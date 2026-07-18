@@ -52,7 +52,7 @@ jobs:
 
       - name: Restore compiled core
         id: core-cache
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v6
         with:
           path: |
             jni/arm64-v8a
