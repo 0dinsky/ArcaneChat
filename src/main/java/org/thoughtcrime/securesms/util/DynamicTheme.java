@@ -53,7 +53,7 @@ public class DynamicTheme {
   public static void setDefaultDayNightMode(@NonNull Context context) {
     String theme = Prefs.getTheme(context);
 
-    if (!theme.equals(LIGHT) && !theme.equals(DARK)) {
+    if (theme.equals(SYSTEM)) {
       AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
     } else if (DynamicTheme.isDarkTheme(context)) {
       AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);

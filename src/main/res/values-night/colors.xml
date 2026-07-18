@@ -11,11 +11,4 @@
     <color name="dummy_avatar_color">#808080</color>
 
     <color name="delete_account_item_bg">#222222</color>
-    <!-- PURPLE overrides for dark theme: purple -> white -->
-    <color name="purple_primary">#ffffffff</color>
-    <color name="purple_primary_lite">#ffffffff</color>
-    <color name="purple_primary_alpha33">#55ffffff</color>
-    <color name="purple_accent">#ffffffff</color>
-    <color name="purple_outgoing_label">#ffffffff</color>
-    <color name="purple_unreadcount">#ffffff</color>
 </resources>
