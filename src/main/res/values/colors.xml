@@ -11,13 +11,13 @@
     <!-- ========== -->
 
     <!-- PURPLE -->
-    <color name="purple_primary">#ff7b00c8</color>
-    <color name="purple_primary_lite">#ff7b00c8</color>
-    <color name="purple_primary_alpha33">#557b00c8</color>
-    <color name="purple_accent">#9646c8</color>
+    <color name="purple_primary">#ff000000</color>
+    <color name="purple_primary_lite">#ff000000</color>
+    <color name="purple_primary_alpha33">#55000000</color>
+    <color name="purple_accent">#000000</color>
     <color name="purple_outgoing_bubble">#fffff9d9</color>
-    <color name="purple_outgoing_label">#ff7b00c8</color>
-    <color name="purple_unreadcount">#7b00c8</color>
+    <color name="purple_outgoing_label">#ff000000</color>
+    <color name="purple_unreadcount">#000000</color>
     <!-- ========== -->
 
     <!-- GREEN -->
