@@ -10,12 +10,12 @@
     <string name="gray">Gray</string>
 
     <!-- device messages for updates -->
-    <!-- when translating the sentence about the ArcaneChat channel, clarify that the channel is in English -->
-    <string name="device_welcome_message">🔮 Welcome to ArcaneChat✨\n\nTo get in contact with friends:\n\n🤳🏻 Tap
+    <!-- when translating the sentence about the Arcane Chat channel, clarify that the channel is in English -->
+    <string name="device_welcome_message">🔮 Welcome to Arcane Chat✨\n\nTo get in contact with friends:\n\n🤳🏻 Tap
         \"QR code\" on the main screen of both devices. Choose \"Scan QR Code\" on one device, and
         point it at the other\n\n🔗 If not in the same room, you can share your invite link from
-        \"Invite friends\" in the menu\n\n📢 Join the [Official ArcaneChat Channel](%1$s) to keep
+        \"Invite friends\" in the menu\n\n📢 Join the [Official Arcane Chat Channel](%1$s) to keep
         updated about the development status.</string>
 
-    <string name="update_2_46ac">🔮 What\'s new?\n\n✦ Greatly enhanced experimental video/audio calls with better system integration\n\n✦ Added a basic sticker picker\n\n✦ Improved attachment selector\n\n✦ Further minimize metadata in messages\n\n✦ Increase resilience of multi-relay usage: if on relay goes down, messages are still received in the others\n\n✦ Better synchronization of notifications state across multiple devices\n\n✦ Fixed invitation link to join the 📢 [Official ArcaneChat Channel](%2$s)\n\n✦ Several bug fixes and updated translations\n\n\n💜 Please donate to help us remain independent and continue to bring improvements: %1$s</string>
+    <string name="update_2_46ac">🔮 What\'s new?\n\n✦ Greatly enhanced experimental video/audio calls with better system integration\n\n✦ Added a basic sticker picker\n\n✦ Improved attachment selector\n\n✦ Further minimize metadata in messages\n\n✦ Increase resilience of multi-relay usage: if on relay goes down, messages are still received in the others\n\n✦ Better synchronization of notifications state across multiple devices\n\n✦ Fixed invitation link to join the 📢 [Official Arcane Chat Channel](%2$s)\n\n✦ Several bug fixes and updated translations\n\n\n💜 Please donate to help us remain independent and continue to bring improvements: %1$s</string>
 </resources>

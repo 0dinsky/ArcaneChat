@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- common strings without special context -->
-    <string name="app_name">Delta Chat</string>
+    <string name="app_name">Arcane Chat</string>
     <string name="ok">OK</string>
     <string name="cancel">Отказ</string>
     <string name="clear_search">Изчистване на търсенето</string>
@@ -42,7 +42,7 @@
     <!-- Verb "to mute". used to mute a chat, so that it is silenced e.g. does not make noise or cause notifications -->
     <string name="mute">Изключване на звука</string>
     <string name="ephemeral_messages">Изчезващи съобщения</string>
-    <string name="ephemeral_messages_hint">Приложимо за всички членове на този чат, ако използват Delta Chat; в противен случай те пак могат да копират, записват и препращат съобщения или да използват други клиенти за електронна поща.</string>
+    <string name="ephemeral_messages_hint">Приложимо за всички членове на този чат, ако използват Arcane Chat; в противен случай те пак могат да копират, записват и препращат съобщения или да използват други клиенти за електронна поща.</string>
     <string name="save">Записване</string>
     <string name="chat">Чат</string>
     <string name="media">Медия</string>
@@ -428,9 +428,9 @@
     <string name="multidevice_title">Добавяне на допълнително устройство</string>
     <string name="multidevice_same_network_hint">Уверете се, че и двете устройства са свързани към една и съща Wi-Fi или друга мрежа</string>
     <string name="multidevice_this_creates_a_qr_code">Ще бъде създаден QR код, чрез сканиране на който другото устройство може да копира акаунта.</string>
-    <string name="multidevice_install_dc_on_other_device">Инсталирайте Delta Chat на другото Ви устройство (https://get.delta.chat)</string>
+    <string name="multidevice_install_dc_on_other_device">Инсталирайте Arcane Chat на другото Ви устройство (https://get.delta.chat)</string>
     <!-- "I Already Have a Profile / Add as Second Device” should be the same text as defined by the keys onboarding_alternative_logins and multidevice_receiver_title -->
-    <string name="multidevice_tap_scan_on_other_device">Стартирайте Delta Chat, докоснете \"Добавяне като допълнително устройство\" и сканирайте кода, показан тук</string>
+    <string name="multidevice_tap_scan_on_other_device">Стартирайте Arcane Chat, докоснете \"Добавяне като допълнително устройство\" и сканирайте кода, показан тук</string>
     <!-- Shown inside a "QR code card" with very limited space; please formulate the text as short as possible therefore. The placeholder will be replaced by the profile name eg. "Scan to set up second device for Alice" -->
     <string name="multidevice_qr_subtitle">Сканирайте, за да установите допълнително устройство за %1$s</string>
     <string name="multidevice_receiver_title">Добавяне като допълнително устройство</string>
@@ -636,7 +636,7 @@
     <string name="profile_image_delete">Изтриване на изображението на профила</string>
     <string name="pref_show_tray_icon">Показване на иконата в System Tray</string>
     <string name="pref_edit_profile">Редактиране на профил</string>
-    <string name="send_stats_to_devs">Да се изпраща статистика към разработчиците на Delta Chat</string>
+    <string name="send_stats_to_devs">Да се изпраща статистика към разработчиците на Arcane Chat</string>
     <!-- Emoji picker and categories -->
     <string name="emoji_search_results">Резултати от търсенето</string>
     <string name="emoji_not_found">Не е открито Emoji</string>
@@ -667,9 +667,9 @@
     <!-- %1$d will be replaced by the number of messages, you can assume plural/lots here. %2$s will be replaced by a timespan option. -->
     <string name="autodel_device_ask">Искате ли да изтриете %1$d съобщения сега, както и всички съобщения \"%2$s\", които ще бъдат изтегляни в бъдеще?\n\n• Това включва всички медийни файлове\n\n• Съобщенията ще бъдат изтрити, независимо от това дали са видени или не\n\n• Съобщенията от \"Запазени съобщения\" няма да бъдат изтривани локално</string>
     <!-- deprecated -->
-    <string name="autodel_server_ask">Искате ли да изтриете %1$d съобщения сега и всички съобщения \"%2$s\", които ще бъдат изтегляни в бъдеще?\n\n⚠️ Това включва електронна поща, медийни файлове и съобщенията от \"Записани съобщения\" във всички папки на сървъра\n\n⚠️ Не ползвайте тази функция, ако искате да запазите данните на сървъра\n\n⚠️ Не ползвайте тази функция, ако работите с други клиенти за електронна поща освен Delta Chat</string>
+    <string name="autodel_server_ask">Искате ли да изтриете %1$d съобщения сега и всички съобщения \"%2$s\", които ще бъдат изтегляни в бъдеще?\n\n⚠️ Това включва електронна поща, медийни файлове и съобщенията от \"Записани съобщения\" във всички папки на сървъра\n\n⚠️ Не ползвайте тази функция, ако искате да запазите данните на сървъра\n\n⚠️ Не ползвайте тази функция, ако работите с други клиенти за електронна поща освен Arcane Chat</string>
     <!-- deprecated -->
-    <string name="autodel_server_enabled_hint">Това включва електронна поща, медийни файлове и \"Запазени съобщения\" във всички папки на сървъра. Не ползвайте тази функция, ако искате да запазите данните на сървъра или ако работите с други клиенти за електронна поща освен Delta Chat.</string>
+    <string name="autodel_server_enabled_hint">Това включва електронна поща, медийни файлове и \"Запазени съобщения\" във всички папки на сървъра. Не ползвайте тази функция, ако искате да запазите данните на сървъра или ако работите с други клиенти за електронна поща освен Arcane Chat.</string>
     <string name="autodel_confirm">Разбирам. Всички тези съобщения да бъдат изтрити</string>
     <!-- "At once" in the meaning of "Immediately", without any intervening time. -->
     <string name="autodel_at_once">Наведнъж</string>
@@ -751,7 +751,7 @@
     <string name="devicemsg_storage_exceeding">⚠️ Мястото за съхранение, предоставено от Вашия доставчик, скоро ще бъде изчерпано:%1$s%% вече са използвани.\n\nМоже да нямате възможност да получавате съобщения, ако мястото за съхранение е заето напълно.\n\n👉 Моля, проверете дали не бихте могли да изтриете стари данни през уеб интерфейса на доставчика и обмислете дали да не включите \"Настройки / Изтриване на старите съобщения\". Можете по всяко време да проверите текущо използваното място за съхранение в \"Настройки / Свързаност\".</string>
     <!-- %1%s will be replaced by date and time in some human-readable format -->
     <string name="devicemsg_bad_time">⚠️ Изглежда датата и часът на Вашето устройство са неточни (%1$s).\n\nНастройте часовника ⏰🔧, за да имате сигурност, че Вашите съобщения се получават правилно.</string>
-    <string name="devicemsg_update_reminder">⚠️ Възможно е версията на Вашия Delta Chat да е неактуална.\n\nТова може да създаде проблеми, тъй като Вашите чат партньори използват по-нови версии; освен това Ви липсват най-новите възможности.😳\nМоля, проверете за актуализации на https://get.delta.chat или в ползвания от Вас магазин за приложения.</string>
+    <string name="devicemsg_update_reminder">⚠️ Възможно е версията на Вашия Arcane Chat да е неактуална.\n\nТова може да създаде проблеми, тъй като Вашите чат партньори използват по-нови версии; освен това Ви липсват най-новите възможности.😳\nМоля, проверете за актуализации на https://get.delta.chat или в ползвания от Вас магазин за приложения.</string>
 
     <!-- Some options as "Add Second Device" or "Backup" may require the system PIN/Fingerprint/Gesture/Etc. to be entered in a system dialog. This hint is added to the system dialog, below a title as "Add Second Device" or "Backup". -->
     <string name="enter_system_secret_to_continue">Отключете, за да продължите</string>
@@ -827,7 +827,7 @@
     <string name="perm_explain_access_to_mic_denied">За да изпращате аудиосъобщения, отидете в настройките на приложението, изберете \"Позволения\" и разрешете \"Микрофон\".</string>
     <string name="perm_explain_access_to_storage_denied">За да получавате или изпращате файлове, отидете в настройките на приложението, изберете \"Позволения\" и разрешете \"Съхранение\".</string>
     <string name="perm_explain_access_to_location_denied">За да прикрепите информация за местоположението, отидете в настройките на приложението, изберете \"Позволения\" и разрешете \"Местоположение\".</string>
-    <string name="perm_explain_access_to_notifications_denied">За да получавате уведомления, отидете в \"Системни настройки / Приложения / Delta Chat\" и разрешете \"Уведомления\"</string>
+    <string name="perm_explain_access_to_notifications_denied">За да получавате уведомления, отидете в \"Системни настройки / Приложения / Arcane Chat\" и разрешете \"Уведомления\"</string>
 
     <!-- ImageEditorHud -->
     <string name="ImageEditorHud_draw_anywhere_to_blur">Рисувайте на произволно място, за да замъглите</string>
@@ -839,7 +839,7 @@
     <string name="ImageEditorHud_flip">Обръщане</string>
     <string name="ImageEditorHud_rotate">Завъртане</string>
 
-    <string name="welcome_desktop">Добре дошли в Delta Chat</string>
+    <string name="welcome_desktop">Добре дошли в Arcane Chat</string>
     <string name="global_menu_preferences_language_desktop">Език</string>
     <string name="global_menu_file_desktop">Файл</string>
     <string name="global_menu_file_quit_desktop">Напускане</string>
@@ -855,8 +855,8 @@
     <string name="global_menu_view_developer_tools_desktop">Инструменти за разработчици</string>
     <string name="global_menu_help_desktop">Помощ</string>
     <string name="global_menu_help_report_desktop">Съобщаване за проблем</string>
-    <string name="global_menu_help_about_desktop">Относно Delta Chat</string>
-    <string name="global_menu_file_open_desktop">Отваряне на Delta Chat</string>
+    <string name="global_menu_help_about_desktop">Относно Arcane Chat</string>
+    <string name="global_menu_file_open_desktop">Отваряне на Arcane Chat</string>
     <string name="global_menu_minimize_to_tray">Минимизиране</string>
     <string name="no_chat_selected_suggestion_desktop">Изберете чат или създайте нов</string>
     <string name="write_message_desktop">Писане на съобщение</string>
@@ -873,7 +873,7 @@
     <string name="message_detail_received_desktop">получено</string>
     <string name="menu.view.developer.open.log.folder">Отваряне на папката \"Дневник\"</string>
     <string name="menu.view.developer.open.current.log.file">Отваряне на текущия файл на дневника</string>
-    <string name="explain_desktop_minimized_disabled_tray_pref" tools:ignore="TypographyDashes">Показването на икона в системната лента не може да бъде забранено, тъй като Delta Chat е стартиран с опцията --minimized.</string>
+    <string name="explain_desktop_minimized_disabled_tray_pref" tools:ignore="TypographyDashes">Показването на икона в системната лента не може да бъде забранено, тъй като Arcane Chat е стартиран с опцията --minimized.</string>
     <!-- deprecated, used on desktop although there is not spell checker -->
     <string name="no_spellcheck_suggestions_found">Няма открити предложения за правопис.</string>
     <string name="show_window">Показване на прозореца</string>
@@ -912,22 +912,22 @@
     <string name="import_device_contacts">Въвеждане на контакти от устройството</string>
     <string name="import_device_contacts_hint">За да чатите с контакти от Вашето устройство, отворете Настройки и разрешете \"Контакти\".</string>
     <!-- iOS notification settings -->
-    <string name="disabled_in_dc">Забранено в Delta Chat</string>
+    <string name="disabled_in_dc">Забранено в Arcane Chat</string>
     <string name="disabled_in_system_settings">Забранено в системните настройки</string>
     <string name="bg_app_refresh_disabled">\"Опресняване на приложението на заден план\" е забранено в системните настройки</string>
     <string name="notifications_avg_minutes">Средно всеки %1$d минути</string>
     <string name="notifications_avg_hours">Средно всеки %1$d часа</string>
     <string name="last_check_at">Проверено на %1$s</string>
     <!-- iOS permissions, copy from "deltachat-ios/Info.plist", which is used on missing translations in "deltachat-ios/LANG.lproj/InfoPlist.strings" -->
-    <string name="InfoPlist_NSCameraUsageDescription">Delta Chat използва Вашата камера, за да прави и изпраща снимки и видеоклипове, както и да сканира QR кодове.</string>
-    <string name="InfoPlist_NSLocationAlwaysAndWhenInUseUsageDescription">Delta Chat се нуждае от позволение да споделя Вашето местоположение за периода от време, през който сте разрешили споделяне на местоположението.</string>
-    <string name="InfoPlist_NSLocationWhenInUseUsageDescription">Delta Chat се нуждае от позволение да споделя Вашето местоположение за периода от време, през който сте разрешили споделяне на местоположението.</string>
-    <string name="InfoPlist_NSMicrophoneUsageDescription">Delta Chat използва Вашия микрофон, за да записва и изпраща гласови съобщения и видеоклипове със звук.</string>
-    <string name="InfoPlist_NSPhotoLibraryUsageDescription">Delta Chat ще Ви даде да изберете кои снимки от Вашата библотека да изпратите.</string>
-    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">Delta Chat иска да запише изображения във Вашата библиотека със снимки.</string>
-    <string name="pref_background_notifications_rationale">За да се поддържа връзката към Вашия сървър за електронна поща и да получавате съобщения във фонов режим, игнорирайте оптимизациите на батерията на следващата стъпка.\n\nDelta Chat използва малко ресурси и се грижи да не изтощава Вашата батерия.</string>
+    <string name="InfoPlist_NSCameraUsageDescription">Arcane Chat използва Вашата камера, за да прави и изпраща снимки и видеоклипове, както и да сканира QR кодове.</string>
+    <string name="InfoPlist_NSLocationAlwaysAndWhenInUseUsageDescription">Arcane Chat се нуждае от позволение да споделя Вашето местоположение за периода от време, през който сте разрешили споделяне на местоположението.</string>
+    <string name="InfoPlist_NSLocationWhenInUseUsageDescription">Arcane Chat се нуждае от позволение да споделя Вашето местоположение за периода от време, през който сте разрешили споделяне на местоположението.</string>
+    <string name="InfoPlist_NSMicrophoneUsageDescription">Arcane Chat използва Вашия микрофон, за да записва и изпраща гласови съобщения и видеоклипове със звук.</string>
+    <string name="InfoPlist_NSPhotoLibraryUsageDescription">Arcane Chat ще Ви даде да изберете кои снимки от Вашата библотека да изпратите.</string>
+    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">Arcane Chat иска да запише изображения във Вашата библиотека със снимки.</string>
+    <string name="pref_background_notifications_rationale">За да се поддържа връзката към Вашия сървър за електронна поща и да получавате съобщения във фонов режим, игнорирайте оптимизациите на батерията на следващата стъпка.\n\nArcane Chat използва малко ресурси и се грижи да не изтощава Вашата батерия.</string>
     <!-- disabling "Reliable service" will hide a the maybe annoying permanent-notification with the drawback that new-message-notifications get potentially unreliable -->
-    <string name="perm_enable_bg_reminder_title">Докоснете тук, за да получавате съобщения, докато Delta Chat е във фонов режим.</string>
-    <string name="perm_enable_bg_already_done">Вече разрешихте Delta Chat да получава съобщения във фонов режим.\n\nАко съобщенията все още не пристигат във фонов режим, моля проверете Вашите системни настройки.</string>
+    <string name="perm_enable_bg_reminder_title">Докоснете тук, за да получавате съобщения, докато Arcane Chat е във фонов режим.</string>
+    <string name="perm_enable_bg_already_done">Вече разрешихте Arcane Chat да получава съобщения във фонов режим.\n\nАко съобщенията все още не пристигат във фонов режим, моля проверете Вашите системни настройки.</string>
 
     </resources>

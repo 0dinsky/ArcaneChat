@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- common strings without special context -->
-    <string name="app_name">Delta Chat</string>
+    <string name="app_name">Arcane Chat</string>
     <string name="ok">OK</string>
     <string name="cancel">Avbryt</string>
     <string name="clear_search">Nullstill søk</string>
@@ -55,7 +55,7 @@
     <!-- Adjective "smth is muted". used to describe a muted or silenced chat, that e.g. does not make noise or cause notifications -->
     <string name="muted">Dempet</string>
     <string name="ephemeral_messages">Forsvinnende meldinger</string>
-    <string name="ephemeral_messages_hint">Disse innstillingene gjelder alle deltakerne som bruker Delta Chat. Men de kan kopiere, lagre og videresende meldinger eller bruke annen e-postklient.</string>
+    <string name="ephemeral_messages_hint">Disse innstillingene gjelder alle deltakerne som bruker Arcane Chat. Men de kan kopiere, lagre og videresende meldinger eller bruke annen e-postklient.</string>
     <string name="save">Lagre</string>
     <string name="chat">Chat</string>
     <string name="media">Media</string>
@@ -305,7 +305,7 @@
     <string name="share_invite_link_explain">Alle som har denne lenken kan se profilen din og starte en chat med deg. Den bør bare deles med folk du stoler på.</string>
     <string name="invite_friends">Inviter venner</string>
     <!-- %1$s is replaced by the user's invitation link ("https://i.delta.chat/...") -->
-    <string name="invite_friends_text">Ta kontakt på Delta Chat:\n%1$s</string>
+    <string name="invite_friends_text">Ta kontakt på Arcane Chat:\n%1$s</string>
     <string name="menu_copy_selection_to_clipboard">Kopier utvalg</string>
     <string name="menu_copy_link_to_clipboard">Kopier lenge</string>
     <string name="menu_copy_text_to_clipboard">Kopier tekst</string>
@@ -359,7 +359,7 @@
     <string name="title_share_location">Del posisjon med alle gruppemedlemmer</string>
     <string name="device_talk">Enhetsmeldinger</string>
     <string name="device_talk_subtitle">Lokalt genererte meldinger</string>
-    <string name="device_talk_explain">Meldinger i denne chatten blir generert lokalt av Delta Chat-appen. Produsentene bruker den for å informere om appoppdateringer og problemer under bruk.</string>
+    <string name="device_talk_explain">Meldinger i denne chatten blir generert lokalt av Arcane Chat-appen. Produsentene bruker den for å informere om appoppdateringer og problemer under bruk.</string>
     <string name="device_talk_welcome_message2">Ta kontakt!\n\n🙌 Trykk \"QR-kode\" begge enhetenes hovedskjerm. Velg \"Skann QR-kode\" på den ene enheten, og pek med kameraet på den andre\n\n🌍 Hvis enhetene ikke er i samme rom, skann i en videosamtale eller del en invitasjonslenke fra \"Skann QR-kode\"\n\nSå kan du ta del i en meldingstjeneste som er bygget på det største desentraliserte nettverket som noen gang er laget: e-post. Og, i motsetning til andre populære apper, uten sentral kontroll, sporing, og salg av data om deg, dine venner, dine kolleger, eller din familie til store selskaper.</string>
     <string name="edit_contact">Rediger kontakt</string>
     <!-- Verb "to pin", making something sticky, not a noun or abbreviation for "pin number". -->
@@ -376,7 +376,7 @@
     <!-- Menu item beside an app/chat that adds an icon to the system's home screen. If the user taps that icon, the app/chat is opened directly. -->
     <string name="add_to_home_screen">Legg til på hjemmeskjermen</string>
     <string name="donate">Doner</string>
-    <string name="donate_device_msg">❤️ Det ser ut som du liker Delta Chat!\n\nVurder å donere for å holde Delta Chat gratis for alle.\n\nSelv om Delta Chat er gratis å bruke og åpen kildekode, så koster det penger å utvikle. Hjelp oss å holde Delta Chat uavhengig og gjøre det enda bedre.\n\nhttps://delta.chat/donate</string>
+    <string name="donate_device_msg">❤️ Det ser ut som du liker Arcane Chat!\n\nVurder å donere for å holde Arcane Chat gratis for alle.\n\nSelv om Arcane Chat er gratis å bruke og åpen kildekode, så koster det penger å utvikle. Hjelp oss å holde Arcane Chat uavhengig og gjøre det enda bedre.\n\nhttps://delta.chat/donate</string>
 
     <string name="mute_for_one_hour">Demp i 1 time</string>
     <string name="mute_for_eight_hours">Demp i 8 timer</string>
@@ -491,7 +491,7 @@
     <string name="chat_new_one_to_one_hint">Send en melding til %1$s.</string>
     <!-- consider keeping the term "channel" as in WhatsApp or Telegram -->
     <string name="chat_new_channel_hint">Kanaler er et en-til-mange-verktøy for å publisere meldingene dine.</string>
-    <string name="chat_new_group_hint">Forfatt den første meldingen, noe som lar andre svare i gruppen.\n\n• Det er greit at ikke alle medlemmer bruker Delta Chat.\n\n• Levering av den første meldingen kan ta sin tid.</string>
+    <string name="chat_new_group_hint">Forfatt den første meldingen, noe som lar andre svare i gruppen.\n\n• Det er greit at ikke alle medlemmer bruker Arcane Chat.\n\n• Levering av den første meldingen kan ta sin tid.</string>
     <string name="chat_record_slide_to_cancel">Dra for å avbryte</string>
     <string name="chat_record_explain">Trykk og hold for å ta opp en melding, slipp for å sende</string>
     <string name="chat_no_chats_yet_title">Tøm innboksen.\nTrykk \"+\" for å starte en ny chat.</string>
@@ -696,13 +696,13 @@
     <!-- permissions -->
     <string name="perm_required_title">Tillatelse kreves</string>
     <string name="perm_continue">Fortsett</string>
-    <string name="welcome_desktop">Velkommen til Delta Chat</string>
+    <string name="welcome_desktop">Velkommen til Arcane Chat</string>
     <string name="global_menu_preferences_language_desktop">Språk</string>
     <string name="global_menu_edit_desktop">Rediger</string>
     <string name="global_menu_edit_copy_desktop">Kopier</string>
     <string name="global_menu_view_desktop">Vis</string>
     <string name="global_menu_help_desktop">Hjelp</string>
-    <string name="global_menu_help_about_desktop">Om Delta Chat</string>
+    <string name="global_menu_help_about_desktop">Om Arcane Chat</string>
     <string name="encryption_info_title_desktop">Krypteringsinfo</string>
     <string name="delete_message_desktop">Slett melding</string>
     <string name="more_info_desktop">Mer informasjon</string>

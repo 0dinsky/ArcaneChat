@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- common strings without special context -->
-    <string name="app_name">Delta Chat</string>
+    <string name="app_name">Arcane Chat</string>
     <string name="ok">IH</string>
     <string name="cancel">Sefsex</string>
     <string name="clear_search">Sfeḍ anadi</string>
@@ -369,7 +369,7 @@
     <!-- Menu item beside an app/chat that adds an icon to the system's home screen. If the user taps that icon, the app/chat is opened directly. -->
     <string name="add_to_home_screen">Rnu ɣer ugdil agejdan</string>
     <string name="donate">Mudd tawsa</string>
-    <string name="donate_device_msg">❤️ Yettban-iyi-d dakken aql-ik·im tḥemmled Delta Chat!\n\nMa ulac aɣilif, mudd-d tawsa akken ad tḍemneḍ d akken Delta Chat ad yeqqim baṭel i yal yiwen.\n\nMa d Delta Chat baṭel i useqdec d uɣbalu yeldin, taneflit tesqam-d idrimen. Mudd-aɣ-d afus ad neḥrez Delta Chat d ilelli u ad t-nerr d imgerrez ugar ɣer zdat.\n\nhttps://delta.chat/donate</string>
+    <string name="donate_device_msg">❤️ Yettban-iyi-d dakken aql-ik·im tḥemmled Arcane Chat!\n\nMa ulac aɣilif, mudd-d tawsa akken ad tḍemneḍ d akken Arcane Chat ad yeqqim baṭel i yal yiwen.\n\nMa d Arcane Chat baṭel i useqdec d uɣbalu yeldin, taneflit tesqam-d idrimen. Mudd-aɣ-d afus ad neḥrez Arcane Chat d ilelli u ad t-nerr d imgerrez ugar ɣer zdat.\n\nhttps://delta.chat/donate</string>
 
     <string name="mute_for_one_hour"> Sgugem i 1 usrag</string>
     <string name="mute_for_eight_hours">Sgugem i 8 yisragen</string>
@@ -573,13 +573,13 @@
     <string name="multidevice_this_creates_a_qr_code">Aya ad yernu tangalt QR i yezmer ad yeḍumm ibenk wis sin akken ad yenɣel amaɣnu.\n\nḍmen d akken ula d yiwen n umnadi neɣ n tkamra ur yezmer ad iwali agdil-a.</string>
     <string name="multidevice_install_dc_on_other_device">Sebded delta Chat ɣef yibenk-ik·im nniḍen (https://get.delta.chat)</string>
     <!-- "I Already Have a Profile / Add as Second Device” should be the same text as defined by the keys onboarding_alternative_logins and multidevice_receiver_title -->
-    <string name="multidevice_tap_scan_on_other_device">Bdu Delta Chat, sit “Sεiɣ yakan amaɣnu / Rnu am yibenk wis sin” sakin ḍumm tangalt i d-yettwaseknen dagi</string>
+    <string name="multidevice_tap_scan_on_other_device">Bdu Arcane Chat, sit “Sεiɣ yakan amaɣnu / Rnu am yibenk wis sin” sakin ḍumm tangalt i d-yettwaseknen dagi</string>
     <!-- Shown inside a "QR code card" with very limited space; please formulate the text as short as possible therefore. The placeholder will be replaced by the profile name eg. "Scan to set up second device for Alice" -->
     <string name="multidevice_qr_subtitle">Ḍumm akken ad tesbeddeḍ ibenk wis sin i %1$s</string>
     <string name="multidevice_receiver_title">Rnu am yibenk wis sin</string>
     <string name="multidevice_open_settings_on_other_device">Deg yibenk amezwaru, ruḥ ɣer \"Iɣewwaṛen / Rnu ibenk wis sin\" sakin ḍumm tangalt i d-yettwaseknen din</string>
     <string name="multidevice_receiver_scanning_ask">Nɣel amaɣnu seg yibenk-nniḍen ɣer yibenk-a?</string>
-    <string name="multidevice_receiver_needs_update">Amaɣnu i tebɣiḍ ad d-tketreḍ seg lqem amaynut n Delta Chat.\n\nAkken ad tkemleḍ asebded n yibenk wis sin, ma ulac aɣilif leqqem ibenk-agi ɣer lqem aneggaru n Delta Chat. </string>
+    <string name="multidevice_receiver_needs_update">Amaɣnu i tebɣiḍ ad d-tketreḍ seg lqem amaynut n Arcane Chat.\n\nAkken ad tkemleḍ asebded n yibenk wis sin, ma ulac aɣilif leqqem ibenk-agi ɣer lqem aneggaru n Arcane Chat. </string>
     <string name="multidevice_abort">Sefsex asbadu n yibenk wis sin?</string>
     <string name="multidevice_abort_will_invalidate_copied_qr">Aya ad yili d arameɣtu i tangalt QR i d-yettwanɣelen ɣer tecfawt.</string>
     <string name="multidevice_transfer_done_devicemsg">ℹ️ Amaɣnu yettusiweḍ ɣer yibenk-ik·im wis sin.</string>
@@ -833,13 +833,13 @@
     <string name="pref_show_tray_icon">Sken Tignit n ufaggag n waddad</string>
     <string name="pref_edit_profile">Ẓreg amaɣnu</string>
     <string name="send_stats_to_devs">Azen tidaddanin i yineflayen n DeltaChat</string>
-    <string name="stats_device_message">Tebɣiḍ ad tεawneḍ deg usnerni n Delta Chat u ad tεawneḍ anadi s tuzna n tesnaddadin n useqdec udrigen?\n\n👉 Tekki da... 👈</string>
-    <string name="stats_confirmation_dialog">Tebɣiḍ ad tεawneḍ deg usnerni n Delta Chat u ad tεawneḍ anadi s tuzna n tesnaddadin n useqdec udrigen?</string>
-    <string name="stats_thanks">Tanemmirt! Tzemreḍ dima ad tessenseḍ tuzna deg \"Iɣewwaṛen -> Talqayt\".\n\nƔur-k·m ugar n 5 n tesdatin akken ad ttekkiḍ deg yiwet n tezrawt tussnant ɣef tɣellist n Delta Chat?</string>
+    <string name="stats_device_message">Tebɣiḍ ad tεawneḍ deg usnerni n Arcane Chat u ad tεawneḍ anadi s tuzna n tesnaddadin n useqdec udrigen?\n\n👉 Tekki da... 👈</string>
+    <string name="stats_confirmation_dialog">Tebɣiḍ ad tεawneḍ deg usnerni n Arcane Chat u ad tεawneḍ anadi s tuzna n tesnaddadin n useqdec udrigen?</string>
+    <string name="stats_thanks">Tanemmirt! Tzemreḍ dima ad tessenseḍ tuzna deg \"Iɣewwaṛen -> Talqayt\".\n\nƔur-k·m ugar n 5 n tesdatin akken ad ttekkiḍ deg yiwet n tezrawt tussnant ɣef tɣellist n Arcane Chat?</string>
     <string name="stats_disable_dialog">Tuzzna n tdaddanin termed yakan.\n\nTebɣiḍ ad t-tessexsiḍ?</string>
     <string name="disable">Sens</string>
     <string name="stats_keep_sending">Eǧǧ tuzna</string>
-    <string name="stats_msg_body">Afaylu amedday yegber tiddadanin tudrigin, i ɣ-iεawnen ad nesnerni Delta Chat. Wali https://delta.chat/help#statssending i wugar n telɣut. Tanemmirt-ik·im!</string>
+    <string name="stats_msg_body">Afaylu amedday yegber tiddadanin tudrigin, i ɣ-iεawnen ad nesnerni Arcane Chat. Wali https://delta.chat/help#statssending i wugar n telɣut. Tanemmirt-ik·im!</string>
 
     <!-- Emoji picker and categories -->
     <string name="emoji_search_results">Igmaḍ n unadi</string>
@@ -974,7 +974,7 @@
     <string name="devicemsg_storage_exceeding">⚠️Asaǧǧaw-ik·im n usekles qrib ad yaččar: %1$s%% yettwaseqdec yakan.\n\nAhat ur tezmireḍ ara ad d-remseḍ iznan ma yella asekles yeččur.\n\n 👉 Ttxil-k·m senqed ma yella tzemreḍ ad tekkseḍ isefka iqburen deg ugrudem n web n isaǧǧawen syin rmed \"Iɣewwaṛen / Idiwenniyen / Kkes iznan iqbuṛen\". Tzemreḍ ad tesneqdeḍ aseqdec n usekles-inek·inem amiran deg \"Iɣewwaṛen / tuqqna\".</string>
     <!-- %1%s will be replaced by date and time in some human-readable format -->
     <string name="devicemsg_bad_time">⚠️ Azemz neɣ akud deg yibenk-ik·im yettban-d ur iṣeḥḥa ara (%1$s).\n\nṢeggem tamasragt-ik·im ⏰🔧Akken ad neḍmen d akken iznan-ik·im ad ttwaremsen akken iwata. </string>
-    <string name="devicemsg_update_reminder">⚠️Yezmer lḥal alqem-ik·im n Delta Chat d aqbur.\n\nAya yezmer ad d-yeglu s wuguren acku imendiden-ik·im n udiwenni sseqdacen ileqman imaynuten - yerna txuṣṣeḍ timahilin tineggura 😳\nTtxil-k·m, ssefqed https://get.delta.chat neɣ taḥanut-nnek·nnem n usnas i uleqqem.</string>
+    <string name="devicemsg_update_reminder">⚠️Yezmer lḥal alqem-ik·im n Arcane Chat d aqbur.\n\nAya yezmer ad d-yeglu s wuguren acku imendiden-ik·im n udiwenni sseqdacen ileqman imaynuten - yerna txuṣṣeḍ timahilin tineggura 😳\nTtxil-k·m, ssefqed https://get.delta.chat neɣ taḥanut-nnek·nnem n usnas i uleqqem.</string>
 
     <!-- Some options as "Add Second Device" or "Backup" may require the system PIN/Fingerprint/Gesture/Etc. to be entered in a system dialog. This hint is added to the system dialog, below a title as "Add Second Device" or "Backup". -->
     <string name="enter_system_secret_to_continue">Kkes assekeṛ akken ad tkemmleḍ</string>
@@ -1058,7 +1058,7 @@
     <string name="perm_explain_access_to_mic_denied">Akken ad tazneḍ iznan n umeslaw, ddu ɣer iɣewwaṛen n unagraw neɣ n usnas, fren \" tisirag \" neɣ \" tabaḍnit &amp; taɣellist \", syin rmed \"Amikrufun\".</string>
     <string name="perm_explain_access_to_storage_denied">Akken ad tremseḍ neɣ ad tazneḍ ifuyla, ddu ɣer iɣewwaṛen n usnas, fren \" tisirag \", sakin rmed \" takatut \".</string>
     <string name="perm_explain_access_to_location_denied">Akken ad teqqneḍ adig, ddu ɣer iɣewwaṛen n usnas, fren \" tisirag \", sakin rmed \" adig \". </string>
-    <string name="perm_explain_access_to_notifications_denied">Akken ad d-remseḍ ilɣa, ddu ɣer \"Iɣewwaṛen n Unagraw / Isnas / Delta Chat\" akken ad tremdeḍ \"Ilɣa\".</string>
+    <string name="perm_explain_access_to_notifications_denied">Akken ad d-remseḍ ilɣa, ddu ɣer \"Iɣewwaṛen n Unagraw / Isnas / Arcane Chat\" akken ad tremdeḍ \"Ilɣa\".</string>
 
     <!-- ImageEditorHud -->
     <string name="ImageEditorHud_draw_anywhere_to_blur">Suneɣ-d anda tebɣiḍ i wakken ad tesluɣeḍ</string>
@@ -1070,7 +1070,7 @@
     <string name="ImageEditorHud_flip">Bren</string>
     <string name="ImageEditorHud_rotate">Zzi</string>
 
-    <string name="welcome_desktop">Ansuf yis-k-m ɣer Delta Chat</string>
+    <string name="welcome_desktop">Ansuf yis-k-m ɣer Arcane Chat</string>
     <string name="global_menu_preferences_language_desktop">Tutlayt</string>
     <string name="global_menu_file_desktop">Afaylu</string>
     <string name="global_menu_file_quit_desktop">Ffeɣ</string>
@@ -1085,11 +1085,11 @@
     <string name="global_menu_view_developer_desktop">Aneflay</string>
     <string name="global_menu_view_developer_tools_desktop">Ifecka n tneflit</string>
     <string name="global_menu_help_desktop">Tallelt</string>
-    <string name="delta_chat_homepage">Asebter agejdan n Delta Chat</string>
+    <string name="delta_chat_homepage">Asebter agejdan n Arcane Chat</string>
     <string name="contribute">Ttekki</string>
     <string name="global_menu_help_report_desktop">Azen aneqqis n wugur</string>
-    <string name="global_menu_help_about_desktop">Ɣef Delta Chat</string>
-    <string name="global_menu_file_open_desktop">Ldi Delta Chat</string>
+    <string name="global_menu_help_about_desktop">Ɣef Arcane Chat</string>
+    <string name="global_menu_file_open_desktop">Ldi Arcane Chat</string>
     <string name="global_menu_minimize_to_tray">Simẓi</string>
     <string name="no_chat_selected_suggestion_desktop">Fren adiwenni neɣ snulfu-d adiwenni amaynut</string>
     <string name="write_message_desktop">Aru izen</string>
@@ -1108,7 +1108,7 @@
     <string name="message_detail_received_desktop">yettwarmes</string>
     <string name="menu.view.developer.open.log.folder">Ldi akaram n uɣmis</string>
     <string name="menu.view.developer.open.current.log.file">Ldi afaylu n uɣmis amiran</string>
-    <string name="explain_desktop_minimized_disabled_tray_pref" tools:ignore="TypographyDashes">Tignit n tfeggagt n tmahilin ur tezmir ara ad tsens mi ara d-yebdu Delta Chat s --Uɣewwaṛ adday.</string>
+    <string name="explain_desktop_minimized_disabled_tray_pref" tools:ignore="TypographyDashes">Tignit n tfeggagt n tmahilin ur tezmir ara ad tsens mi ara d-yebdu Arcane Chat s --Uɣewwaṛ adday.</string>
     <!-- deprecated, used on desktop although there is not spell checker -->
     <string name="no_spellcheck_suggestions_found">Ulac isumar n teɣdirawt yettwafen.</string>
     <string name="show_window">Sken asfaylu</string>
@@ -1147,7 +1147,7 @@
     <string name="import_device_contacts">Kter inermisen n yibenk</string>
     <string name="import_device_contacts_hint">Iwakken ad tmeslayeḍ akked inermisen seg yibenk-ik·im, ldi Iɣewwaṛen sakkin rmed \"Iinermisen\".</string>
     <!-- iOS notification settings -->
-    <string name="disabled_in_dc">Ittwasens deg Delta Chat</string>
+    <string name="disabled_in_dc">Ittwasens deg Arcane Chat</string>
     <string name="disabled_in_system_settings">Ittwasens deg iɣewwaren n unagraw</string>
     <string name="bg_app_refresh_disabled">\"Asmiren n usnas n ugilal\" yensa deg yiɣewwaren n unagraw</string>
     <string name="notifications_avg_minutes">Deg tlemmast yal %1$d n tesdatin</string>
@@ -1160,18 +1160,18 @@
     <!-- use the same translation for "Shortcuts" as the system is using, often the term "Shortcut" stays untranslated; check eg. how the "Shortcuts" system app is called in your locale -->
     <string name="shortcuts_widget_title">Inegzumen</string>
     <!-- use the same translation for "Widget" as the system is using; often the term "Widget" stays untranslated -->
-    <string name="shortcuts_widget_description">Seqdec \"Rnu ɣer uwiǧit\" deg Delta Chat akken ad ternuḍ iferdisen.</string>
+    <string name="shortcuts_widget_description">Seqdec \"Rnu ɣer uwiǧit\" deg Arcane Chat akken ad ternuḍ iferdisen.</string>
     <!-- use the same translation for "Widget" as the system is using; often the term "Widget" stays untranslated -->
     <string name="remove_from_widget">Kkes seg uwiǧit</string>
     <!-- use the same translation for "Widget" as the system is using; often the term "Widget" stays untranslated -->
     <string name="add_to_widget">Rnu ɣer uwiǧet</string>
     <!-- iOS permissions, copy from "deltachat-ios/Info.plist", which is used on missing translations in "deltachat-ios/LANG.lproj/InfoPlist.strings" -->
-    <string name="InfoPlist_NSCameraUsageDescription">Delta Chat yesseqdac takamrat-ik·im akken ad d-yeṭṭfeḍ tiwlafin d tvidyutin yerna ad i uḍummu tingalin QR.</string>
-    <string name="InfoPlist_NSLocationAlwaysAndWhenInUseUsageDescription">Delta Chat isra ad tebḍuḍ ideg-inek·inem ɣef wakud i tesremdeḍ ad tebḍuḍ ideg.</string>
-    <string name="InfoPlist_NSLocationWhenInUseUsageDescription">Delta Chat yesra tasiregt akken ad yebḍu adig-inek·inem deg wakud i tremdeḍ buṭṭu n wadig.</string>
-    <string name="InfoPlist_NSMicrophoneUsageDescription">Delta Chat yesseqdac amikrufun-ik·im i usekles d tuzna n yiznan n taɣect akked d tvidyutin s imesli.</string>
-    <string name="InfoPlist_NSPhotoLibraryUsageDescription">Delta Chat ad k-yeǧǧ ad tferneḍ anwa tiwlafin seg temkarḍit-ik·im ara tazneḍ.</string>
-    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">Delta Chat yebɣa ad yessekles tugniwin ɣer temkarḍit-ik·im n tewlafin.</string>
+    <string name="InfoPlist_NSCameraUsageDescription">Arcane Chat yesseqdac takamrat-ik·im akken ad d-yeṭṭfeḍ tiwlafin d tvidyutin yerna ad i uḍummu tingalin QR.</string>
+    <string name="InfoPlist_NSLocationAlwaysAndWhenInUseUsageDescription">Arcane Chat isra ad tebḍuḍ ideg-inek·inem ɣef wakud i tesremdeḍ ad tebḍuḍ ideg.</string>
+    <string name="InfoPlist_NSLocationWhenInUseUsageDescription">Arcane Chat yesra tasiregt akken ad yebḍu adig-inek·inem deg wakud i tremdeḍ buṭṭu n wadig.</string>
+    <string name="InfoPlist_NSMicrophoneUsageDescription">Arcane Chat yesseqdac amikrufun-ik·im i usekles d tuzna n yiznan n taɣect akked d tvidyutin s imesli.</string>
+    <string name="InfoPlist_NSPhotoLibraryUsageDescription">Arcane Chat ad k-yeǧǧ ad tferneḍ anwa tiwlafin seg temkarḍit-ik·im ara tazneḍ.</string>
+    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">Arcane Chat yebɣa ad yessekles tugniwin ɣer temkarḍit-ik·im n tewlafin.</string>
     <string name="InfoPlist_NSFaceIDUsageDescription">Delta cat yezmer ad iseqdec ID n wudem i ummesten n umaɣnu-ik·im adigan, asnulfu n uḥraz akked usebded n yibenk wis sin.</string>
 
     <!-- android specific strings, developers: please take care to remove strings that are no longer used! -->
@@ -1181,10 +1181,10 @@
     <string name="pref_reliable_service">Ḥettem tuqqna n ugilal</string>
     <string name="pref_reliable_service_explain">ad d-yeglu s telɣut timezgit</string>
 
-    <string name="pref_background_notifications_rationale">Akken ad tḥerzeḍ tuqqna daɣen ad d-remseḍ iznan deg ugilal, zgel aseggem n udɣaɣ deg usurif ay d-itteddun.\n\nDelta Chat yesseqdac kra n teɣbula u yernu ur ttḥewwil ara akken ad yečč aṭas deg udɣaɣ-ik·im.</string>
+    <string name="pref_background_notifications_rationale">Akken ad tḥerzeḍ tuqqna daɣen ad d-remseḍ iznan deg ugilal, zgel aseggem n udɣaɣ deg usurif ay d-itteddun.\n\nArcane Chat yesseqdac kra n teɣbula u yernu ur ttḥewwil ara akken ad yečč aṭas deg udɣaɣ-ik·im.</string>
     <!-- disabling "Reliable service" will hide a the maybe annoying permanent-notification with the drawback that new-message-notifications get potentially unreliable -->
-    <string name="perm_enable_bg_reminder_title">Sit dagi akken ad tremseḍ iznan ticki Delta Chat yella deg ugilal.</string>
-    <string name="perm_enable_bg_already_done">Tsirgeḍ yakan Delta Chat i wakken ad d-remseḍ iznan deg ugilal.\n\nMa yella iznan ur d-ttawḍen ara deg ugilal, ttxil-k·m senqed daɣen iɣewwaṛen n unagraw.</string>
+    <string name="perm_enable_bg_reminder_title">Sit dagi akken ad tremseḍ iznan ticki Arcane Chat yella deg ugilal.</string>
+    <string name="perm_enable_bg_already_done">Tsirgeḍ yakan Arcane Chat i wakken ad d-remseḍ iznan deg ugilal.\n\nMa yella iznan ur d-ttawḍen ara deg ugilal, ttxil-k·m senqed daɣen iɣewwaṛen n unagraw.</string>
 
     <!-- device messages for updates -->
     <string name="update_2_0">D acu i d amaynut?\n\n💯Awgelhen n yixef ɣer yixef d ayen iɣef ara tettekleḍ u i lebda. Inekcaman 🔒 ruḥen!\n\n✉️ Imayl aklasik war awgelhen yettwacreḍ s usekkil azamulan.\n\n 😻 Agdil amaynut yettwasneflin n umaɣnu i akk inermisen-ik·im\n\n🔲 Taqeffalt tamaynutt i unekcum uzrib ɣer yisnasen yettwasqedcen deg udiwenni usrid\n\n❤️ Ma ulac aɣilif mudd-aɣ-d afus akken ad neqqim d imunanen, daɣen ad nkemmel ad d-nawi asnerni: %1$s</string>

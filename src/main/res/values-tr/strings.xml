@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- common strings without special context -->
-    <string name="app_name">Delta Chat</string>
+    <string name="app_name">Arcane Chat</string>
     <string name="ok">Tamam</string>
     <string name="cancel">İptal</string>
     <string name="clear_search">Aramayı Temizle</string>
@@ -305,7 +305,7 @@
     <string name="share_invite_link_explain">Herhangi birisi bu bağlantıyla profilinizi görüntüleyebilir ve sizinle bir sohbet başlatabilir. Onu yalnızca güvendiğiniz insanlarla paylaşın.</string>
     <string name="invite_friends">Arkadaşları Çağır</string>
     <!-- %1$s is replaced by the user's invitation link ("https://i.delta.chat/...") -->
-    <string name="invite_friends_text">Delta Chat üzerinden bana ulaşın:\n%1$s</string>
+    <string name="invite_friends_text">Arcane Chat üzerinden bana ulaşın:\n%1$s</string>
     <string name="menu_copy_selection_to_clipboard">Seçimi Kopyala</string>
     <string name="menu_copy_link_to_clipboard">Bağlantıyı Kopyala</string>
     <string name="menu_copy_text_to_clipboard">Metni Kopyala</string>
@@ -376,7 +376,7 @@
     <!-- Menu item beside an app/chat that adds an icon to the system's home screen. If the user taps that icon, the app/chat is opened directly. -->
     <string name="add_to_home_screen">Ana Ekrana Ekle</string>
     <string name="donate">Bağış</string>
-    <string name="donate_device_msg">❤️ Delta Chat\'in tadını çıkarıyor gibisiniz!\n\nDelta Chat\'in herkes için ücretsiz kalmasını sağlamak için lütfen bağış yapmayı düşünün.\n\nDelta Chat, kullanımı ücretsiz ve açık kaynaklıdır, geliştirme paraya mâl olur. Delta Chat\'in bağımsızlığını korumak ve onu gelecekte daha da harika yapmak için bize yardımcı olun.\n\nhttps://delta.chat/donate</string>
+    <string name="donate_device_msg">❤️ Arcane Chat\'in tadını çıkarıyor gibisiniz!\n\nArcane Chat\'in herkes için ücretsiz kalmasını sağlamak için lütfen bağış yapmayı düşünün.\n\nArcane Chat, kullanımı ücretsiz ve açık kaynaklıdır, geliştirme paraya mâl olur. Arcane Chat\'in bağımsızlığını korumak ve onu gelecekte daha da harika yapmak için bize yardımcı olun.\n\nhttps://delta.chat/donate</string>
 
     <string name="mute_for_one_hour">1 saatliğine sessize al</string>
     <string name="mute_for_eight_hours">8 saatliğine sessize al</string>
@@ -584,15 +584,15 @@
     <string name="multidevice_title">İkinci Aygıt Ekle</string>
     <string name="multidevice_same_network_hint">Her iki aygıtın da aynı Wi-Fi\'da ya da ağda olduğundan emin olun</string>
     <string name="multidevice_this_creates_a_qr_code">Bu, ikinci aygıtın profili kopyalamak için tarayabileceği bir QR kodu oluşturur.\n\nİstenmeyen gözlemcinin ya da kameranın aşağıdaki ekranı göremediğinden emin olun.</string>
-    <string name="multidevice_install_dc_on_other_device">Delta Chat\'i diğer aygıtınıza kurun (https://get.delta.chat)</string>
+    <string name="multidevice_install_dc_on_other_device">Arcane Chat\'i diğer aygıtınıza kurun (https://get.delta.chat)</string>
     <!-- "I Already Have a Profile / Add as Second Device” should be the same text as defined by the keys onboarding_alternative_logins and multidevice_receiver_title -->
-    <string name="multidevice_tap_scan_on_other_device">Delta Chat\'i başlatın, “Zaten Bir Profilim Var / İkinci Aygıt Olarak Ekle”ye dokunun ve burada gösterilen kodu tarayın</string>
+    <string name="multidevice_tap_scan_on_other_device">Arcane Chat\'i başlatın, “Zaten Bir Profilim Var / İkinci Aygıt Olarak Ekle”ye dokunun ve burada gösterilen kodu tarayın</string>
     <!-- Shown inside a "QR code card" with very limited space; please formulate the text as short as possible therefore. The placeholder will be replaced by the profile name eg. "Scan to set up second device for Alice" -->
     <string name="multidevice_qr_subtitle">%1$s için ikinci aygıtı ayarlamak üzere tarayın</string>
     <string name="multidevice_receiver_title">İkinci Aygıt Olarak Ayarla</string>
     <string name="multidevice_open_settings_on_other_device">Birinci aygıtta “Ayarlar / İkinci Aygıt Ekle”ye gidin ve orada gösterilen kodu tarayın</string>
     <string name="multidevice_receiver_scanning_ask">Diğer aygıttan gelen profil bu aygıta kopyalansın mı?</string>
-    <string name="multidevice_receiver_needs_update">İçe aktarmak istediğiniz profil daha yeni bir Delta Chat sürümünden geliyor.\n\nİkinci aygıtı ayarlamayı sürdürmek için lütfen bu aygıtı Delta Chat\'in en son sürümüne güncelleştirin.</string>
+    <string name="multidevice_receiver_needs_update">İçe aktarmak istediğiniz profil daha yeni bir Arcane Chat sürümünden geliyor.\n\nİkinci aygıtı ayarlamayı sürdürmek için lütfen bu aygıtı Arcane Chat\'in en son sürümüne güncelleştirin.</string>
     <string name="multidevice_abort">İkinci aygıtı ayarlamadan vazgeçilsin mi?</string>
     <string name="multidevice_abort_will_invalidate_copied_qr">Bu, panoya kopyalanan QR kodunu geçersizleştirecek.</string>
     <string name="multidevice_transfer_done_devicemsg">ℹ️ Profil, ikinci aygıtınıza aktarıldı.</string>
@@ -849,14 +849,14 @@
     <string name="profile_image_delete">Profil Görselini Sil</string>
     <string name="pref_show_tray_icon">Tepsi Simgesi Göster</string>
     <string name="pref_edit_profile">Profili Düzenle</string>
-    <string name="send_stats_to_devs">Delta Chat\'in geliştiricilerine istatistikleri gönder</string>
-    <string name="stats_device_message">Haftalık belirsiz kullanım istatistiklerini göndererek Delta Chat\'i geliştirmeye yardımcı olmak ve araştırmaları desteklemek istiyor musunuz?\n\n👉 Buraya dokunun… 👈</string>
-    <string name="stats_confirmation_dialog">Haftalık belirsiz kullanım istatistiklerini göndererek Delta Chat\'i geliştirmeye yardımcı olmak ve araştırmaları desteklemek istiyor musunuz?</string>
-    <string name="stats_thanks">Teşekkür ederiz! Gönderimi “Ayarlar -> Gelişmiş”ten her zaman etkisizleştirebilirsiniz.\n\nEk olarak Delta Chat\'in güvenliği üzerine yapılacak bilimsel bir araştırmaya katılmak için 5 dakikanız var mı?</string>
+    <string name="send_stats_to_devs">Arcane Chat\'in geliştiricilerine istatistikleri gönder</string>
+    <string name="stats_device_message">Haftalık belirsiz kullanım istatistiklerini göndererek Arcane Chat\'i geliştirmeye yardımcı olmak ve araştırmaları desteklemek istiyor musunuz?\n\n👉 Buraya dokunun… 👈</string>
+    <string name="stats_confirmation_dialog">Haftalık belirsiz kullanım istatistiklerini göndererek Arcane Chat\'i geliştirmeye yardımcı olmak ve araştırmaları desteklemek istiyor musunuz?</string>
+    <string name="stats_thanks">Teşekkür ederiz! Gönderimi “Ayarlar -> Gelişmiş”ten her zaman etkisizleştirebilirsiniz.\n\nEk olarak Arcane Chat\'in güvenliği üzerine yapılacak bilimsel bir araştırmaya katılmak için 5 dakikanız var mı?</string>
     <string name="stats_disable_dialog">İstatistiklerin gönderimi zaten etkinleştirildi.\n\nOnu etkisizleştirmek istiyor musunuz?</string>
     <string name="disable">Etkisizleştir</string>
     <string name="stats_keep_sending">Gönderimde tut</string>
-    <string name="stats_msg_body">İlişik, Delta Chat\'i geliştirmemize yardımcı olan belirsiz kullanım istatistikleri içerir. Daha fazla bilgi için https://delta.chat/help#statssending adresine bakın. Teşekkür ederiz!</string>
+    <string name="stats_msg_body">İlişik, Arcane Chat\'i geliştirmemize yardımcı olan belirsiz kullanım istatistikleri içerir. Daha fazla bilgi için https://delta.chat/help#statssending adresine bakın. Teşekkür ederiz!</string>
 
     <!-- Emoji picker and categories -->
     <string name="emoji_search_results">Arama Sonuçları</string>
@@ -994,7 +994,7 @@
     <string name="devicemsg_storage_exceeding">⚠️ Sağlayıcınızın depolaması dolmak üzere: %1$s%% zaten kullanımda.\n\nDepolama tam dolduğunda iletileri alamayabilirsiniz.\n\n👉 Lütfen sağlayıcınızın web arabiriminden eski verileri silip silemeyeceğinizi denetleyin ve “Ayarlar / Sohbetler / Eski İletileri Sil”i etkinleştirmeyi düşünün. Herhangi bir zamanda şu anki depolama kullanımınızı “Ayarlar / Bağlanabilirlik”ten denetleyebilirsiniz.</string>
     <!-- %1%s will be replaced by date and time in some human-readable format -->
     <string name="devicemsg_bad_time">⚠️ Aygıtınızdaki tarih ya da saat yanlış görünüyor (%1$s).\n\nİletilerinizin doğru şekilde alınmasını sağlamak için saatinizi ⏰🔧 ayarlayın.</string>
-    <string name="devicemsg_update_reminder">⚠️ Delta Chat sürümünüz eski olabilir.\n\nBu, sorunlara neden olabilir; çünkü sohbet ortaklarınız daha yeni sürümleri kullanıyor - ve en yeni özellikleri kaybediyorsunuz 😳\nGüncelleştirmeler için lütfen https://get.delta.chat ya da uygulama mağazanızı denetleyin.</string>
+    <string name="devicemsg_update_reminder">⚠️ Arcane Chat sürümünüz eski olabilir.\n\nBu, sorunlara neden olabilir; çünkü sohbet ortaklarınız daha yeni sürümleri kullanıyor - ve en yeni özellikleri kaybediyorsunuz 😳\nGüncelleştirmeler için lütfen https://get.delta.chat ya da uygulama mağazanızı denetleyin.</string>
 
     <!-- Some options as "Add Second Device" or "Backup" may require the system PIN/Fingerprint/Gesture/Etc. to be entered in a system dialog. This hint is added to the system dialog, below a title as "Add Second Device" or "Backup". -->
     <string name="enter_system_secret_to_continue">Sürdürmek için kilidi açın</string>
@@ -1075,7 +1075,7 @@
 
     <!-- location streaming -->
     <string name="location_streaming_notification_text">Konumunuzu paylaşıyorsunuz</string>
-    <string name="location_rationale">Sohbet üyeleriyle canlı konumunuzu paylaşmak için Delta Chat\'in konum verilerinizi kullanmasına izin verin.\n\nCanlı konumun çalışmasını kesintisiz yapmak için konum verileri, uygulama kapatıldığında ya da kullanımda değilken bile kullanılır.</string>
+    <string name="location_rationale">Sohbet üyeleriyle canlı konumunuzu paylaşmak için Arcane Chat\'in konum verilerinizi kullanmasına izin verin.\n\nCanlı konumun çalışmasını kesintisiz yapmak için konum verileri, uygulama kapatıldığında ya da kullanımda değilken bile kullanılır.</string>
 
     <!-- permissions -->
     <string name="perm_required_title">İzin gerekli</string>
@@ -1085,7 +1085,7 @@
     <string name="perm_explain_access_to_mic_denied">Sesli iletiler göndermek için sistem ya da uygulama ayarlarına gidin, “İzinler”i ya da “Gizlilik ve Güvenlik”i seçin ve “Mikrofon”u etkinleştirin.</string>
     <string name="perm_explain_access_to_storage_denied">Dosyalar almak ya da göndermek için uygulama ayarlarına gidin, “İzinler”i seçin ve “Depolama”yı etkinleştirin.</string>
     <string name="perm_explain_access_to_location_denied">Bir konum iliştirmek için uygulama ayarlarına gidin, “İzinler”i seçin ve “Konum”u etkinleştirin.</string>
-    <string name="perm_explain_access_to_notifications_denied">Bildirimler almak için “Sistem Ayarları / Uygulamalar / Delta Chat”e gidin ve “Bildirimler”i etkinleştirin.</string>
+    <string name="perm_explain_access_to_notifications_denied">Bildirimler almak için “Sistem Ayarları / Uygulamalar / Arcane Chat”e gidin ve “Bildirimler”i etkinleştirin.</string>
 
     <!-- ImageEditorHud -->
     <string name="ImageEditorHud_draw_anywhere_to_blur">Bulanıklaştırmak için herhangi bir yere çizin</string>
@@ -1097,7 +1097,7 @@
     <string name="ImageEditorHud_flip">Çevir</string>
     <string name="ImageEditorHud_rotate">Döndür</string>
 
-    <string name="welcome_desktop">Delta Chat\'e hoş geldiniz</string>
+    <string name="welcome_desktop">Arcane Chat\'e hoş geldiniz</string>
     <string name="global_menu_preferences_language_desktop">Dil</string>
     <string name="global_menu_file_desktop">Dosya</string>
     <string name="global_menu_file_quit_desktop">Çık</string>
@@ -1112,11 +1112,11 @@
     <string name="global_menu_view_developer_desktop">Geliştirici</string>
     <string name="global_menu_view_developer_tools_desktop">Geliştirici Araçları</string>
     <string name="global_menu_help_desktop">Yardım</string>
-    <string name="delta_chat_homepage">Delta Chat Ana Sayfası</string>
+    <string name="delta_chat_homepage">Arcane Chat Ana Sayfası</string>
     <string name="contribute">Katkıda Bulunun</string>
     <string name="global_menu_help_report_desktop">Bir Sorun Raporla</string>
-    <string name="global_menu_help_about_desktop">Delta Chat hakkında</string>
-    <string name="global_menu_file_open_desktop">Delta Chat\'i Aç</string>
+    <string name="global_menu_help_about_desktop">Arcane Chat hakkında</string>
+    <string name="global_menu_file_open_desktop">Arcane Chat\'i Aç</string>
     <string name="global_menu_minimize_to_tray">Küçült</string>
     <string name="no_account_selected">Bir profil seçin ya da yeni bir profil oluşturun</string>
     <string name="no_chat_selected_suggestion_desktop">Bir sohbet seçin ya da yeni bir sohbet oluşturun</string>
@@ -1136,11 +1136,11 @@
     <string name="message_detail_received_desktop">Alınma</string>
     <string name="menu.view.developer.open.log.folder">Günlük Klasörünü Aç</string>
     <string name="menu.view.developer.open.current.log.file">Şu Anki Günlük Dosyasını Aç</string>
-    <string name="explain_desktop_minimized_disabled_tray_pref" tools:ignore="TypographyDashes">Delta Chat --minimized seçeneğiyle başlatıldığından tepsi simgesi etkisizleştirilemez.</string>
+    <string name="explain_desktop_minimized_disabled_tray_pref" tools:ignore="TypographyDashes">Arcane Chat --minimized seçeneğiyle başlatıldığından tepsi simgesi etkisizleştirilemez.</string>
     <!-- deprecated, used on desktop although there is not spell checker -->
     <string name="no_spellcheck_suggestions_found">Yazım önerileri bulunamadı.</string>
     <string name="show_window">Pencereyi Göster</string>
-    <string name="data_found_other_installation_message">Başka bir Delta Chat kurulumundan gelen profilleriniz erişilebilir değildir - farklı kurulumlar, verilerini ayrı konumlarda saklar.\n\nVarolan profilleri tutmak için:\n1. Şimdi çıkın\n2. Diğer Delta Chat\'i açın - gerekirse, onu %1$s üzerinden yeniden kurun\n3. Her profili “Ayarlar/Sohbetler”den yedekleyin\n4. Bu sürümü yeniden başlatın\n5. Yedekleri “Zaten bir profilim var”dan geri yükleyin\n\nÖnceki profilleriniz olmadan sürdürülsün mü?</string>
+    <string name="data_found_other_installation_message">Başka bir Arcane Chat kurulumundan gelen profilleriniz erişilebilir değildir - farklı kurulumlar, verilerini ayrı konumlarda saklar.\n\nVarolan profilleri tutmak için:\n1. Şimdi çıkın\n2. Diğer Arcane Chat\'i açın - gerekirse, onu %1$s üzerinden yeniden kurun\n3. Her profili “Ayarlar/Sohbetler”den yedekleyin\n4. Bu sürümü yeniden başlatın\n5. Yedekleri “Zaten bir profilim var”dan geri yükleyin\n\nÖnceki profilleriniz olmadan sürdürülsün mü?</string>
 
     <!-- title of the "keybindings" dialog (for the keybindings names as such, where possible the normal command strings are used) -->
     <string name="keybindings">Tuş Bağları</string>
@@ -1183,7 +1183,7 @@
     <string name="import_device_contacts">Aygıt kişilerini içe aktar</string>
     <string name="import_device_contacts_hint">Aygıtınızdan gelen kişilerle sohbet etmek için Ayarlar\'ı açın ve “Kişiler”i etkinleştirin.</string>
     <!-- iOS notification settings -->
-    <string name="disabled_in_dc">Delta Chat\'ten etkisizleştirildi</string>
+    <string name="disabled_in_dc">Arcane Chat\'ten etkisizleştirildi</string>
     <string name="disabled_in_system_settings">Sistem ayarlarından etkisizleştirildi</string>
     <string name="bg_app_refresh_disabled">“Arka Planda Uygulama Yenileme” sistem ayarlarından etkisizleştirildi</string>
     <string name="notifications_avg_minutes">Ortalama olarak her %1$d dakikada bir</string>
@@ -1196,19 +1196,19 @@
     <!-- use the same translation for "Shortcuts" as the system is using, often the term "Shortcut" stays untranslated; check eg. how the "Shortcuts" system app is called in your locale -->
     <string name="shortcuts_widget_title">Kısayollar</string>
     <!-- use the same translation for "Widget" as the system is using; often the term "Widget" stays untranslated -->
-    <string name="shortcuts_widget_description">Öğeleri eklemek için Delta Chat\'in “Widget\'a Ekle” öğesini kullanın</string>
+    <string name="shortcuts_widget_description">Öğeleri eklemek için Arcane Chat\'in “Widget\'a Ekle” öğesini kullanın</string>
     <!-- use the same translation for "Widget" as the system is using; often the term "Widget" stays untranslated -->
     <string name="remove_from_widget">Widget\'tan Kaldır</string>
     <!-- use the same translation for "Widget" as the system is using; often the term "Widget" stays untranslated -->
     <string name="add_to_widget">Widget\'a Ekle</string>
     <!-- iOS permissions, copy from "deltachat-ios/Info.plist", which is used on missing translations in "deltachat-ios/LANG.lproj/InfoPlist.strings" -->
-    <string name="InfoPlist_NSCameraUsageDescription">Delta Chat, fotoğraflar ve videolar çekmek ve göndermek için ve QR kodlarını taramak için kameranızı kullanır.</string>
-    <string name="InfoPlist_NSLocationAlwaysAndWhenInUseUsageDescription">Konum paylaşımını etkinleştirdiğiniz zaman aralığında konumunuzu paylaşmak için Delta Chat\'e izin gerekir.</string>
-    <string name="InfoPlist_NSLocationWhenInUseUsageDescription">Konum paylaşımını etkinleştirdiğiniz zaman aralığında konumunuzu paylaşmak için Delta Chat\'e izin gerekir.</string>
-    <string name="InfoPlist_NSMicrophoneUsageDescription">Delta Chat, sesli iletiler ve sesli videolar kaydetmek ve göndermek için mikrofonunuzu kullanır.</string>
-    <string name="InfoPlist_NSPhotoLibraryUsageDescription">Delta Chat, kitaplığınızdan hangi fotoğrafların gönderileceğini seçmenize izin verir.</string>
-    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">Delta Chat, görselleri fotoğraf kitaplığınıza kaydetmek istiyor.</string>
-    <string name="InfoPlist_NSFaceIDUsageDescription">Delta Chat; yerel profilinizi korumak, yedek oluşturmak ve ikinci aygıt ayarlaması için Face ID\'yi kullanabilir.</string>
+    <string name="InfoPlist_NSCameraUsageDescription">Arcane Chat, fotoğraflar ve videolar çekmek ve göndermek için ve QR kodlarını taramak için kameranızı kullanır.</string>
+    <string name="InfoPlist_NSLocationAlwaysAndWhenInUseUsageDescription">Konum paylaşımını etkinleştirdiğiniz zaman aralığında konumunuzu paylaşmak için Arcane Chat\'e izin gerekir.</string>
+    <string name="InfoPlist_NSLocationWhenInUseUsageDescription">Konum paylaşımını etkinleştirdiğiniz zaman aralığında konumunuzu paylaşmak için Arcane Chat\'e izin gerekir.</string>
+    <string name="InfoPlist_NSMicrophoneUsageDescription">Arcane Chat, sesli iletiler ve sesli videolar kaydetmek ve göndermek için mikrofonunuzu kullanır.</string>
+    <string name="InfoPlist_NSPhotoLibraryUsageDescription">Arcane Chat, kitaplığınızdan hangi fotoğrafların gönderileceğini seçmenize izin verir.</string>
+    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">Arcane Chat, görselleri fotoğraf kitaplığınıza kaydetmek istiyor.</string>
+    <string name="InfoPlist_NSFaceIDUsageDescription">Arcane Chat; yerel profilinizi korumak, yedek oluşturmak ve ikinci aygıt ayarlaması için Face ID\'yi kullanabilir.</string>
 
     <!-- android specific strings, developers: please take care to remove strings that are no longer used! -->
     <string name="pref_instant_delivery">Anında Teslimat</string>
@@ -1217,10 +1217,10 @@
     <string name="pref_reliable_service">Arka Plan Bağlantısını Zorla</string>
     <string name="pref_reliable_service_explain">Kalıcı bir bildirime neden olur</string>
 
-    <string name="pref_background_notifications_rationale">Bağlantıyı sürdürmek ve arka planda iletileri almak için sonraki adımda pil iyileştirmelerini yoksayın.\n\nDelta Chat, az kaynak kullanır ve pilinizi boşaltmamaya özen gösterir.</string>
+    <string name="pref_background_notifications_rationale">Bağlantıyı sürdürmek ve arka planda iletileri almak için sonraki adımda pil iyileştirmelerini yoksayın.\n\nArcane Chat, az kaynak kullanır ve pilinizi boşaltmamaya özen gösterir.</string>
     <!-- disabling "Reliable service" will hide a the maybe annoying permanent-notification with the drawback that new-message-notifications get potentially unreliable -->
-    <string name="perm_enable_bg_reminder_title">Delta Chat arka plandayken iletileri almak için buraya dokunun.</string>
-    <string name="perm_enable_bg_already_done">Delta Chat\'in arka planda iletileri almasına zaten izin verdiniz.\n\nİletiler arka planda hâlâ gelmiyorsa, lütfen sistem ayarlarınızı da denetleyin.</string>
+    <string name="perm_enable_bg_reminder_title">Arcane Chat arka plandayken iletileri almak için buraya dokunun.</string>
+    <string name="perm_enable_bg_already_done">Arcane Chat\'in arka planda iletileri almasına zaten izin verdiniz.\n\nİletiler arka planda hâlâ gelmiyorsa, lütfen sistem ayarlarınızı da denetleyin.</string>
 
     <!-- device messages for updates -->
     <string name="update_2_0">Ne yeni?\n\n💯 Uçtan uca şifreleme artık güvenilir ve sonsuza kadar geçerli. Asma kilitlerle 🔒 anlaşılabilir!\n\n✉️ Uçtan uca şifrelemeli olmayan klasik e-posta bir mektup sembolü olarak işaretlenir\n\n😻 Tüm kişileriniz için yeni geliştirilen profil ekranı\n\n🔲 Bir sohbette kullanılan uygulamalara hızlı erişim için yeni düğme\n\n❤️ Bağımsız kalmamız ve yeni geliştirmeler getirmemiz için lütfen bize yardım edin: %1$s</string>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- common strings without special context -->
-    <string name="app_name">Delta Chat</string>
+    <string name="app_name">Arcane Chat</string>
     <string name="ok">OK</string>
     <string name="cancel">Zrušit</string>
     <string name="clear_search">Vyčistit vyhledávání</string>
@@ -55,7 +55,7 @@
     <!-- Adjective "smth is muted". used to describe a muted or silenced chat, that e.g. does not make noise or cause notifications -->
     <string name="muted">Ztlumeno</string>
     <string name="ephemeral_messages">Mizející zprávy</string>
-    <string name="ephemeral_messages_hint">Volba platí pro všechny členy tohoto chatu, kteří používají Delta Chat; stále ale mohou kopírovat, ukládat a přeposílat zprávy nebo používat jiné e-mailové klienty, které tuto volbu nerespektují.</string>
+    <string name="ephemeral_messages_hint">Volba platí pro všechny členy tohoto chatu, kteří používají Arcane Chat; stále ale mohou kopírovat, ukládat a přeposílat zprávy nebo používat jiné e-mailové klienty, které tuto volbu nerespektují.</string>
     <string name="save">Uložit</string>
     <string name="chat">Chat</string>
     <string name="media">Multimédia</string>
@@ -319,7 +319,7 @@
     <string name="share_invite_link_explain">Kdokoli s tímto odkazem si může zobrazit váš profil a začít s vámi chatovat. Sdílejte jej pouze s lidmi, kterým důvěřujete.</string>
     <string name="invite_friends">Pozvat přátele</string>
     <!-- %1$s is replaced by the user's invitation link ("https://i.delta.chat/...") -->
-    <string name="invite_friends_text">Kontaktujte mě na Delta Chatu:\n%1$s</string>
+    <string name="invite_friends_text">Kontaktujte mě na Arcane Chatu:\n%1$s</string>
     <string name="menu_copy_selection_to_clipboard">Kopírovat výběr</string>
     <string name="menu_copy_link_to_clipboard">Kopírovat odkaz</string>
     <string name="menu_copy_text_to_clipboard">Kopírovat text</string>
@@ -390,7 +390,7 @@
     <!-- Menu item beside an app/chat that adds an icon to the system's home screen. If the user taps that icon, the app/chat is opened directly. -->
     <string name="add_to_home_screen">Přidat na domovskou obrazovku</string>
     <string name="donate">Darovat</string>
-    <string name="donate_device_msg">❤️ Vypadá to, že se vám Delta Chat líbí! \n\n Prosím, zvažte možnost darování, abyste pomohli zajistit, že Delta Chat zůstane zdarma pro všechny. \n\n Ačkoli je Delta Chat zdarma a má otevřený zdrojový kód, vývoj stojí peníze. Pomozte nám udržet Delta Chat nezávislý a v budoucnu jej udělat ještě úžasnějším. \n\n https://delta.chat/donate</string>
+    <string name="donate_device_msg">❤️ Vypadá to, že se vám Arcane Chat líbí! \n\n Prosím, zvažte možnost darování, abyste pomohli zajistit, že Arcane Chat zůstane zdarma pro všechny. \n\n Ačkoli je Arcane Chat zdarma a má otevřený zdrojový kód, vývoj stojí peníze. Pomozte nám udržet Arcane Chat nezávislý a v budoucnu jej udělat ještě úžasnějším. \n\n https://delta.chat/donate</string>
 
     <string name="mute_for_one_hour">Ztlumit na 1 hodinu</string>
     <string name="mute_for_eight_hours">Ztlumit na 8 hodin</string>
@@ -581,15 +581,15 @@
     <string name="multidevice_title">Přidat další zařízení</string>
     <string name="multidevice_same_network_hint">Ujistěte se, že jsou obě zařízení na stejné Wi-Fi či síti</string>
     <string name="multidevice_this_creates_a_qr_code">Tímto bude vytvořen QR kód, který můžete naskenovat dalším zařízením ke zkopírování profilu.\n\nUjistěte se, že následující obrazovku neuvidí žádný nechtěný přihlížející či kamera.</string>
-    <string name="multidevice_install_dc_on_other_device">Nainstalujte si Delta Chat do druhého zařízení (https://get.delta.chat)</string>
+    <string name="multidevice_install_dc_on_other_device">Nainstalujte si Arcane Chat do druhého zařízení (https://get.delta.chat)</string>
     <!-- "I Already Have a Profile / Add as Second Device” should be the same text as defined by the keys onboarding_alternative_logins and multidevice_receiver_title -->
-    <string name="multidevice_tap_scan_on_other_device">Spusťte Delta Chat, klepněte na „Již mám svůj profil / Přidat jako další zařízení“ a naskenujte následující kód</string>
+    <string name="multidevice_tap_scan_on_other_device">Spusťte Arcane Chat, klepněte na „Již mám svůj profil / Přidat jako další zařízení“ a naskenujte následující kód</string>
     <!-- Shown inside a "QR code card" with very limited space; please formulate the text as short as possible therefore. The placeholder will be replaced by the profile name eg. "Scan to set up second device for Alice" -->
     <string name="multidevice_qr_subtitle">Pro připojení zařízení k %1$s naskenujte</string>
     <string name="multidevice_receiver_title">Přidat jako další zařízení</string>
     <string name="multidevice_open_settings_on_other_device">Na hlavním zařízení, otevřete \"Nastavení / Přidat další zařízení\" a naskenujte kód, který se na něm zobrazí</string>
     <string name="multidevice_receiver_scanning_ask">Přejete si zkopírovat profil z jiného zařízení na toto?</string>
-    <string name="multidevice_receiver_needs_update">Profil, který se chystáte importovat, je z novější verze aplikace Delta Chat.\n\nAby bylo možné pokračovat v nastavování tohoto zařízení, aktualizujte na něm prosím Delta Chat na nejnovější verzi.</string>
+    <string name="multidevice_receiver_needs_update">Profil, který se chystáte importovat, je z novější verze aplikace Arcane Chat.\n\nAby bylo možné pokračovat v nastavování tohoto zařízení, aktualizujte na něm prosím Arcane Chat na nejnovější verzi.</string>
     <string name="multidevice_abort">Přerušit nastavování dalšího zařízení?</string>
     <string name="multidevice_abort_will_invalidate_copied_qr">Tímto bude zneplatněn QR kód zkopírovaný ve schránce.</string>
     <string name="multidevice_transfer_done_devicemsg">ℹ️ Profil byl přenesen na další zařízení.</string>
@@ -831,8 +831,8 @@
     <string name="profile_image_delete">Smazat profilový obrázek</string>
     <string name="pref_show_tray_icon">Zobrazit ikonu v oznamovací oblasti</string>
     <string name="pref_edit_profile">Upravit profil</string>
-    <string name="send_stats_to_devs">Odeslat statistiky vývojářům Delta Chatu</string>
-    <string name="stats_msg_body">Příloha obsahuje anonymní statistiky používání, které nám pomáhají zlepšovat službu Delta Chat. Děkujeme vám!</string>
+    <string name="send_stats_to_devs">Odeslat statistiky vývojářům Arcane Chatu</string>
+    <string name="stats_msg_body">Příloha obsahuje anonymní statistiky používání, které nám pomáhají zlepšovat službu Arcane Chat. Děkujeme vám!</string>
 
     <!-- Emoji picker and categories -->
     <string name="emoji_search_results">Výsledky hledání</string>
@@ -864,9 +864,9 @@
     <!-- %1$d will be replaced by the number of messages, you can assume plural/lots here. %2$s will be replaced by a timespan option. -->
     <string name="autodel_device_ask">Skutečně smazat %1$d zpráv a všechny v budoucnu stažené zprávy \"%2$s\"?\n\n• Toto zahrnuje všechna multimédia\n\n• Zprávy budou smazány bez ohledu na jejich přečtení\n\n• \"Uložené zprávy\" budou ponechány</string>
     <!-- deprecated -->
-    <string name="autodel_server_ask">Skutečně smazat %1$d zprávy a všechny v budoucnu stažené zprávy \"%2$s\"?\n\n⚠️ Toto zahrnuje e-maily, multimédia a \"Uložené zprávy\" ve všech složkách na serveru\n\n⚠️ Nepoužívejte tuto funkci, pokud si přejete ponechat data na serveru\n\n⚠️ Nepoužívejte tuto funkci, pokud používáte i jiné e-mailové klienty mimo Delta Chat</string>
+    <string name="autodel_server_ask">Skutečně smazat %1$d zprávy a všechny v budoucnu stažené zprávy \"%2$s\"?\n\n⚠️ Toto zahrnuje e-maily, multimédia a \"Uložené zprávy\" ve všech složkách na serveru\n\n⚠️ Nepoužívejte tuto funkci, pokud si přejete ponechat data na serveru\n\n⚠️ Nepoužívejte tuto funkci, pokud používáte i jiné e-mailové klienty mimo Arcane Chat</string>
     <!-- deprecated -->
-    <string name="autodel_server_enabled_hint">Toto zahrnuje e-maily, multimédia a \"Uložené zprávy\" ve všech složkách na serveru. Nepoužívejte tuto funkci, pokud chcete ponechat data na serveru, nebo pokud používáte i jiné e-mailové programy mimo Delta Chat</string>
+    <string name="autodel_server_enabled_hint">Toto zahrnuje e-maily, multimédia a \"Uložené zprávy\" ve všech složkách na serveru. Nepoužívejte tuto funkci, pokud chcete ponechat data na serveru, nebo pokud používáte i jiné e-mailové programy mimo Arcane Chat</string>
     <!-- deprecated -->
     <string name="autodel_server_warn_multi_device_title">Zapnout okamžité mazání</string>
     <!-- deprecated -->
@@ -963,7 +963,7 @@
     <string name="devicemsg_storage_exceeding">⚠️ Úložiště u vašeho poskytovatele je téměř vyčerpané: %1$s %% je již využito.\n\nPokud se úložiště zaplní, nebudete moci přijímat zprávy.\n\n👉 Zkuste smazat stará data ve webovém prostředí poskytovatele a zvažte povolení volby \"Nastavení / Chaty a multimédia / Mazat staré zprávy\". Aktuální využití úložiště můžete kdykoliv zkontrolovat v \"Nastavení / Připojení\".</string>
     <!-- %1%s will be replaced by date and time in some human-readable format -->
     <string name="devicemsg_bad_time">⚠️ Datum a čas na vašem zařízení se zdají být nepřesné (%1$s).\n\nUpravte si čas ⏰🔧, abyste mohli přijímat své zprávy.</string>
-    <string name="devicemsg_update_reminder">⚠️ Vaše verze Delta Chatu může být zastaralá.\n\nTo může způsobit problémy, protože vaši partneři v chatu používají novější verze – a vám chybí nejnovější funkce 😳\nAktualizace najdete na https://get.delta.chat nebo v obchodě s aplikacemi.</string>
+    <string name="devicemsg_update_reminder">⚠️ Vaše verze Arcane Chatu může být zastaralá.\n\nTo může způsobit problémy, protože vaši partneři v chatu používají novější verze – a vám chybí nejnovější funkce 😳\nAktualizace najdete na https://get.delta.chat nebo v obchodě s aplikacemi.</string>
 
     <!-- Some options as "Add Second Device" or "Backup" may require the system PIN/Fingerprint/Gesture/Etc. to be entered in a system dialog. This hint is added to the system dialog, below a title as "Add Second Device" or "Backup". -->
     <string name="enter_system_secret_to_continue">Pro pokračování odemkněte</string>
@@ -1046,7 +1046,7 @@
     <string name="perm_explain_access_to_mic_denied">Pro posílání zvukových zpráv přejděte do nastavení aplikace, vyberte \"Oprávnění\" a povolte oprávnění \"Mikrofon\".</string>
     <string name="perm_explain_access_to_storage_denied">Pro příjem a posílání souborů přejděte do nastavení aplikace, vyberte \"Oprávnění\" a povolte oprávnění \"Fotky a videa\".</string>
     <string name="perm_explain_access_to_location_denied">Pro posílání polohy přejděte do nastavení aplikace, vyberte \"Oprávnění\" a povolte oprávnění \"Poloha\".</string>
-    <string name="perm_explain_access_to_notifications_denied">Chcete-li dostávat oznámení, přejděte na „Nastavení systému / Aplikace / Delta Chat“ a povolte „Oznámení“.</string>
+    <string name="perm_explain_access_to_notifications_denied">Chcete-li dostávat oznámení, přejděte na „Nastavení systému / Aplikace / Arcane Chat“ a povolte „Oznámení“.</string>
 
     <!-- ImageEditorHud -->
     <string name="ImageEditorHud_draw_anywhere_to_blur">Kreslením rozmazávejte</string>
@@ -1058,7 +1058,7 @@
     <string name="ImageEditorHud_flip">Zrcadlení</string>
     <string name="ImageEditorHud_rotate">Otočení</string>
 
-    <string name="welcome_desktop">Vítejte v aplikaci Delta Chat</string>
+    <string name="welcome_desktop">Vítejte v aplikaci Arcane Chat</string>
     <string name="global_menu_preferences_language_desktop">Jazyk</string>
     <string name="global_menu_file_desktop">Soubor</string>
     <string name="global_menu_file_quit_desktop">Ukončit</string>
@@ -1073,11 +1073,11 @@
     <string name="global_menu_view_developer_desktop">Vývoj</string>
     <string name="global_menu_view_developer_tools_desktop">Nástroje pro vývojáře</string>
     <string name="global_menu_help_desktop">Nápověda</string>
-    <string name="delta_chat_homepage">Domovská stránka Delta Chat</string>
+    <string name="delta_chat_homepage">Domovská stránka Arcane Chat</string>
     <string name="contribute">Přispět</string>
     <string name="global_menu_help_report_desktop">Nahlásit problém</string>
-    <string name="global_menu_help_about_desktop">O aplikaci Delta Chat</string>
-    <string name="global_menu_file_open_desktop">Otevřít Delta Chat</string>
+    <string name="global_menu_help_about_desktop">O aplikaci Arcane Chat</string>
+    <string name="global_menu_file_open_desktop">Otevřít Arcane Chat</string>
     <string name="global_menu_minimize_to_tray">Minimalizovat</string>
     <string name="no_chat_selected_suggestion_desktop">Vybrat chat nebo vytvořit nový</string>
     <string name="write_message_desktop">Napište zprávu</string>
@@ -1096,7 +1096,7 @@
     <string name="message_detail_received_desktop">přijato</string>
     <string name="menu.view.developer.open.log.folder">Otevřít složku protokolu</string>
     <string name="menu.view.developer.open.current.log.file">Otevřít stávající soubor s protokolem</string>
-    <string name="explain_desktop_minimized_disabled_tray_pref" tools:ignore="TypographyDashes">Ikonu na panelu nelze deaktivovat, protože Delta Chat byl spuštěn s volbou --minimized.</string>
+    <string name="explain_desktop_minimized_disabled_tray_pref" tools:ignore="TypographyDashes">Ikonu na panelu nelze deaktivovat, protože Arcane Chat byl spuštěn s volbou --minimized.</string>
     <!-- deprecated, used on desktop although there is not spell checker -->
     <string name="no_spellcheck_suggestions_found">Žádné pravopisné návrhy.</string>
     <string name="show_window">Zobrazit okno</string>
@@ -1135,7 +1135,7 @@
     <string name="import_device_contacts">Importovat kontakty ze zařízení</string>
     <string name="import_device_contacts_hint">Chcete-li chatovat s kontakty ze svého zařízení, otevřete Nastavení a povolte „Kontakty“.</string>
     <!-- iOS notification settings -->
-    <string name="disabled_in_dc">Zakázáno aplikací Delta Chat</string>
+    <string name="disabled_in_dc">Zakázáno aplikací Arcane Chat</string>
     <string name="disabled_in_system_settings">Zakázáno v systémovém nastavení</string>
     <string name="bg_app_refresh_disabled">\"Aktualizace aplikací na pozadí\" jsou vypnuty v systémovém nastavení</string>
     <string name="notifications_avg_minutes">Průměrně jednou za %1$d minut</string>
@@ -1148,19 +1148,19 @@
     <!-- use the same translation for "Shortcuts" as the system is using, often the term "Shortcut" stays untranslated; check eg. how the "Shortcuts" system app is called in your locale -->
     <string name="shortcuts_widget_title">Zkratky</string>
     <!-- use the same translation for "Widget" as the system is using; often the term "Widget" stays untranslated -->
-    <string name="shortcuts_widget_description">K přidání položek použijte volbu \"Přidat na widget\" v aplikaci Delta Chat</string>
+    <string name="shortcuts_widget_description">K přidání položek použijte volbu \"Přidat na widget\" v aplikaci Arcane Chat</string>
     <!-- use the same translation for "Widget" as the system is using; often the term "Widget" stays untranslated -->
     <string name="remove_from_widget">Odstranit z widgetu</string>
     <!-- use the same translation for "Widget" as the system is using; often the term "Widget" stays untranslated -->
     <string name="add_to_widget">Přidat na widget</string>
     <!-- iOS permissions, copy from "deltachat-ios/Info.plist", which is used on missing translations in "deltachat-ios/LANG.lproj/InfoPlist.strings" -->
-    <string name="InfoPlist_NSCameraUsageDescription">Delta Chat využívá fotoaparát k focení, natáčení videí a snímání QR kódů.</string>
-    <string name="InfoPlist_NSLocationAlwaysAndWhenInUseUsageDescription">Delta Chat potřebuje oprávnění ke sdílení vaší polohy po dobu, po kterou je povoleno sdílení polohy.</string>
-    <string name="InfoPlist_NSLocationWhenInUseUsageDescription">Delta Chat potřebuje oprávnění ke sdílení vaší polohy po dobu, po kterou je povoleno sdílení polohy.</string>
-    <string name="InfoPlist_NSMicrophoneUsageDescription">Delta Chat používá mikrofon k nahrávání hlasových zpráv a natáčení videí se zvukem.</string>
-    <string name="InfoPlist_NSPhotoLibraryUsageDescription">Delta Chat vás nechá vybrat, které fotky z galerie si přejete poslat.</string>
-    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">Delta Chat ukládá obrázky do vaší galerie.</string>
-    <string name="InfoPlist_NSFaceIDUsageDescription">Delta Chat umí využívat Face ID k ochraně vašeho lokálního profilu, vytváření záloh a přidávání dalších zařízení.</string>
+    <string name="InfoPlist_NSCameraUsageDescription">Arcane Chat využívá fotoaparát k focení, natáčení videí a snímání QR kódů.</string>
+    <string name="InfoPlist_NSLocationAlwaysAndWhenInUseUsageDescription">Arcane Chat potřebuje oprávnění ke sdílení vaší polohy po dobu, po kterou je povoleno sdílení polohy.</string>
+    <string name="InfoPlist_NSLocationWhenInUseUsageDescription">Arcane Chat potřebuje oprávnění ke sdílení vaší polohy po dobu, po kterou je povoleno sdílení polohy.</string>
+    <string name="InfoPlist_NSMicrophoneUsageDescription">Arcane Chat používá mikrofon k nahrávání hlasových zpráv a natáčení videí se zvukem.</string>
+    <string name="InfoPlist_NSPhotoLibraryUsageDescription">Arcane Chat vás nechá vybrat, které fotky z galerie si přejete poslat.</string>
+    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">Arcane Chat ukládá obrázky do vaší galerie.</string>
+    <string name="InfoPlist_NSFaceIDUsageDescription">Arcane Chat umí využívat Face ID k ochraně vašeho lokálního profilu, vytváření záloh a přidávání dalších zařízení.</string>
 
     <!-- android specific strings, developers: please take care to remove strings that are no longer used! -->
     <string name="pref_instant_delivery">Okamžité doručení</string>
@@ -1169,10 +1169,10 @@
     <string name="pref_reliable_service">Vynutit připojení na pozadí</string>
     <string name="pref_reliable_service_explain">Zobrazí stálé oznámení</string>
 
-    <string name="pref_background_notifications_rationale">K udržení spojení s e-mailovým serverem a přijímání zpráv na pozadí v následujícím kroku zvolte, aby byly ignorovány optimalizace baterie.\n\nDelta Chat používá jen málo zdrojů a snaží se neplýtvat baterií.</string>
+    <string name="pref_background_notifications_rationale">K udržení spojení s e-mailovým serverem a přijímání zpráv na pozadí v následujícím kroku zvolte, aby byly ignorovány optimalizace baterie.\n\nArcane Chat používá jen málo zdrojů a snaží se neplýtvat baterií.</string>
     <!-- disabling "Reliable service" will hide a the maybe annoying permanent-notification with the drawback that new-message-notifications get potentially unreliable -->
-    <string name="perm_enable_bg_reminder_title">Stiskem nastavíte přijímání zpráv, když je aplikace Delta Chat na pozadí.</string>
-    <string name="perm_enable_bg_already_done">Přijímání zpráv na pozadí jste již aplikaci Delta Chat povolili.\n\nV případě, že vám zprávy na pozadí stále nechodí, prosím zkontrolujte svá systémová nastavení.</string>
+    <string name="perm_enable_bg_reminder_title">Stiskem nastavíte přijímání zpráv, když je aplikace Arcane Chat na pozadí.</string>
+    <string name="perm_enable_bg_already_done">Přijímání zpráv na pozadí jste již aplikaci Arcane Chat povolili.\n\nV případě, že vám zprávy na pozadí stále nechodí, prosím zkontrolujte svá systémová nastavení.</string>
 
     <!-- device messages for updates -->
     <string name="update_2_0">Co je nového? \n\n💯 Koncové šifrování je nyní spolehlivé a navždy. Visací zámky 🔒 jsou pryč! \n\n✉️ Klasické e-maily bez koncového šifrování jsou označeny symbolem písmene \n\n😻 Nová vylepšená profilová obrazovka pro všechny kontakty \n\n🔲 Nové tlačítko pro rychlý přístup k aplikacím používaným v chatu \n\n❤️ Přispějte nám, abychom zůstali nezávislí a mohli pokračovat ve vylepšování: %1$s</string>

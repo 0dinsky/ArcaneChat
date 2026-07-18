@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- common strings without special context -->
-    <string name="app_name">Delta Chat</string>
+    <string name="app_name">Arcane Chat</string>
     <string name="ok">OK</string>
     <string name="cancel">Hủy</string>
     <string name="clear_search">Dọn dẹp tìm kiếm</string>
@@ -42,7 +42,7 @@
     <!-- Verb "to mute". used to mute a chat, so that it is silenced e.g. does not make noise or cause notifications -->
     <string name="mute">Tắt tiếng</string>
     <string name="ephemeral_messages">Tin nhắn biến mất</string>
-    <string name="ephemeral_messages_hint">Áp dụng cho tất cả thành viên của cuộc trò chuyện này nếu họ sử dụng Delta Chat; họ vẫn có thể sao chép, lưu và chuyển tiếp thư hoặc sử dụng các ứng dụng e-mail khác.</string>
+    <string name="ephemeral_messages_hint">Áp dụng cho tất cả thành viên của cuộc trò chuyện này nếu họ sử dụng Arcane Chat; họ vẫn có thể sao chép, lưu và chuyển tiếp thư hoặc sử dụng các ứng dụng e-mail khác.</string>
     <string name="save">Lưu</string>
     <string name="chat">Trò chuyện</string>
     <string name="media">Phương tiện</string>
@@ -416,9 +416,9 @@
     <string name="multidevice_title">Thêm thiết bị thứ hai</string>
     <string name="multidevice_same_network_hint">Đảm bảo cả hai thiết bị đều sử dụng cùng một Wi-Fi hoặc mạng</string>
     <string name="multidevice_this_creates_a_qr_code">Thao tác này sẽ tạo mã QR mà thiết bị thứ hai có thể quét để sao chép tài khoản.</string>
-    <string name="multidevice_install_dc_on_other_device">Cài đặt Delta Chat trên thiết bị khác của bạn (https://get.delta.chat)</string>
+    <string name="multidevice_install_dc_on_other_device">Cài đặt Arcane Chat trên thiết bị khác của bạn (https://get.delta.chat)</string>
     <!-- "I Already Have a Profile / Add as Second Device” should be the same text as defined by the keys onboarding_alternative_logins and multidevice_receiver_title -->
-    <string name="multidevice_tap_scan_on_other_device">Bắt đầu Delta Chat, nhấn vào “Thêm làm thiết bị thứ hai” và quét mã được hiển thị ở đây</string>
+    <string name="multidevice_tap_scan_on_other_device">Bắt đầu Arcane Chat, nhấn vào “Thêm làm thiết bị thứ hai” và quét mã được hiển thị ở đây</string>
     <!-- Shown inside a "QR code card" with very limited space; please formulate the text as short as possible therefore. The placeholder will be replaced by the profile name eg. "Scan to set up second device for Alice" -->
     <string name="multidevice_qr_subtitle">Quét để thiết lập thiết bị thứ hai cho %1$s</string>
     <string name="multidevice_receiver_title">Thêm làm thiết bị thứ hai</string>
@@ -617,9 +617,9 @@
     <!-- %1$d will be replaced by the number of messages, you can assume plural/lots here. %2$s will be replaced by a timespan option. -->
     <string name="autodel_device_ask">Bạn có muốn xóa %1$d tin nhắn ngay bây giờ và tất cả các tin nhắn mới được tìm nạp \"%2$s\" trong tương lai không?\n\n• Điều này bao gồm tất cả phương tiện\n\n• Tin nhắn sẽ bị xóa dù chúng có được nhìn thấy hay không\n\n• \"Tin nhắn đã lưu\" sẽ bị bỏ qua khỏi quá trình xóa cục bộ</string>
     <!-- deprecated -->
-    <string name="autodel_server_ask">Bạn có muốn xóa %1$d tin nhắn ngay bây giờ và tất cả các tin nhắn mới được tìm nạp \"%2$s\" trong tương lai không?\n\n⚠️ Điều này bao gồm e-mail, phương tiện và \"Tin nhắn đã lưu\" trong tất cả máy chủ thư mục\n\n⚠️ Không sử dụng chức năng này nếu bạn muốn giữ dữ liệu trên máy chủ\n\n⚠️ Không sử dụng chức năng này nếu bạn đang sử dụng các ứng dụng e-mail khác ngoài Delta Chat</string>
+    <string name="autodel_server_ask">Bạn có muốn xóa %1$d tin nhắn ngay bây giờ và tất cả các tin nhắn mới được tìm nạp \"%2$s\" trong tương lai không?\n\n⚠️ Điều này bao gồm e-mail, phương tiện và \"Tin nhắn đã lưu\" trong tất cả máy chủ thư mục\n\n⚠️ Không sử dụng chức năng này nếu bạn muốn giữ dữ liệu trên máy chủ\n\n⚠️ Không sử dụng chức năng này nếu bạn đang sử dụng các ứng dụng e-mail khác ngoài Arcane Chat</string>
     <!-- deprecated -->
-    <string name="autodel_server_enabled_hint">Điều này bao gồm e-mail, phương tiện và \"Tin nhắn đã lưu\" trong tất cả các thư mục máy chủ. Không sử dụng chức năng này nếu bạn muốn giữ dữ liệu trên máy chủ hoặc nếu bạn đang sử dụng các ứng dụng e-mail khác ngoài Delta Chat.</string>
+    <string name="autodel_server_enabled_hint">Điều này bao gồm e-mail, phương tiện và \"Tin nhắn đã lưu\" trong tất cả các thư mục máy chủ. Không sử dụng chức năng này nếu bạn muốn giữ dữ liệu trên máy chủ hoặc nếu bạn đang sử dụng các ứng dụng e-mail khác ngoài Arcane Chat.</string>
     <string name="autodel_confirm">Tôi hiểu, hãy xóa tất cả những tin nhắn này</string>
     <!-- "At once" in the meaning of "Immediately", without any intervening time. -->
     <string name="autodel_at_once">Ngay lập tức</string>
@@ -699,7 +699,7 @@
     <string name="devicemsg_storage_exceeding">⚠️ Bộ nhớ nhà cung cấp của bạn sắp hết: %1$s%% đã được sử dụng.\n\nBạn có thể không nhận được tin nhắn nếu bộ nhớ đầy.\n\n 👉 Vui lòng kiểm tra xem bạn có thể xóa không dữ liệu cũ trong giao diện web của nhà cung cấp và cân nhắc bật \"Cài đặt / Xóa tin nhắn cũ\". Bạn có thể kiểm tra mức sử dụng bộ nhớ hiện tại của mình bất kỳ lúc nào tại \"Cài đặt / Kết nối\".</string>
     <!-- %1%s will be replaced by date and time in some human-readable format -->
     <string name="devicemsg_bad_time">⚠️ Ngày hoặc giờ trên thiết bị của bạn có vẻ không chính xác (%1$s).\n\nĐiều chỉnh đồng hồ của bạn ⏰🔧 để đảm bảo tin nhắn của bạn được nhận chính xác.</string>
-    <string name="devicemsg_update_reminder">⚠️ Phiên bản Delta Chat của bạn có thể đã lỗi thời.\n\nĐiều này có thể gây ra sự cố vì đối tác trò chuyện của bạn sử dụng các phiên bản mới hơn - và bạn đang thiếu các tính năng mới nhất 😳\nVui lòng kiểm tra https://get.delta.chat hoặc cửa hàng ứng dụng của bạn để biết thông tin cập nhật .</string>
+    <string name="devicemsg_update_reminder">⚠️ Phiên bản Arcane Chat của bạn có thể đã lỗi thời.\n\nĐiều này có thể gây ra sự cố vì đối tác trò chuyện của bạn sử dụng các phiên bản mới hơn - và bạn đang thiếu các tính năng mới nhất 😳\nVui lòng kiểm tra https://get.delta.chat hoặc cửa hàng ứng dụng của bạn để biết thông tin cập nhật .</string>
 
     <!-- Some options as "Add Second Device" or "Backup" may require the system PIN/Fingerprint/Gesture/Etc. to be entered in a system dialog. This hint is added to the system dialog, below a title as "Add Second Device" or "Backup". -->
     <string name="enter_system_secret_to_continue">Mở khóa để tiếp tục</string>
@@ -769,7 +769,7 @@
     <string name="perm_explain_access_to_mic_denied">Để gửi tin nhắn âm thanh, hãy chuyển tới cài đặt ứng dụng, chọn \"Quyền\" và bật \"Micrô\".</string>
     <string name="perm_explain_access_to_storage_denied">Để nhận hoặc gửi tệp, hãy đi tới cài đặt ứng dụng, chọn \"Quyền\" và bật \"Bộ nhớ\".</string>
     <string name="perm_explain_access_to_location_denied">Để đính kèm một vị trí, hãy đi tới cài đặt ứng dụng, chọn \"Quyền\" và bật \"Vị trí\".</string>
-    <string name="perm_explain_access_to_notifications_denied">Để nhận thông báo, hãy đi tới \"Cài đặt hệ thống / Ứng dụng / Delta Chat\" và bật \"Thông báo\".</string>
+    <string name="perm_explain_access_to_notifications_denied">Để nhận thông báo, hãy đi tới \"Cài đặt hệ thống / Ứng dụng / Arcane Chat\" và bật \"Thông báo\".</string>
 
     <!-- ImageEditorHud -->
     <string name="ImageEditorHud_draw_anywhere_to_blur">Vẽ bất cứ nơi nào để làm mờ</string>
@@ -781,7 +781,7 @@
     <string name="ImageEditorHud_flip">Lật</string>
     <string name="ImageEditorHud_rotate">Xoay</string>
 
-    <string name="welcome_desktop">Chào mừng đến với Delta Chat</string>
+    <string name="welcome_desktop">Chào mừng đến với Arcane Chat</string>
     <string name="global_menu_preferences_language_desktop">Ngôn ngữ</string>
     <string name="global_menu_file_desktop">Tập tin</string>
     <string name="global_menu_file_quit_desktop">Thoát</string>
@@ -797,8 +797,8 @@
     <string name="global_menu_view_developer_tools_desktop">Công cụ dành cho nhà phát triển</string>
     <string name="global_menu_help_desktop">Trợ giúp</string>
     <string name="global_menu_help_report_desktop">Báo cáo sự cố</string>
-    <string name="global_menu_help_about_desktop">Giới thiệu về Delta Chat</string>
-    <string name="global_menu_file_open_desktop">Mở Delta Chat</string>
+    <string name="global_menu_help_about_desktop">Giới thiệu về Arcane Chat</string>
+    <string name="global_menu_file_open_desktop">Mở Arcane Chat</string>
     <string name="global_menu_minimize_to_tray">Giảm thiểu</string>
     <string name="no_chat_selected_suggestion_desktop">Chọn một cuộc trò chuyện hoặc tạo một cuộc trò chuyện mới</string>
     <string name="write_message_desktop">Viết tin nhắn</string>
@@ -815,7 +815,7 @@
     <string name="message_detail_received_desktop">đã nhận được</string>
     <string name="menu.view.developer.open.log.folder">Mở thư mục nhật ký</string>
     <string name="menu.view.developer.open.current.log.file">Mở tệp nhật ký hiện tại</string>
-    <string name="explain_desktop_minimized_disabled_tray_pref" tools:ignore="TypographyDashes">Không thể tắt biểu tượng khay vì Delta Chat đã được bắt đầu bằng tùy chọn --giảm-thiểu.</string>
+    <string name="explain_desktop_minimized_disabled_tray_pref" tools:ignore="TypographyDashes">Không thể tắt biểu tượng khay vì Arcane Chat đã được bắt đầu bằng tùy chọn --giảm-thiểu.</string>
     <!-- deprecated, used on desktop although there is not spell checker -->
     <string name="no_spellcheck_suggestions_found">Không tìm thấy gợi ý chính tả.</string>
     <string name="show_window">Hiển thị cửa sổ</string>
@@ -854,22 +854,22 @@
     <string name="import_device_contacts">Nhập danh bạ thiết bị</string>
     <string name="import_device_contacts_hint">Để trò chuyện với các liên hệ từ thiết bị của bạn, hãy mở Cài đặt và bật \"Danh bạ\".</string>
     <!-- iOS notification settings -->
-    <string name="disabled_in_dc">Đã tắt trong Delta Chat</string>
+    <string name="disabled_in_dc">Đã tắt trong Arcane Chat</string>
     <string name="disabled_in_system_settings">Đã tắt trong cài đặt hệ thống</string>
     <string name="bg_app_refresh_disabled">\"Làm mới ứng dụng nền\" bị tắt trong cài đặt hệ thống</string>
     <string name="notifications_avg_minutes">Trung bình cứ sau %1$d phút</string>
     <string name="notifications_avg_hours">Trung bình cứ sau %1$d giờ</string>
     <string name="last_check_at">Đã kiểm tra lúc %1$s</string>
     <!-- iOS permissions, copy from "deltachat-ios/Info.plist", which is used on missing translations in "deltachat-ios/LANG.lproj/InfoPlist.strings" -->
-    <string name="InfoPlist_NSCameraUsageDescription">Delta Chat sử dụng máy ảnh của bạn để chụp và gửi ảnh cũng như video cũng như quét mã QR.</string>
-    <string name="InfoPlist_NSLocationAlwaysAndWhenInUseUsageDescription">Delta Chat cần có quyền chia sẻ vị trí của bạn trong khoảng thời gian bạn đã bật tính năng chia sẻ vị trí.</string>
-    <string name="InfoPlist_NSLocationWhenInUseUsageDescription">Delta Chat cần có quyền chia sẻ vị trí của bạn trong khoảng thời gian bạn đã bật tính năng chia sẻ vị trí.</string>
-    <string name="InfoPlist_NSMicrophoneUsageDescription">Delta Chat sử dụng micrô của bạn để ghi và gửi tin nhắn thoại cũng như video có âm thanh.</string>
-    <string name="InfoPlist_NSPhotoLibraryUsageDescription">Delta Chat sẽ cho phép bạn chọn ảnh từ thư viện để gửi.</string>
-    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">Delta Chat muốn lưu hình ảnh vào thư viện ảnh của bạn.</string>
-    <string name="pref_background_notifications_rationale">Để duy trì kết nối với máy chủ e-mail của bạn và nhận tin nhắn ở chế độ nền, hãy bỏ qua tối ưu hóa pin trong bước tiếp theo.\n\nDelta Chat sử dụng ít tài nguyên và chú ý không làm tiêu hao pin của bạn.</string>
+    <string name="InfoPlist_NSCameraUsageDescription">Arcane Chat sử dụng máy ảnh của bạn để chụp và gửi ảnh cũng như video cũng như quét mã QR.</string>
+    <string name="InfoPlist_NSLocationAlwaysAndWhenInUseUsageDescription">Arcane Chat cần có quyền chia sẻ vị trí của bạn trong khoảng thời gian bạn đã bật tính năng chia sẻ vị trí.</string>
+    <string name="InfoPlist_NSLocationWhenInUseUsageDescription">Arcane Chat cần có quyền chia sẻ vị trí của bạn trong khoảng thời gian bạn đã bật tính năng chia sẻ vị trí.</string>
+    <string name="InfoPlist_NSMicrophoneUsageDescription">Arcane Chat sử dụng micrô của bạn để ghi và gửi tin nhắn thoại cũng như video có âm thanh.</string>
+    <string name="InfoPlist_NSPhotoLibraryUsageDescription">Arcane Chat sẽ cho phép bạn chọn ảnh từ thư viện để gửi.</string>
+    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">Arcane Chat muốn lưu hình ảnh vào thư viện ảnh của bạn.</string>
+    <string name="pref_background_notifications_rationale">Để duy trì kết nối với máy chủ e-mail của bạn và nhận tin nhắn ở chế độ nền, hãy bỏ qua tối ưu hóa pin trong bước tiếp theo.\n\nArcane Chat sử dụng ít tài nguyên và chú ý không làm tiêu hao pin của bạn.</string>
     <!-- disabling "Reliable service" will hide a the maybe annoying permanent-notification with the drawback that new-message-notifications get potentially unreliable -->
-    <string name="perm_enable_bg_reminder_title">Nhấn vào đây để nhận tin nhắn khi Delta Chat ở chế độ nền.</string>
-    <string name="perm_enable_bg_already_done">Bạn đã cho phép Delta Chat nhận tin nhắn trong nền.\n\nNếu tin nhắn vẫn không đến trong nền, vui lòng kiểm tra cài đặt hệ thống của bạn.</string>
+    <string name="perm_enable_bg_reminder_title">Nhấn vào đây để nhận tin nhắn khi Arcane Chat ở chế độ nền.</string>
+    <string name="perm_enable_bg_already_done">Bạn đã cho phép Arcane Chat nhận tin nhắn trong nền.\n\nNếu tin nhắn vẫn không đến trong nền, vui lòng kiểm tra cài đặt hệ thống của bạn.</string>
 
     </resources>
