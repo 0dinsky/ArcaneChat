@@ -34,7 +34,7 @@ jobs:
             ${{ runner.os }}-gradle-
 
       - name: Validate Gradle Wrapper
-        uses: gradle/actions/wrapper-validation@v7
+        uses: gradle/actions/wrapper-validation@v6
 
       - uses: android-actions/setup-android@v4
       - uses: nttld/setup-ndk@v1
