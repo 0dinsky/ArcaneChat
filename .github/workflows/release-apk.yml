@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: \( {{ github.workflow }}- \){{ github.ref }}
   cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
 
 permissions: {}
@@ -14,35 +14,35 @@ jobs:
     name: Upload Release APK
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
         with:
           submodules: recursive
           persist-credentials: false
 
       - uses: actions/setup-java@v5
         with:
-          java-version: 17
+          java-version: 21
           distribution: 'temurin'
 
       - uses: actions/cache@v4
         with:
           path: |
-            ~/.gradle/caches
-            ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}-${{ hashFiles('**/gradle-wrapper.properties') }}
+            \~/.gradle/caches
+            \~/.gradle/wrapper
+          key: \( {{ runner.os }}-gradle- \){{ hashFiles('**/*.gradle*') }}-${{ hashFiles('**/gradle-wrapper.properties') }}
           restore-keys: |
             ${{ runner.os }}-gradle-
 
       - name: Validate Gradle Wrapper
-        uses: gradle/actions/wrapper-validation@50e97c2cd7a37755bbfafc9c5b7cafaece252f6e # v6.1.0
+        uses: gradle/actions/wrapper-validation@v7
 
-      - uses: android-actions/setup-android@40fd30fb8d7440372e1316f5d1809ec01dcd3699 # v4.0.1
-      - uses: nttld/setup-ndk@ed92fe6cadad69be94a966a7ee3271275e62f779 # v1.6.0
+      - uses: android-actions/setup-android@v4
+      - uses: nttld/setup-ndk@v1
         id: setup-ndk
         with:
           ndk-version: r27
 
-      - uses: Swatinem/rust-cache@c19371144df3bb44fab255c43d04cbc2ab54d1c4 # v2.9.1
+      - uses: Swatinem/rust-cache@v2
         with:
           workspaces: jni/deltachat-core-rust
 
@@ -57,7 +57,7 @@ jobs:
           path: |
             jni/arm64-v8a
             libs/arm64-v8a
-          key: core-arm64-v8a-${{ steps.core-hash.outputs.hash }}-${{ hashFiles('jni/Android.mk', 'jni/Application.mk', 'jni/dc_wrapper.c', 'scripts/ndk-make.sh') }}-ndk-r27
+          key: core-arm64-v8a-\( {{ steps.core-hash.outputs.hash }}- \){{ hashFiles('jni/Android.mk', 'jni/Application.mk', 'jni/dc_wrapper.c', 'scripts/ndk-make.sh') }}-ndk-r27
 
       - name: Compile core
         if: steps.core-cache.outputs.cache-hit != 'true'
@@ -65,7 +65,7 @@ jobs:
           ANDROID_NDK_ROOT: ${{ steps.setup-ndk.outputs.ndk-path }}
         run: |
           rustup target add aarch64-linux-android
-          export PATH="${PATH}:${ANDROID_NDK_ROOT}/toolchains/llvm/prebuilt/linux-x86_64/bin/"
+          export PATH="\( {PATH}: \){ANDROID_NDK_ROOT}/toolchains/llvm/prebuilt/linux-x86_64/bin/"
           scripts/install-toolchains.sh && scripts/ndk-make.sh arm64-v8a
 
       - name: Setup keystore
@@ -73,18 +73,13 @@ jobs:
           echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > ${{ github.workspace }}/release.keystore
           chmod 600 ${{ github.workspace }}/release.keystore
 
-          # Точные имена переменных из build.gradle signingConfigs
           echo "DC_RELEASE_STORE_FILE=${{ github.workspace }}/release.keystore" >> gradle.properties
           echo "DC_RELEASE_STORE_PASSWORD=${{ secrets.KEYSTORE_PASSWORD }}" >> gradle.properties
           echo "DC_RELEASE_KEY_PASSWORD=${{ secrets.KEY_PASSWORD }}" >> gradle.properties
 
-          # releaseFdroid использует свой алиас
           echo "DC_RELEASE_KEY_ALIAS_FDROID=${{ secrets.KEY_ALIAS_FDROID }}" >> gradle.properties
-
-          # releaseApk (gplay) использует свой алиас
           echo "DC_RELEASE_KEY_ALIAS_GPLAY=${{ secrets.KEY_ALIAS_GPLAY }}" >> gradle.properties
 
-          # Для apksigner в следующих шагах (foss сборка = fdroid алиас)
           echo "STORE_FILE=${{ github.workspace }}/release.keystore" >> $GITHUB_ENV
           echo "KEYSTORE_PASSWORD=${{ secrets.KEYSTORE_PASSWORD }}" >> $GITHUB_ENV
           echo "KEY_ALIAS=${{ secrets.KEY_ALIAS_FDROID }}" >> $GITHUB_ENV
@@ -137,7 +132,7 @@ jobs:
           echo "Signature verified successfully."
 
       - name: Upload APK
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: app-preview.apk
           path: ${{ env.FINAL_APK }}
