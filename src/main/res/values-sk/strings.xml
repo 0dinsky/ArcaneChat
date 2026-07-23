@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- common strings without special context -->
-    <string name="app_name">Arcane Chat</string>
+    <string name="app_name">Delta Chat</string>
     <string name="ok">OK</string>
     <string name="cancel">Zrušiť</string>
     <string name="clear_search">Zrušiť hľadanie</string>
@@ -12,35 +12,38 @@
     <string name="yes">Áno</string>
     <string name="no">Nie</string>
     <string name="select">Vybrať</string>
-    <string name="on">Zapnúť</string>
-    <string name="off">Vypnúť</string>
-    <string name="def">Štandardné nastavenie</string>
-    <string name="default_value">Štandardné nastavenie (%1$s)</string>
-    <string name="custom">Vlastný</string>
-    <string name="none">Nie je</string>
-    <string name="automatic">Automatický</string>
-    <string name="strict">Striktný</string>
+    <string name="on">Zapnuté</string>
+    <string name="off">Vypnuté</string>
+    <string name="def">Predvolené</string>
+    <string name="default_value">Predvolené (%1$s)</string>
+    <string name="custom">Vlastné</string>
+    <string name="none">Nenastavené</string>
+    <string name="automatic">Automaticky</string>
+    <string name="strict">Presne</string>
     <string name="open">Otvoriť</string>
     <string name="download">Stiahnuť</string>
-    <string name="downloading">Sťahujem...</string>
+    <string name="downloading">Sťahovanie…</string>
     <string name="open_attachment">Otvoriť prílohu</string>
-    <string name="join">Spojiť</string>
-    <string name="rejoin">Znovu spojiť</string>
+    <string name="join">Pripojiť sa</string>
+    <string name="join_group">Pripojiť sa ku skupine</string>
+    <string name="join_channel">Pripojiť sa do kanála</string>
+    <string name="rejoin">Znovu sa pripojiť</string>
     <string name="delete">Odstrániť</string>
     <string name="delete_for_me">Odstrániť pre mňa</string>
     <string name="delete_for_everyone">Odstrániť pre všetkých</string>
-    <string name="info">Informácia</string>
+    <string name="info">Informácie</string>
     <string name="update">Aktualizovať</string>
     <string name="emoji">Smajlíci</string>
     <string name="attachment">Príloha</string>
     <string name="back">Späť</string>
-    <string name="close">Zatvoriť</string>
+    <string name="close">Zavrieť</string>
     <string name="close_window">Zavrieť okno</string>
-    <string name="forward">Vpred</string>
+    <string name="forward">Preposlať</string>
     <string name="create">Vytvoriť</string>
+    <string name="reset">Obnoviť</string>
     <string name="later">Neskôr</string>
     <!-- "Resend" means "Sending the selected message(s) again to the same chat". The string is used in a menu and should be as short as possible. Resending may be needed after failures or to repost old messages to new members. -->
-    <string name="resend">Znovu poslať</string>
+    <string name="resend">Poslať znovu</string>
     <string name="edited">Upravená</string>
     <string name="edit_message">Upraviť správu</string>
     <!-- Verb "to archive", as in "put a chat in the archive", not a noun "The Archive". -->
@@ -48,9 +51,11 @@
     <!-- Verb "to unarchive", as in "remove a chat from the archive", opposite of the previous string -->
     <string name="unarchive">Zrušiť archiváciu</string>
     <!-- Verb "to mute". used to mute a chat, so that it is silenced e.g. does not make noise or cause notifications -->
-    <string name="mute">Stíšiť</string>
+    <string name="mute">Stlmiť</string>
+    <!-- Adjective "smth is muted". used to describe a muted or silenced chat, that e.g. does not make noise or cause notifications -->
+    <string name="muted">Stlmené</string>
     <string name="ephemeral_messages">Miznúce správy</string>
-    <string name="ephemeral_messages_hint">Tieto nastavenia platia pre všetkých účastníkov používajúcich Arcane Chat. Môžu však kopírovať, ukladať a preposielať správy alebo používať iných e-mailových klientov.</string>
+    <string name="ephemeral_messages_hint">Platí pre všetkých členov tejto konverzácie, ktorí si však stále môžu správy ukladať, kopírovať alebo preposlať.</string>
     <string name="save">Uložiť</string>
     <string name="chat">Konverzácia</string>
     <string name="media">Médiá</string>
@@ -60,39 +65,45 @@
     <string name="all_profiles">Všetky účty</string>
     <!-- deprecated -->
     <string name="current_profile">Aktuálny účet</string>
-    <string name="main_menu">Hlavné menu</string>
+    <string name="main_menu">Hlavná ponuka</string>
     <string name="start_chat">Začať konverzáciu</string>
     <string name="show_full_message">Zobraziť celú správu ...</string>
     <!-- Stay short here, say ~16 characters. The source string could also be "All Read", maybe that hint can make translations easier :) -->
-    <string name="mark_all_as_read">Všetko prečítané</string>
+    <string name="mark_all_as_read">Všetko ako prečítané</string>
     <!-- Used as an menu entry or button -->
     <string name="mark_as_read">Označiť ako prečítané</string>
     <!-- Used beside an icon with very few space. Shortest text for "Mark as being read". In english, this could be "Read" (past tense of "to read"), in german, this could be "Gelesen". -->
     <string name="mark_as_read_short">Prečítané</string>
+    <!-- Used as an menu entry or button -->
+    <string name="mark_as_unread">Označiť ako neprečítané</string>
+    <!-- Used beside an icon with very few space. Shortest text for "Mark as being unread". In english, this could be "Unread" (past tense of "to unread"), in german, this could be "Ungelesen". -->
+    <string name="mark_as_unread_short">Neprečítané</string>
     <!-- Placeholder text when something is loading -->
-    <string name="loading">Načítam…</string>
+    <string name="loading">Načítavanie…</string>
     <string name="hide">Skryť</string>
     <string name="activate">Zapnúť</string>
     <string name="load_remote_content">Načítať vzdialené obrázky</string>
     <!-- Possible answers to the question are: Never, Always, Once -->
-    <string name="load_remote_content_ask">Na sledovanie vás možno použiť obrázky nadiaľku.\n\nToto nastavenie tiež umožňuje načítať písma a ďalší obsah. Aj keď je vypnutá, stále sa vám môžu zobrazovať vložené alebo uložené obrázky.\n\nNačítať vzdialené obrázky?</string>
+    <string name="load_remote_content_ask">Načítanie obrázkov je možné zneužiť na sledovanie vašej aktivity.\n\nToto nastavenie tiež umožňuje načítať písma a ďalší obsah. Aj keď to nie je povolené, stále sa môžu zobrazovať vložené obrázky alebo obrázky z vyrovnávacej pamäte.\n\nNačítať vzdialený obsah?</string>
     <string name="always">Vždy</string>
-    <string name="once">Raz</string>
+    <string name="always_load_remote_images">Vždy načítať vzdialené obrázky</string>
+    <string name="once">Len raz</string>
     <!-- deprecated -->
     <string name="show_warning">Zobraziť varovanie</string>
     <string name="not_now">Teraz nie</string>
     <string name="never">Nikdy</string>
-    <string name="one_moment">Moment...</string>
+    <string name="one_moment">Len chvíľu…</string>
     <string name="done">Hotovo</string>
     <string name="undo">Vrátiť späť</string>
     <string name="offline">Offline</string>
     <!-- For the next view or as "continue". Should be as short as possible. -->
-    <string name="next">Ďalšie</string>
+    <string name="next">Ďalej</string>
+    <string name="warning">Upozornenie</string>
     <string name="error">Chyba</string>
     <string name="error_x">Chyba: %1$s</string>
-    <string name="no_app_to_handle_data">Nemôžem nájsť aplikáciu na spracovanie tohto typu údajov.</string>
+    <string name="no_app_to_handle_data">Nie je možné nájsť aplikáciu na spracovanie tohto typu údajov.</string>
     <string name="no_browser_installed">Nie je nainštalovaný žiadny prehliadač.</string>
-    <string name="file_not_found">Nemohol nájsť %1$s.</string>
+    <string name="file_not_found">Nie je možné nájsť %1$s.</string>
     <!-- the placeholder will be replaced by the name of a file -->
     <string name="cannot_save_file">Nepodarilo sa uložiť %1$s.</string>
     <string name="copied_to_clipboard">Skopírované do schránky.</string>
@@ -109,12 +120,21 @@
     <string name="this_week">Tento týždeň</string>
     <string name="this_month">Tento mesiac</string>
     <string name="last_week">Minulý týždeň</string>
-    <string name="last_month">Minulý mesiac</string>
+    <string name="last_month">Minulý mesiacB</string>
     <!-- Refers to the time a contact was last seen. Shown below contact name in the profile. The placeholder will be replaced by date or time, resulting in "Last seen at 12:13 AM" or "Last seen Nov 12" -->
-    <string name="last_seen_at">Naposledy videné o%1$s</string>
+    <string name="last_seen_at">Naposledy videné o%1$sAA</string>
     <!-- Refers to the time a contact was last seen. Shown below contact name in the profile. The placeholder will be replaced by a relative point in time as "3 minutes ago" (see https://momentjs.com for more examples and languages) -->
-    <string name="last_seen_relative">Naposledy online %1$s</string>
+    <string name="last_seen_relative">Naposledy videné %1$s</string>
     <string name="last_seen_unknown">Naposledy videné: Neznáme</string>
+    <!-- Call duration as shown in the call bubbles. There is some risk to mix with the sending time, so the word "Duration" may be helpful. Might also be "Duration: %d minutes", "%d-minute duration", "%d-minute length" or "%d-minute call" -->
+    <plurals name="call_duration_minutes">
+        <item quantity="one">Trvanie %dminútu</item>
+        <item quantity="few">Trvanie %d minútu</item>
+        <item quantity="many">Trvanie %d minúty</item>
+        <item quantity="other">Trvanie %d minút</item>
+    </plurals>
+    <!-- Call duration as shown in the call bubbles in case the call is less than one minute. If the context is not clear enough, one may want to add the word "Duration". -->
+    <string name="call_duration_less_than_a_minute">Menej ako minútu</string>
     <!-- Shown beside messages that are "N minutes old". Prefer short strings, or well-known abbreviations. -->
     <plurals name="n_minutes">
         <item quantity="one">%d minúta</item>
@@ -265,6 +285,7 @@
     <string name="menu_send">Poslať</string>
     <string name="menu_toggle_keyboard">Prepnúť klávesnicu emodži</string>
     <string name="menu_edit_group">Upraviť skupinu</string>
+    <!-- deprecated: "Edit Group" dialog usually also contains the "Group Description" field, use global_menu_edit_desktop instead -->
     <string name="menu_group_name_and_image">Názov a obrázok skupiny</string>
     <string name="menu_show_global_map">Zobraziť všetky polohy</string>
     <string name="menu_archive_chat">Archivovať konverzáciu</string>
@@ -281,7 +302,7 @@
     <string name="menu_copy_to_clipboard">Skopírovať do schránky</string>
     <string name="invite_friends">Pozvať priateľov</string>
     <!-- %1$s is replaced by the user's invitation link ("https://i.delta.chat/...") -->
-    <string name="invite_friends_text">Kontaktujte ma na Arcane Chat: %1$s</string>
+    <string name="invite_friends_text">Kontaktujte ma na Delta Chat: %1$s</string>
     <string name="menu_copy_selection_to_clipboard">Kopírovať výber</string>
     <string name="menu_copy_link_to_clipboard">Skopírovať odkaz</string>
     <string name="menu_copy_text_to_clipboard">Kopírovať text</string>
@@ -335,7 +356,7 @@
     <string name="title_share_location">Zdieľať polohu so všetkými členmi skupiny</string>
     <string name="device_talk">Správy zariadenia</string>
     <string name="device_talk_subtitle">Miestne generované správy</string>
-    <string name="device_talk_explain">Správy v tejto konverzácií sú generované lokálne vašou aplikáciou Arcane Chat. Jeho tvorcovia ho používajú na informovanie o aktualizáciách aplikácií a problémoch počas používania.</string>
+    <string name="device_talk_explain">Správy v tejto konverzácií sú generované lokálne vašou aplikáciou Delta Chat. Jeho tvorcovia ho používajú na informovanie o aktualizáciách aplikácií a problémoch počas používania.</string>
     <string name="edit_contact">Upraviť kontakt</string>
     <!-- Verb "to pin", making something sticky, not a noun or abbreviation for "pin number". -->
     <string name="pin_chat">Pripnúť konverzáciu</string>
@@ -429,8 +450,8 @@
         <item quantity="other">%d nové správy</item>
     </plurals>
     <!-- The placeholder will be replaced by the name of the recipient in a one-to-one chat. -->
-    <string name="chat_new_one_to_one_hint">Pošlite správu. Je v poriadku ak%1$s nepoužíva Arcane Chat.</string>
-    <string name="chat_new_group_hint">Vytvorte prvú správu a umožnite ostatným odpovedať v rámci tejto skupiny.\n\n• Je v poriadku, ak nie všetci členovia používajú Arcane Chat.\n\n• Doručenie prvej správy môže chvíľu trvať.</string>
+    <string name="chat_new_one_to_one_hint">Pošlite správu. Je v poriadku ak%1$s nepoužíva Delta Chat.</string>
+    <string name="chat_new_group_hint">Vytvorte prvú správu a umožnite ostatným odpovedať v rámci tejto skupiny.\n\n• Je v poriadku, ak nie všetci členovia používajú Delta Chat.\n\n• Doručenie prvej správy môže chvíľu trvať.</string>
     <string name="chat_record_slide_to_cancel">Posunutím akciu zrušíte</string>
     <string name="chat_record_explain">Klepnutím a podržaním nahráte hlasovú správu, uvoľnením ju odošlete</string>
     <string name="chat_no_chats_yet_title">Prázdna doručená pošta.\nStlačením tlačidla + začnete novú konverzáciu</string>
@@ -515,15 +536,15 @@
     <!-- "Second Device" can also be translated as "Another Device", if that is catchier in the destination language. However, make sure to use the term consistently. -->
     <string name="multidevice_title">Pridať ďalšie zariadenie</string>
     <string name="multidevice_same_network_hint">Uistite sa, že obe zariadenia sú na rovnakej Wi-Fi sieti.</string>
-    <string name="multidevice_install_dc_on_other_device">Nainštalujte Arcane Chat na vašom ďalšom zariadení (https://get.delta.chat)</string>
+    <string name="multidevice_install_dc_on_other_device">Nainštalujte Delta Chat na vašom ďalšom zariadení (https://get.delta.chat)</string>
     <!-- "I Already Have a Profile / Add as Second Device” should be the same text as defined by the keys onboarding_alternative_logins and multidevice_receiver_title -->
-    <string name="multidevice_tap_scan_on_other_device">Otvorte Arcane Chat, ťuknite na \"Existujúci účet / Pridať ako ďalšie zariadenie\" a naskenujte zobrazený kód</string>
+    <string name="multidevice_tap_scan_on_other_device">Otvorte Delta Chat, ťuknite na \"Existujúci účet / Pridať ako ďalšie zariadenie\" a naskenujte zobrazený kód</string>
     <!-- Shown inside a "QR code card" with very limited space; please formulate the text as short as possible therefore. The placeholder will be replaced by the profile name eg. "Scan to set up second device for Alice" -->
     <string name="multidevice_qr_subtitle">Naskenujte pre nastavenie ďalšieho zariadenia pre %1$s</string>
     <string name="multidevice_receiver_title">Pridať ako ďalšie zariadenie</string>
     <string name="multidevice_open_settings_on_other_device">Na pôvodnom zariadení, choďte do \"Nastavenia / Pridať ďalšie zariadenie\" a naskenujte zobrazený kód</string>
     <string name="multidevice_receiver_scanning_ask">Skopírovať účet na toto zariadenie?</string>
-    <string name="multidevice_receiver_needs_update">Účet, ktorý sa snažíte importovať bol vytvorený novšou verziou Arcane Chat. Ak chcete pokračovať, aktualizujte toto zariadenie na najnovšiu verziu Arcane Chat.</string>
+    <string name="multidevice_receiver_needs_update">Účet, ktorý sa snažíte importovať bol vytvorený novšou verziou Delta Chat. Ak chcete pokračovať, aktualizujte toto zariadenie na najnovšiu verziu Delta Chat.</string>
     <string name="multidevice_abort">Zrušiť pridávanie nového zariadenia?</string>
     <string name="multidevice_transfer_done_devicemsg">ℹ️ Účet pridaný do ďalšieho zariadenia.</string>
     <!-- Shown beside progress bar, stay short -->
@@ -729,7 +750,7 @@
     <string name="profile_image_delete">Odstrániť profilový obrázok</string>
     <string name="pref_show_tray_icon">Zobraziť ikonu v systémovej lište</string>
     <string name="pref_edit_profile">Upraviť účet</string>
-    <string name="send_stats_to_devs">Zasielať štatistické údaje Arcane Chat vývojárom</string>
+    <string name="send_stats_to_devs">Zasielať štatistické údaje Delta Chat vývojárom</string>
     <!-- Emoji picker and categories -->
     <string name="emoji_search_results">Výsledky vyhľadávania</string>
     <string name="emoji_not_found">Nenašli sa žiadne emodži</string>
@@ -760,9 +781,9 @@
     <!-- %1$d will be replaced by the number of messages, you can assume plural/lots here. %2$s will be replaced by a timespan option. -->
     <string name="autodel_device_ask">Chcete odstrániť %1$d správy a všetky novo načítané správy %2$s v budúcnosti?\n\n• Zahŕňa to všetky médiá\n\n• Správy budú odstránené bez ohľadu na to, či boli alebo neboli videné\n\n• „Uložené správy \"bude preskočené z lokálneho mazania</string>
     <!-- deprecated -->
-    <string name="autodel_server_ask">Chcete odstrániť %1$d správy a všetky novo načítané správy %2$s v budúcnosti?\n\n⚠️ Zahŕňa to e-maily, médiá a uložené správy vo všetkých priečinkoch servera\n\n⚠️ Túto funkciu nepoužívajte, ak chcete uchovanie údajov na serveri\n\n⚠️ Túto funkciu nepoužívajte, ak okrem Arcane Chatu používate aj iných e-mailových klientov</string>
+    <string name="autodel_server_ask">Chcete odstrániť %1$d správy a všetky novo načítané správy %2$s v budúcnosti?\n\n⚠️ Zahŕňa to e-maily, médiá a uložené správy vo všetkých priečinkoch servera\n\n⚠️ Túto funkciu nepoužívajte, ak chcete uchovanie údajov na serveri\n\n⚠️ Túto funkciu nepoužívajte, ak okrem Delta Chatu používate aj iných e-mailových klientov</string>
     <!-- deprecated -->
-    <string name="autodel_server_enabled_hint">Patria sem e-maily, médiá a „Uložené správy“ vo všetkých priečinkoch servera. Túto funkciu nepoužívajte, ak chcete uchovať údaje na serveri alebo ak okrem Arcane Chatu používate aj iných e-mailových klientov.</string>
+    <string name="autodel_server_enabled_hint">Patria sem e-maily, médiá a „Uložené správy“ vo všetkých priečinkoch servera. Túto funkciu nepoužívajte, ak chcete uchovať údaje na serveri alebo ak okrem Delta Chatu používate aj iných e-mailových klientov.</string>
     <string name="autodel_confirm">Rozumiem, vymazať všetky tieto správy</string>
     <!-- "At once" in the meaning of "Immediately", without any intervening time. -->
     <string name="autodel_at_once">Naraz</string>
@@ -841,7 +862,7 @@
     <string name="devicemsg_storage_exceeding">⚠️ Úložisko vašeho poskytovateľa čoskoro prekročí limit, už%1$s%% sú využité.\n\n Je možné, že nebudete môcť prijímať správy, ak bude úložisko 100 %% využité.\n\n👉 Prosím skontrolujte, či môžete vo webovom rozhraní poskytovateľa vymazať staré údaje, a zvážte aktiváciu „Nastavenia / Odstrániť Staré Správy“. Aktuálne využitie úložiska si môžete kedykoľvek skontrolovať v časti „Nastavenia / Pripojenie“. </string>
     <!-- %1%s will be replaced by date and time in some human-readable format -->
     <string name="devicemsg_bad_time">Zdá sa, že dátum alebo čas vášho zariadenia je nepresný (%1$s).\n\nUpravte si hodiny ⏰🔧, aby ste zaistili správne prijímanie správ. </string>
-    <string name="devicemsg_update_reminder">⚠️ Vaša verzia Arcane Chat-u môže byť zastaraná.\n\nMôže to spôsobiť problémy, pretože vaši chatový partneri používajú novšie verzie – a vám chýbajú najnovšie funkcie 😳\nAktualizácie nájdete na https://get.delta.chat alebo obchode s aplikáciami . </string>
+    <string name="devicemsg_update_reminder">⚠️ Vaša verzia Delta Chat-u môže byť zastaraná.\n\nMôže to spôsobiť problémy, pretože vaši chatový partneri používajú novšie verzie – a vám chýbajú najnovšie funkcie 😳\nAktualizácie nájdete na https://get.delta.chat alebo obchode s aplikáciami . </string>
 
     <!-- Some options as "Add Second Device" or "Backup" may require the system PIN/Fingerprint/Gesture/Etc. to be entered in a system dialog. This hint is added to the system dialog, below a title as "Add Second Device" or "Backup". -->
     <string name="enter_system_secret_to_continue">Ak chcete pokračovať, zadajte heslo do systému.</string>
@@ -919,7 +940,7 @@
     <string name="ImageEditorHud_flip">Preklopiť</string>
     <string name="ImageEditorHud_rotate">Otočiť</string>
 
-    <string name="welcome_desktop">Víta vás Arcane Chat</string>
+    <string name="welcome_desktop">Víta vás Delta Chat</string>
     <string name="global_menu_preferences_language_desktop">Jazyk</string>
     <string name="global_menu_file_desktop">Súbor</string>
     <string name="global_menu_file_quit_desktop">Skončiť</string>
@@ -934,10 +955,10 @@
     <string name="global_menu_view_developer_desktop">Vývojár</string>
     <string name="global_menu_view_developer_tools_desktop">Nástroje pre vývojárov</string>
     <string name="global_menu_help_desktop">Pomocník</string>
-    <string name="delta_chat_homepage">Stránka Arcane Chat</string>
+    <string name="delta_chat_homepage">Stránka Delta Chat</string>
     <string name="global_menu_help_report_desktop">Nahlásiť problém</string>
-    <string name="global_menu_help_about_desktop">O spoločnosti Arcane Chat</string>
-    <string name="global_menu_file_open_desktop">Otvoriť Arcane Chat</string>
+    <string name="global_menu_help_about_desktop">O spoločnosti Delta Chat</string>
+    <string name="global_menu_file_open_desktop">Otvoriť Delta Chat</string>
     <string name="global_menu_minimize_to_tray">Minimalizovať</string>
     <string name="no_chat_selected_suggestion_desktop">Vyberte existujúce alebo vytvorte novú konverzáciu</string>
     <string name="write_message_desktop">Napíšte správu</string>
@@ -954,7 +975,7 @@
     <string name="message_detail_received_desktop">prijaté</string>
     <string name="menu.view.developer.open.log.folder">Otvoriť priečinok denníka</string>
     <string name="menu.view.developer.open.current.log.file">Otvoriť aktuálny súbor protokolu</string>
-    <string name="explain_desktop_minimized_disabled_tray_pref" tools:ignore="TypographyDashes">Ikonu v systémovej lište nie je možné vypnúť, pretože Arcane Chat bol spustený s prepínačom --minimized.</string>
+    <string name="explain_desktop_minimized_disabled_tray_pref" tools:ignore="TypographyDashes">Ikonu v systémovej lište nie je možné vypnúť, pretože Delta Chat bol spustený s prepínačom --minimized.</string>
     <!-- deprecated, used on desktop although there is not spell checker -->
     <string name="no_spellcheck_suggestions_found">Neboli nájdené žiadne návrhy opravy preklepov.</string>
     <string name="show_window">Zobraziť okno</string>
@@ -993,7 +1014,7 @@
     <string name="import_device_contacts">Importovať kontakty zo zariadenia</string>
     <string name="import_device_contacts_hint">Pre písanie s kontaktmi z vášho zariadenie otvorte Nastavenia a povoľte Kontakty.</string>
     <!-- iOS notification settings -->
-    <string name="disabled_in_dc">Vypnuté v Arcane Chat-e</string>
+    <string name="disabled_in_dc">Vypnuté v Delta Chat-e</string>
     <string name="disabled_in_system_settings">Vypnuté v nastaveniach systém</string>
     <string name="bg_app_refresh_disabled">\"Obnovenie aplikácie na pozadí\" vypnuté v nastaveniach systém</string>
     <string name="notifications_avg_minutes">V priemere každých %1$d minút</string>
@@ -1001,15 +1022,15 @@
     <string name="last_check_at">Skontrolované %1$s</string>
     <string name="system_settings">Systémové nastavenia</string>
     <!-- iOS permissions, copy from "deltachat-ios/Info.plist", which is used on missing translations in "deltachat-ios/LANG.lproj/InfoPlist.strings" -->
-    <string name="InfoPlist_NSCameraUsageDescription">Arcane Chat používa váš fotoaparát na snímanie a odosielanie fotografií a videí a na skenovanie QR kódov.</string>
-    <string name="InfoPlist_NSLocationAlwaysAndWhenInUseUsageDescription">Arcane Chat vyžaduje oprávnenia na získanie polohy, aby ste mohli zdieľať Vašu polohu počas doby, ktorú ste stanovili.</string>
-    <string name="InfoPlist_NSLocationWhenInUseUsageDescription">Arcane Chat vyžaduje oprávnenia na zdieľanie vašej polohy počas doby, kedy bude zdieľanie polohy zapnuté.</string>
-    <string name="InfoPlist_NSMicrophoneUsageDescription">Aplikácia Arcane Chat používa váš mikrofón na zaznamenávanie a odosielanie hlasových správ a videí so zvukom.</string>
-    <string name="InfoPlist_NSPhotoLibraryUsageDescription">Arcane Chat vám umožní zvoliť si, ktoré fotografie z vašej knižnice chcete odoslať.</string>
-    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">Arcane Chat chce uložiť obrázky do vašej knižnice fotografií.</string>
-    <string name="pref_background_notifications_rationale">Ak chcete zachovať pripojenie k svojmu e-mailovému serveru a prijímať správy na pozadí, v ďalšom kroku ignorujte optimalizáciu batérie. \n\nArcane Chat využíva málo zdrojov a dbá na to, aby sa batéria nevybíjala.</string>
+    <string name="InfoPlist_NSCameraUsageDescription">Delta Chat používa váš fotoaparát na snímanie a odosielanie fotografií a videí a na skenovanie QR kódov.</string>
+    <string name="InfoPlist_NSLocationAlwaysAndWhenInUseUsageDescription">Delta Chat vyžaduje oprávnenia na získanie polohy, aby ste mohli zdieľať Vašu polohu počas doby, ktorú ste stanovili.</string>
+    <string name="InfoPlist_NSLocationWhenInUseUsageDescription">Delta Chat vyžaduje oprávnenia na zdieľanie vašej polohy počas doby, kedy bude zdieľanie polohy zapnuté.</string>
+    <string name="InfoPlist_NSMicrophoneUsageDescription">Aplikácia Delta Chat používa váš mikrofón na zaznamenávanie a odosielanie hlasových správ a videí so zvukom.</string>
+    <string name="InfoPlist_NSPhotoLibraryUsageDescription">Delta Chat vám umožní zvoliť si, ktoré fotografie z vašej knižnice chcete odoslať.</string>
+    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">Delta Chat chce uložiť obrázky do vašej knižnice fotografií.</string>
+    <string name="pref_background_notifications_rationale">Ak chcete zachovať pripojenie k svojmu e-mailovému serveru a prijímať správy na pozadí, v ďalšom kroku ignorujte optimalizáciu batérie. \n\nDelta Chat využíva málo zdrojov a dbá na to, aby sa batéria nevybíjala.</string>
     <!-- disabling "Reliable service" will hide a the maybe annoying permanent-notification with the drawback that new-message-notifications get potentially unreliable -->
-    <string name="perm_enable_bg_reminder_title">Klepnutím sem prijmete správy, zatiaľ čo je Arcane Chat na pozadí.</string>
-    <string name="perm_enable_bg_already_done">Službe Arcane Chat ste už povolili príjem správ na pozadí.\n\nAk správy stále neprichádzajú na pozadí, skontrolujte tiež svoje systémové nastavenia.</string>
+    <string name="perm_enable_bg_reminder_title">Klepnutím sem prijmete správy, zatiaľ čo je Delta Chat na pozadí.</string>
+    <string name="perm_enable_bg_already_done">Službe Delta Chat ste už povolili príjem správ na pozadí.\n\nAk správy stále neprichádzajú na pozadí, skontrolujte tiež svoje systémové nastavenia.</string>
 
     </resources>
