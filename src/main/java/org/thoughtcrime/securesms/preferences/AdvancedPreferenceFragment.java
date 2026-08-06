@@ -3,6 +3,7 @@ package org.thoughtcrime.securesms.preferences;
 import static android.app.Activity.RESULT_OK;
 import static android.text.InputType.TYPE_TEXT_VARIATION_URI;
 import static org.thoughtcrime.securesms.connect.DcHelper.CONFIG_BCC_SELF;
+import static org.thoughtcrime.securesms.connect.DcHelper.CONFIG_KEY_GEN_MODE;
 import static org.thoughtcrime.securesms.connect.DcHelper.CONFIG_STATS_SENDING;
 
 import android.content.Context;
@@ -43,6 +44,7 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
 
   CheckBoxPreference selfReportingCheckbox;
   CheckBoxPreference multiDeviceCheckbox;
+  CheckBoxPreference pqcKeysCheckbox;
   private ActivityResultLauncher<Intent> screenLockLauncher;
 
   @Override
@@ -57,6 +59,31 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
                 openRelayListActivity();
               }
             });
+
+    pqcKeysCheckbox = (CheckBoxPreference) this.findPreference("pref_pqc_keys");
+    if (pqcKeysCheckbox != null) {
+      pqcKeysCheckbox.setOnPreferenceChangeListener(
+          (preference, newValue) -> {
+            boolean enablePqc = (Boolean) newValue;
+            int newMode = enablePqc ? 1 : 0;
+            String confirmMsg = enablePqc
+                ? getString(R.string.pref_pqc_keys_confirm_msg)
+                : getString(R.string.pref_pqc_keys_classic_confirm_msg);
+            new AlertDialog.Builder(requireContext())
+                .setTitle(R.string.pref_pqc_keys_confirm_title)
+                .setMessage(confirmMsg)
+                .setPositiveButton(
+                    R.string.ok,
+                    (dialogInterface, i) -> {
+                      dcContext.setConfigInt(CONFIG_KEY_GEN_MODE, newMode);
+                      ((CheckBoxPreference) preference).setChecked(enablePqc);
+                    })
+                .setNegativeButton(R.string.cancel, null)
+                .show();
+            // Return false; we set checked state manually after confirmation.
+            return false;
+          });
+    }
 
     multiDeviceCheckbox = (CheckBoxPreference) this.findPreference("pref_bcc_self");
     if (multiDeviceCheckbox != null) {
@@ -153,6 +180,9 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
 
     selfReportingCheckbox.setChecked(0 != dcContext.getConfigInt(CONFIG_STATS_SENDING));
     multiDeviceCheckbox.setChecked(0 != dcContext.getConfigInt(CONFIG_BCC_SELF));
+    if (pqcKeysCheckbox != null) {
+      pqcKeysCheckbox.setChecked(1 == dcContext.getConfigInt(CONFIG_KEY_GEN_MODE));
+    }
   }
 
   protected File copyToCacheDir(Uri uri) throws IOException {

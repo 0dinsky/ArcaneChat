@@ -810,6 +810,12 @@
     <string name="pref_sound">Sound</string>
     <string name="pref_silent">Silent</string>
     <string name="pref_privacy">Privacy</string>
+    <string name="pref_security">Encryption &amp; Keys</string>
+    <string name="pref_pqc_keys">Post-Quantum Keys</string>
+    <string name="pref_pqc_keys_explain">Generate new keys using post-quantum cryptography (ML-KEM-768 + X25519 hybrid). Messages remain readable by contacts without post-quantum support. Takes effect after key regeneration.</string>
+    <string name="pref_pqc_keys_confirm_title">Regenerate Encryption Keys?</string>
+    <string name="pref_pqc_keys_confirm_msg">Your current key will be replaced with a new post-quantum key. Contacts will automatically use your new key for future messages. Continue?</string>
+    <string name="pref_pqc_keys_classic_confirm_msg">Your current key will be replaced with a new classic key. Contacts will automatically use your new key for future messages. Continue?</string>
     <string name="pref_system_default">System default</string>
     <!-- Translators: as in "opposite of dark" -->
     <string name="pref_light_theme">Light</string>
