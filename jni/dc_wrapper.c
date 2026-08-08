@@ -853,6 +853,23 @@ JNIEXPORT jstring Java_com_b44t_messenger_DcContext_getConfig(JNIEnv *env, jobje
 }
 
 
+/* DcContext - post-quantum encryption */
+
+JNIEXPORT jboolean Java_com_b44t_messenger_DcContext_rotateKeypairNow(JNIEnv *env, jobject obj)
+{
+    return (jboolean)dc_rotate_keypair_now(get_dc_context(env, obj));
+}
+
+
+JNIEXPORT jstring Java_com_b44t_messenger_DcContext_getSelfEncryptionKind(JNIEnv *env, jobject obj)
+{
+    char* temp = dc_get_self_encryption_kind(get_dc_context(env, obj));
+        jstring ret = JSTRING_NEW(temp);
+    dc_str_unref(temp);
+    return ret;
+}
+
+
 /* DcContext - out-of-band verification */
 
 JNIEXPORT jlong Java_com_b44t_messenger_DcContext_checkQrCPtr(JNIEnv *env, jobject obj, jstring qr)

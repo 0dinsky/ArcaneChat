@@ -831,6 +831,15 @@
     <string name="pref_server">Server</string>
     <string name="pref_encryption">Encryption</string>
     <string name="pref_manage_keys">Manage Keys</string>
+    <string name="pref_post_quantum_encryption">Post-Quantum Encryption</string>
+    <string name="pref_post_quantum_encryption_explain">Generate new keys using a hybrid classic + post-quantum algorithm (ML-KEM-768+X25519). Applies to keys generated from now on; use "Regenerate Keys Now" to switch immediately. Compatible with contacts using classic Delta Chat clients.</string>
+    <string name="pref_rotate_keypair_now">Regenerate Keys Now</string>
+    <string name="pref_rotate_keypair_now_explain_classic">Your key: Classic (ECDH/X25519)</string>
+    <string name="pref_rotate_keypair_now_explain_pq">Your key: Post-quantum (ML-KEM-768+X25519)</string>
+    <string name="pref_rotate_keypair_now_confirm_title">Regenerate keys now?</string>
+    <string name="pref_rotate_keypair_now_confirm_message">This creates a new keypair for this account right now, using the encryption type selected above. Contacts who have verified this account will need to verify it again. This cannot be undone.</string>
+    <string name="pref_rotate_keypair_now_success">New keypair generated.</string>
+    <string name="pref_rotate_keypair_now_failed">Could not generate a new keypair.</string>
     <string name="pref_chats">Chats</string>
     <string name="pref_in_chat_sounds">In-Chat Sounds</string>
     <string name="pref_view_log">View Log</string>

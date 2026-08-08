@@ -3,6 +3,7 @@ package org.thoughtcrime.securesms.preferences;
 import static android.app.Activity.RESULT_OK;
 import static android.text.InputType.TYPE_TEXT_VARIATION_URI;
 import static org.thoughtcrime.securesms.connect.DcHelper.CONFIG_BCC_SELF;
+import static org.thoughtcrime.securesms.connect.DcHelper.CONFIG_KEY_GEN_MODE;
 import static org.thoughtcrime.securesms.connect.DcHelper.CONFIG_STATS_SENDING;
 
 import android.content.Context;
@@ -13,6 +14,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
@@ -43,6 +45,8 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
 
   CheckBoxPreference selfReportingCheckbox;
   CheckBoxPreference multiDeviceCheckbox;
+  CheckBoxPreference postQuantumCheckbox;
+  Preference rotateKeypairButton;
   private ActivityResultLauncher<Intent> screenLockLauncher;
 
   @Override
@@ -112,6 +116,21 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
           });
     }
 
+    postQuantumCheckbox = this.findPreference("pref_post_quantum_encryption");
+    if (postQuantumCheckbox != null) {
+      postQuantumCheckbox.setOnPreferenceChangeListener(
+          (preference, newValue) -> {
+            boolean enabled = (Boolean) newValue;
+            dcContext.setConfigInt(CONFIG_KEY_GEN_MODE, enabled ? 1 : 0);
+            return true;
+          });
+    }
+
+    rotateKeypairButton = this.findPreference("pref_rotate_keypair_now");
+    if (rotateKeypairButton != null) {
+      rotateKeypairButton.setOnPreferenceClickListener(new RotateKeypairListener());
+    }
+
     Preference proxySettings = this.findPreference("proxy_settings_button");
     if (proxySettings != null) {
       proxySettings.setOnPreferenceClickListener(
@@ -153,6 +172,24 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
 
     selfReportingCheckbox.setChecked(0 != dcContext.getConfigInt(CONFIG_STATS_SENDING));
     multiDeviceCheckbox.setChecked(0 != dcContext.getConfigInt(CONFIG_BCC_SELF));
+    if (postQuantumCheckbox != null) {
+      postQuantumCheckbox.setChecked(0 != dcContext.getConfigInt(CONFIG_KEY_GEN_MODE));
+    }
+    updateRotateKeypairSummary();
+  }
+
+  private void updateRotateKeypairSummary() {
+    if (rotateKeypairButton == null) {
+      return;
+    }
+    String kind = dcContext.getSelfEncryptionKind();
+    if ("pq".equals(kind)) {
+      rotateKeypairButton.setSummary(R.string.pref_rotate_keypair_now_explain_pq);
+    } else if ("classic".equals(kind)) {
+      rotateKeypairButton.setSummary(R.string.pref_rotate_keypair_now_explain_classic);
+    } else {
+      rotateKeypairButton.setSummary(null);
+    }
   }
 
   protected File copyToCacheDir(Uri uri) throws IOException {
@@ -177,6 +214,46 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
     } catch (PackageManager.NameNotFoundException e) {
       Log.w(TAG, e);
       return context.getString(R.string.app_name);
+    }
+  }
+
+  private class RotateKeypairListener implements Preference.OnPreferenceClickListener {
+    @Override
+    public boolean onPreferenceClick(@NonNull Preference preference) {
+      new AlertDialog.Builder(requireContext())
+          .setTitle(R.string.pref_rotate_keypair_now_confirm_title)
+          .setMessage(R.string.pref_rotate_keypair_now_confirm_message)
+          .setPositiveButton(
+              R.string.ok,
+              (dialogInterface, i) -> {
+                Context appContext = requireActivity().getApplicationContext();
+                new Thread(
+                        () -> {
+                          boolean success = dcContext.rotateKeypairNow();
+                          if (!isAdded()) {
+                            return;
+                          }
+                          requireActivity()
+                              .runOnUiThread(
+                                  () -> {
+                                    if (!isAdded()) {
+                                      return;
+                                    }
+                                    Toast.makeText(
+                                            appContext,
+                                            success
+                                                ? R.string.pref_rotate_keypair_now_success
+                                                : R.string.pref_rotate_keypair_now_failed,
+                                            Toast.LENGTH_SHORT)
+                                        .show();
+                                    updateRotateKeypairSummary();
+                                  });
+                        })
+                    .start();
+              })
+          .setNegativeButton(R.string.cancel, null)
+          .show();
+      return true;
     }
   }
 

@@ -61,6 +61,7 @@ public class DcHelper {
   public static final String CONFIG_STATS_SENDING = "stats_sending";
   public static final String CONFIG_STATS_ID = "stats_id";
   public static final String CONFIG_FORCE_ENCRYPTION = "force_encryption";
+  public static final String CONFIG_KEY_GEN_MODE = "key_gen_mode";
 
   public static DcContext getContext(@NonNull Context context) {
     return ApplicationContext.getInstance(context).getDcContext();

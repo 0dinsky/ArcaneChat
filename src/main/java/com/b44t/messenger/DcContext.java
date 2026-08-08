@@ -171,6 +171,27 @@ public class DcContext {
     return defValue;
   }
 
+  /**
+   * Immediately generates a fresh keypair (honoring the current
+   * "key_gen_mode" config value, e.g. post-quantum if enabled) and makes it
+   * the active key, without waiting for "key_rotation_period" to elapse.
+   * Call this right after changing "key_gen_mode" if the change should
+   * apply to this account right away.
+   *
+   * Note: like any key rotation, this changes the account's fingerprint —
+   * contacts who verified this account will need to re-verify.
+   *
+   * @return true on success, false on failure.
+   */
+  public native boolean rotateKeypairNow();
+
+  /**
+   * Returns which algorithm family this account's own current encryption
+   * key uses: "classic", "pq" (post-quantum hybrid), or "" if there is no
+   * key yet or it could not be determined.
+   */
+  public native String getSelfEncryptionKind();
+
   public native String getInfo();
 
   public native int getConnectivity();
