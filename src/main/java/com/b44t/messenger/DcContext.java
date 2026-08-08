@@ -329,11 +329,6 @@ public class DcContext {
 
   public native boolean isSendingLocationsToChat(int chat_id);
 
-  public DcProvider getProviderFromEmailWithDns(String email) {
-    long cptr = getProviderFromEmailWithDnsCPtr(email);
-    return cptr != 0 ? new DcProvider(cptr) : null;
-  }
-
   public boolean isEnabled() {
     return !"0".equals(getConfig(CONFIG_ACCOUNT_ENABLED));
   }
