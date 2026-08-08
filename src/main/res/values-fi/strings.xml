@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- common strings without special context -->
-    <string name="app_name">Arcane Chat</string>
+    <string name="app_name">Delta Chat</string>
     <string name="ok">OK</string>
     <string name="cancel">Peruuta</string>
     <string name="clear_search">Tyhjennä haku</string>
@@ -42,7 +42,7 @@
     <!-- Verb "to mute". used to mute a chat, so that it is silenced e.g. does not make noise or cause notifications -->
     <string name="mute">Mykistä</string>
     <string name="ephemeral_messages">Katoavat viestit</string>
-    <string name="ephemeral_messages_hint">Nämä asetukset pätevät kaikkiin Arcane Chat -käyttäjiin. He voivat kuitenkin kopioida, tallentaa ja välittää viestejä tai käyttää toisia sähköpostisovelluksia.</string>
+    <string name="ephemeral_messages_hint">Nämä asetukset pätevät kaikkiin Delta Chat -käyttäjiin. He voivat kuitenkin kopioida, tallentaa ja välittää viestejä tai käyttää toisia sähköpostisovelluksia.</string>
     <string name="save">Tallenna</string>
     <string name="chat">Keskustelu</string>
     <string name="media">Media</string>
@@ -268,7 +268,7 @@
     <string name="title_share_location">Jaa sijainti kaikille ryhmän jäsenille</string>
     <string name="device_talk">Laitteen viestit</string>
     <string name="device_talk_subtitle">Paikallisesti luodut viestit</string>
-    <string name="device_talk_explain">Viestit tässä keskustelussa luodaan paikallisesti Arcane Chat -sovelluksessa. Kehittäjät ilmoittavat niiden avulla sovelluksen päivityksistä ja mahdollisista ongelmista.</string>
+    <string name="device_talk_explain">Viestit tässä keskustelussa luodaan paikallisesti Delta Chat -sovelluksessa. Kehittäjät ilmoittavat niiden avulla sovelluksen päivityksistä ja mahdollisista ongelmista.</string>
     <string name="device_talk_welcome_message2">Aloita keskustelu!\n\n🙌 Täppää \"QR koodi\" päänäkymässä molemmilla laitteilla. Valitse \"Skannaa QR koodi\" toisella laitteella, ja osoita sillä toista\n\n🌍 Jos ette ole samassa huoneessa, skannaa vaikkapa videopuhelun yli tai jaa kutsulinkki \"Skannaa QR koodi\" -sivulta\n\nSitten voit nauttia pikaviestittelystä suurimmassa hajautetussa sosiaalisessa verkostossa mitä on koskaan ollut olemassa: eli sähköpostissa. Kontrastina toisiin suosittuihin sovelluksiin, ilman keskitettyä tahoa kontrolloimassa, keräämässä massadataa tai myymässä sinua, ystäviäsi, kollegojasi tai perhettäsi suurille organisaatioille.</string>
     <string name="edit_contact">Muokkaa yhteystietoa</string>
     <!-- Verb "to pin", making something sticky, not a noun or abbreviation for "pin number". -->
@@ -343,7 +343,7 @@
         <item quantity="other">%d uutta viestiä</item>
     </plurals>
     <!-- The placeholder will be replaced by the name of the recipient in a one-to-one chat. -->
-    <string name="chat_new_one_to_one_hint">Lähetä viesti. Ei haittaa, vaikka %1$s ei käyttäisi Arcane Chatia.</string>
+    <string name="chat_new_one_to_one_hint">Lähetä viesti. Ei haittaa, vaikka %1$s ei käyttäisi Delta Chatia.</string>
     <string name="chat_new_group_hint">Muut näkevät ryhmän vasta, kun lähetät ensimmäisen viestin.</string>
     <string name="chat_record_slide_to_cancel">Pyyhkäise peruuttaaksesi</string>
     <string name="chat_record_explain">Pidä painettuna nauhoittaaksesi ääniviestin, irrota lähettääksesi</string>
@@ -433,9 +433,9 @@
     <string name="multidevice_title">Lisää toinen laite</string>
     <string name="multidevice_same_network_hint">Varmista että molemmat laitteet ovat samassa Wi-Fi verkossa</string>
     <string name="multidevice_this_creates_a_qr_code">Tämä luo QR koodin, jolla toinen laite saa ladattua kopion profiilista.</string>
-    <string name="multidevice_install_dc_on_other_device">Lataa Arcane Chat toiselle laitteellesi (https://get.delta.chat)</string>
+    <string name="multidevice_install_dc_on_other_device">Lataa Delta Chat toiselle laitteellesi (https://get.delta.chat)</string>
     <!-- "I Already Have a Profile / Add as Second Device” should be the same text as defined by the keys onboarding_alternative_logins and multidevice_receiver_title -->
-    <string name="multidevice_tap_scan_on_other_device">Avaa Arcane Chat, valitse \"Minulla on jo profiili / Lisää toiseksi laitteeksi\" ja skannaa täällä näkyvä koodi</string>
+    <string name="multidevice_tap_scan_on_other_device">Avaa Delta Chat, valitse \"Minulla on jo profiili / Lisää toiseksi laitteeksi\" ja skannaa täällä näkyvä koodi</string>
     <!-- Shown inside a "QR code card" with very limited space; please formulate the text as short as possible therefore. The placeholder will be replaced by the profile name eg. "Scan to set up second device for Alice" -->
     <string name="multidevice_qr_subtitle">Lisää toiseksi laitteeksi profiilille %1$s</string>
     <string name="multidevice_receiver_title">Lisää toiseksi laitteeksi</string>
@@ -641,7 +641,7 @@
     <string name="profile_image_delete">Poista profiilikuva</string>
     <string name="pref_show_tray_icon">Näytä työkalupalkin kuvake</string>
     <string name="pref_edit_profile">Muokkaa profiilia</string>
-    <string name="send_stats_to_devs">Lähetä tilastotietoja Arcane Chatin kehittäjille</string>
+    <string name="send_stats_to_devs">Lähetä tilastotietoja Delta Chatin kehittäjille</string>
     <!-- Emoji picker and categories -->
     <string name="emoji_search_results">Hakutulokset</string>
     <string name="emoji_not_found">Emojeja ei löytynyt</string>
@@ -672,9 +672,9 @@
     <!-- %1$d will be replaced by the number of messages, you can assume plural/lots here. %2$s will be replaced by a timespan option. -->
     <string name="autodel_device_ask">Haluatko poistaa %1$d viestiä heti ja kaikki uudet viestit \"%2$s\" jatkossa?\n\n• Tämä sisältää kaiken median\n\n• Viestit poistetaan riippumatta siitä onko ne nähty vai ei\n\n• \"Tallennetut viestit\" jätetään paikalliselle laitteelle</string>
     <!-- deprecated -->
-    <string name="autodel_server_ask">Haluatko poistaa %1$d viestiä heti ja kaikki uudet viestit \"%2$s\" jatkossa?\n\n⚠️ Tämä sisältää sähköpostiviestit, median ja kaikki \"Tallennetut viestit\" kaikissa palvelimen kansioissa\n\n⚠️ Älä käytä tätä toimintoa, jos haluat säilyttää tiedot palvelimella\n\n⚠️ Älä käytä tätä toimintoa, jos käytät muita sähköpostisovelluksia Arcane Chatin lisäksi</string>
+    <string name="autodel_server_ask">Haluatko poistaa %1$d viestiä heti ja kaikki uudet viestit \"%2$s\" jatkossa?\n\n⚠️ Tämä sisältää sähköpostiviestit, median ja kaikki \"Tallennetut viestit\" kaikissa palvelimen kansioissa\n\n⚠️ Älä käytä tätä toimintoa, jos haluat säilyttää tiedot palvelimella\n\n⚠️ Älä käytä tätä toimintoa, jos käytät muita sähköpostisovelluksia Delta Chatin lisäksi</string>
     <!-- deprecated -->
-    <string name="autodel_server_enabled_hint">Tämä sisältää sähköpostit, median ja \"Tallennetut viestit\" kaikissa palvelimen kansioissa. Älä käytä tätä toimintoa, jos haluat pitää tietosi palvelimella tai jos käytät muita sähköpostisovelluksia Arcane Chatin lisäksi.</string>
+    <string name="autodel_server_enabled_hint">Tämä sisältää sähköpostit, median ja \"Tallennetut viestit\" kaikissa palvelimen kansioissa. Älä käytä tätä toimintoa, jos haluat pitää tietosi palvelimella tai jos käytät muita sähköpostisovelluksia Delta Chatin lisäksi.</string>
     <string name="autodel_confirm">Ymmärrän, poista kaikki nämä viestit</string>
     <!-- "At once" in the meaning of "Immediately", without any intervening time. -->
     <string name="autodel_at_once">Heti</string>
@@ -758,7 +758,7 @@
     <string name="devicemsg_storage_exceeding">⚠️ Palveluntarjoajasi tallennuskiintiö ylitetään pian, käytössä on jo %1$s / %%.\n\nEt välttämättä enää voi vastaanottaa viestejäsi, kun 100 %% on käytössä.\n\n👉 Kokeile poistaa viestejä palveluntarjoajasi internetkäyttöliittymästä. Kannattaa myös ehkä kytkeä päälle \"Asetukset / Poista vanhat viestit\". Voit tarkistaa tämän hetkisen tallennustilan käytön \"Asetukset / Yhteys\".</string>
     <!-- %1%s will be replaced by date and time in some human-readable format -->
     <string name="devicemsg_bad_time">⚠️ Laitteesi päivämäärä tai aika vaikuttaa olevan väärässä (%1$s).\n\nAseta kellonaika ⏰🔧 varmistaaksesi, että viestin vastaanottaminen onnistuu.</string>
-    <string name="devicemsg_update_reminder">⚠️ Arcane Chat -versio saattaa olla vanhentunut.\n\nTämä saattaa aiheuttaa ongelmia, koska muut käyttävät uudempia versioita - ja saatat jäädä paitsi uusista ominaisuuksista. 😳\nTarkista uudet päivitykset sovelluskaupastasi tai https://get.delta.chat</string>
+    <string name="devicemsg_update_reminder">⚠️ Delta Chat -versio saattaa olla vanhentunut.\n\nTämä saattaa aiheuttaa ongelmia, koska muut käyttävät uudempia versioita - ja saatat jäädä paitsi uusista ominaisuuksista. 😳\nTarkista uudet päivitykset sovelluskaupastasi tai https://get.delta.chat</string>
 
     <!-- Some options as "Add Second Device" or "Backup" may require the system PIN/Fingerprint/Gesture/Etc. to be entered in a system dialog. This hint is added to the system dialog, below a title as "Add Second Device" or "Backup". -->
     <string name="enter_system_secret_to_continue">Avaa lukitus jatkaaksesi</string>
@@ -834,7 +834,7 @@
     <string name="perm_explain_access_to_mic_denied">Lähettääksesi ääniviestin mene sovelluksen asetuksiin, valitse \"Käyttöluvat\" ja kytke päälle \"Mikrofoni\".</string>
     <string name="perm_explain_access_to_storage_denied">Lähettääksesi tai vastaanottaaksesi tiedostoja mene sovelluksen asetuksiin, valitse \"Käyttöluvat\" ja kytke päälle \"Tallennustila\".</string>
     <string name="perm_explain_access_to_location_denied">Jakaaksesi sijaintisi mene sovelluksen asetuksiin, valitse \"Käyttöluvat\" ja kytke päälle \"Sijainti\".</string>
-    <string name="perm_explain_access_to_notifications_denied">Voit ottaa \"Ilmoitukset\" käyttöön navigoimalla kohteeseen \"Järjestelmäasetukset / Sovellukset / Arcane Chat\"</string>
+    <string name="perm_explain_access_to_notifications_denied">Voit ottaa \"Ilmoitukset\" käyttöön navigoimalla kohteeseen \"Järjestelmäasetukset / Sovellukset / Delta Chat\"</string>
 
     <!-- ImageEditorHud -->
     <string name="ImageEditorHud_draw_anywhere_to_blur">Piirrää sumentaaksesi</string>
@@ -846,7 +846,7 @@
     <string name="ImageEditorHud_flip">Käännä</string>
     <string name="ImageEditorHud_rotate">Pyöritä</string>
 
-    <string name="welcome_desktop">Tervetuloa Arcane Chatiin</string>
+    <string name="welcome_desktop">Tervetuloa Delta Chatiin</string>
     <string name="global_menu_preferences_language_desktop">Kieli</string>
     <string name="global_menu_file_desktop">Tiedosto</string>
     <string name="global_menu_file_quit_desktop">Sulje</string>
@@ -862,8 +862,8 @@
     <string name="global_menu_view_developer_tools_desktop">Kehittäjätyökalut</string>
     <string name="global_menu_help_desktop">Ohje</string>
     <string name="global_menu_help_report_desktop">Ilmoita ongelma</string>
-    <string name="global_menu_help_about_desktop">Tietoja Arcane Chatista</string>
-    <string name="global_menu_file_open_desktop">Avaa Arcane Chat</string>
+    <string name="global_menu_help_about_desktop">Tietoja Delta Chatista</string>
+    <string name="global_menu_file_open_desktop">Avaa Delta Chat</string>
     <string name="global_menu_minimize_to_tray">Pienennä</string>
     <string name="no_chat_selected_suggestion_desktop">Valitse tai luo keskustelu</string>
     <string name="write_message_desktop">Kirjoita viesti</string>
@@ -880,7 +880,7 @@
     <string name="message_detail_received_desktop">vastaanotettu</string>
     <string name="menu.view.developer.open.log.folder">Avaa lokikansio</string>
     <string name="menu.view.developer.open.current.log.file">Avaa nykyinen lokitiedosto</string>
-    <string name="explain_desktop_minimized_disabled_tray_pref" tools:ignore="TypographyDashes">Työkalupalkin kuvaketta ei voida poistaa, koska Arcane Chat käynnistettiin \"Käynnistä pienennettynä\" -valinnalla.</string>
+    <string name="explain_desktop_minimized_disabled_tray_pref" tools:ignore="TypographyDashes">Työkalupalkin kuvaketta ei voida poistaa, koska Delta Chat käynnistettiin \"Käynnistä pienennettynä\" -valinnalla.</string>
     <!-- deprecated, used on desktop although there is not spell checker -->
     <string name="no_spellcheck_suggestions_found">Oikeinkirjoitusehdotusta ei löydy.</string>
     <string name="show_window">Näytä ikkuna</string>
@@ -919,19 +919,19 @@
     <string name="import_device_contacts">Tuo laitteen yhteystiedot</string>
     <string name="import_device_contacts_hint">Avaa asetukset ja kytke päälle \"Yhteystiedot\" viestiäksesi laitteen yhteystietojen kanssa.</string>
     <!-- iOS notification settings -->
-    <string name="disabled_in_dc">Kytketty pois Arcane Chatissa</string>
+    <string name="disabled_in_dc">Kytketty pois Delta Chatissa</string>
     <string name="disabled_in_system_settings">Kytketty pois järjestelmäasetuksissa</string>
     <string name="bg_app_refresh_disabled">Taustasovelluksen päivitys kytketty pois järjestelmäasetuksissa</string>
     <string name="notifications_avg_minutes">Keskimäärin%1$d minuutin välein</string>
     <string name="notifications_avg_hours">Keskimäärin %1$d tunnin välein</string>
     <string name="last_check_at">Tarkistettu %1$s</string>
     <!-- iOS permissions, copy from "deltachat-ios/Info.plist", which is used on missing translations in "deltachat-ios/LANG.lproj/InfoPlist.strings" -->
-    <string name="InfoPlist_NSCameraUsageDescription">Arcane Chat käyttää kameraa kuvien ja videoiden kuvaamiseen ja lähettämiseen sekä QR-koodien skannaamiseen.</string>
-    <string name="InfoPlist_NSLocationAlwaysAndWhenInUseUsageDescription">Arcane Chat tarvitsee oikeuden sijainnin tarkasteluun jakaakseen sijaintisi sallimallasi aikavälillä.</string>
-    <string name="InfoPlist_NSLocationWhenInUseUsageDescription">Arcane Chat tarvitsee oikeuden sijainnin tarkasteluun jakaakseen sijaintisi sallimallasi aikavälillä.</string>
-    <string name="InfoPlist_NSMicrophoneUsageDescription">Arcane Chat käyttää mikrofonia ääniviestien ja äänellisten videoiden tallentamiseen ja lähettämiseen.</string>
-    <string name="InfoPlist_NSPhotoLibraryUsageDescription">Arcane Chat antaa sinun valita, mitkä kuvat kirjastostasi haluat lähettää.</string>
-    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">Arcane Chat haluaa tallentaa kuvia kirjastoosi.</string>
+    <string name="InfoPlist_NSCameraUsageDescription">Delta Chat käyttää kameraa kuvien ja videoiden kuvaamiseen ja lähettämiseen sekä QR-koodien skannaamiseen.</string>
+    <string name="InfoPlist_NSLocationAlwaysAndWhenInUseUsageDescription">Delta Chat tarvitsee oikeuden sijainnin tarkasteluun jakaakseen sijaintisi sallimallasi aikavälillä.</string>
+    <string name="InfoPlist_NSLocationWhenInUseUsageDescription">Delta Chat tarvitsee oikeuden sijainnin tarkasteluun jakaakseen sijaintisi sallimallasi aikavälillä.</string>
+    <string name="InfoPlist_NSMicrophoneUsageDescription">Delta Chat käyttää mikrofonia ääniviestien ja äänellisten videoiden tallentamiseen ja lähettämiseen.</string>
+    <string name="InfoPlist_NSPhotoLibraryUsageDescription">Delta Chat antaa sinun valita, mitkä kuvat kirjastostasi haluat lähettää.</string>
+    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">Delta Chat haluaa tallentaa kuvia kirjastoosi.</string>
     <!-- android specific strings, developers: please take care to remove strings that are no longer used! -->
     <string name="pref_instant_delivery">Välitön toimitus</string>
     <string name="pref_background_notifications">Käytä taustayhteyttä</string>
@@ -939,9 +939,9 @@
     <string name="pref_reliable_service">Pakota yhteys taustalla</string>
     <string name="pref_reliable_service_explain">Aiheuttaa pysyvän ilmoituksen</string>
 
-    <string name="pref_background_notifications_rationale">Yhteyden ylläpitämiseksi sähköpostipalvelimen kanssa ja viestien vastaanottamiseksi taustalla, poista akun käytön optimointi käytöstä seuraavassa vaiheessa.\n\nArcane Chat käyttää vain vähän laitteen suorituskyvystä, eikä juurikaan kuluta akkua.</string>
+    <string name="pref_background_notifications_rationale">Yhteyden ylläpitämiseksi sähköpostipalvelimen kanssa ja viestien vastaanottamiseksi taustalla, poista akun käytön optimointi käytöstä seuraavassa vaiheessa.\n\nDelta Chat käyttää vain vähän laitteen suorituskyvystä, eikä juurikaan kuluta akkua.</string>
     <!-- disabling "Reliable service" will hide a the maybe annoying permanent-notification with the drawback that new-message-notifications get potentially unreliable -->
-    <string name="perm_enable_bg_reminder_title">Napauta vastaanottaaksesi viestejä, kun Arcane Chat on taustalla.</string>
+    <string name="perm_enable_bg_reminder_title">Napauta vastaanottaaksesi viestejä, kun Delta Chat on taustalla.</string>
     <string name="perm_enable_bg_already_done">Annoit jo luvan viestien vastaanottamiselle taustalla.\n\nJos et saa viestejä taustalla, tarkista myös järjestelmäasetukset.</string>
 
     </resources>

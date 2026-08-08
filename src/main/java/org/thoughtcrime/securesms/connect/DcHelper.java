@@ -62,17 +62,6 @@ public class DcHelper {
   public static final String CONFIG_STATS_ID = "stats_id";
   public static final String CONFIG_FORCE_ENCRYPTION = "force_encryption";
 
-  /**
-   * Key generation mode.
-   *
-   * 0 (default) — Classic: Ed25519 + Curve25519 ECDH (OpenPGP v4, maximum compatibility)
-   * 1           — Post-quantum hybrid: v6 Ed25519 + ML-KEM-768+X25519 (backward-compatible PQC)
-   *
-   * Changing the mode only affects the *next* key generation.
-   * Existing keys are not replaced automatically.
-   */
-  public static final String CONFIG_KEY_GEN_MODE = "key_gen_mode";
-
   public static DcContext getContext(@NonNull Context context) {
     return ApplicationContext.getInstance(context).getDcContext();
   }
@@ -577,7 +566,7 @@ public class DcHelper {
       if (lastError != null && !lastError.isEmpty()) {
         Log.w(TAG, "Opening account failed, trying to share error: " + lastError);
 
-        String subject = "Arcane Chat failed to update";
+        String subject = "Delta Chat failed to update";
         String email = "delta@merlinux.eu";
 
         new AlertDialog.Builder(context)

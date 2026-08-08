@@ -4,6 +4,6 @@
     tools:ignore="MissingTranslation">
 
     <!-- device messages for updates -->
-    <string name="device_welcome_message">🔮 Bienvenue sur Arcane Chat ✨\n\nPour vous connecter avec vos amis:\n\n🤳🏻Appuyez sur «Code QR» sur l’écran d’accueil des deux appareils. Sélectionnez «Scanner le code QR» sur un appareil et pointez l’appareil photo vers l’autre.\n\n🔗 Si vous n’êtes pas dans la même pièce, partagez votre lien d’invitation via «Inviter des amis» dans le menu.\n\n📢Rejoignez le [Chaîne officielle Arcane Chat](%1$s) (en anglais) pour suivre l’actualité du développement de l’application.</string>
+    <string name="device_welcome_message">🔮 Bienvenue sur ArcaneChat ✨\n\nPour vous connecter avec vos amis:\n\n🤳🏻Appuyez sur «Code QR» sur l’écran d’accueil des deux appareils. Sélectionnez «Scanner le code QR» sur un appareil et pointez l’appareil photo vers l’autre.\n\n🔗 Si vous n’êtes pas dans la même pièce, partagez votre lien d’invitation via «Inviter des amis» dans le menu.\n\n📢Rejoignez le [Chaîne officielle ArcaneChat](%1$s) (en anglais) pour suivre l’actualité du développement de l’application.</string>
 
 </resources>

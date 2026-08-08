@@ -1153,16 +1153,16 @@ JNIEXPORT jlong Java_com_b44t_messenger_DcChatlist_getChatCPtr(JNIEnv *env, jobj
 }
 
 
-JNIEXPORT jint Java_com_b44t_messenger_DcChatlist_getMsgId(JNIEnv *env, jobject obj, jint index)
-{
-    return dc_chatlist_get_msg_id(get_dc_chatlist(env, obj), index);
-}
-
-
 JNIEXPORT jlong Java_com_b44t_messenger_DcChatlist_getMsgCPtr(JNIEnv *env, jobject obj, jint index)
 {
     dc_chatlist_t* chatlist = get_dc_chatlist(env, obj);
     return (jlong)dc_get_msg(dc_chatlist_get_context(chatlist), dc_chatlist_get_msg_id(chatlist, index));
+}
+
+
+JNIEXPORT jint Java_com_b44t_messenger_DcChatlist_getMsgId(JNIEnv *env, jobject obj, jint index)
+{
+    return dc_chatlist_get_msg_id(get_dc_chatlist(env, obj), index);
 }
 
 
