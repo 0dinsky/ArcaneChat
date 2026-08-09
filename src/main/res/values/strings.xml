@@ -837,13 +837,13 @@
     <string name="pref_rotate_keypair_now_explain_classic">Your key: Classic (Ed25519 / ECDH-X25519)</string>
     <string name="pref_rotate_keypair_now_explain_pq">Your key: Post-quantum (ML-DSA-65+Ed25519 / ML-KEM-768+X25519)</string>
     <string name="pref_rotate_keypair_now_confirm_title">Regenerate keys now?</string>
-    <string name="pref_rotate_keypair_now_confirm_message">This creates a new keypair for this account right now, using the encryption type selected above. Contacts who have verified this account will need to verify it again. This cannot be undone.</string>
+    <string name="pref_rotate_keypair_now_confirm_message">This creates a new keypair for this account right now, using the encryption type selected above. If you\'re switching between Classic and Post-Quantum, your fingerprint changes and contacts who verified this account will need to verify it again. Otherwise only the encryption subkey is rotated, your fingerprint stays the same, and no one needs to re-verify. This cannot be undone.</string>
     <string name="pref_rotate_keypair_now_success">New keypair generated.</string>
     <string name="pref_rotate_keypair_now_failed">Could not generate a new keypair.</string>
     <string name="pref_forward_secrecy">Forward Secrecy</string>
-    <string name="pref_forward_secrecy_explain">Automatically regenerate your keys every 60 days and permanently erase old ones after a short grace period. Limits the damage if a key is ever compromised: only messages sent since the last rotation are at risk, not your whole history. Contacts who verified you will need to verify again after each rotation.</string>
+    <string name="pref_forward_secrecy_explain">Automatically rotate your encryption subkey every 60 days and permanently erase the old one after the grace period below. Limits the damage if a key is ever compromised: only messages sent since the last rotation are at risk, not your whole history. Your fingerprint stays the same and contacts don\'t need to re-verify — unless you also switch between Classic and Post-Quantum, which does change the fingerprint.</string>
     <string name="pref_key_rotation_grace">Key erasure grace period</string>
-    <string name="pref_key_rotation_grace_explain">Days to keep a rotated-out secret key so in-flight messages can still be decrypted (1–14, default 2). Shorter = stronger forward secrecy; longer = more tolerance for slow email delivery.</string>
+    <string name="pref_key_rotation_grace_explain">Days to keep a rotated-out subkey\'s secret material so in-flight messages and other devices that haven\'t re-synced yet can still decrypt (7–90, default 30). Shorter = stronger forward secrecy but risks breaking multi-device; longer = safer for multi-device and slow email delivery.</string>
     <string name="pref_key_rotation_grace_dialog_title">Grace period (days)</string>
     <string name="pref_chats">Chats</string>
     <string name="pref_in_chat_sounds">In-Chat Sounds</string>

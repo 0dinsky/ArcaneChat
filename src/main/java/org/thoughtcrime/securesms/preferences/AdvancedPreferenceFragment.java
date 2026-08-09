@@ -47,8 +47,16 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
 
   /** Recommended key rotation period (see `Config::KeyRotationPeriod` docs: 30-60 days). */
   private static final int FORWARD_SECRECY_ROTATION_DAYS = 60;
-  /** Default grace days when user has not set a custom value. */
-  private static final int DEFAULT_GRACE_DAYS = 2;
+  /**
+   * Default grace days when user has not set a custom value, and the low/high ends of the
+   * allowed range. Must mirror the clamp enforced core-side by
+   * `Config::KeyRotationGraceDays` (`clamp_key_rotation_grace_days` in config.rs) — core is the
+   * source of truth and will silently re-clamp anything out of range, but keeping the UI in sync
+   * avoids a confusing "I typed 5 but it shows 7" round-trip.
+   */
+  private static final int DEFAULT_GRACE_DAYS = 30;
+  private static final int MIN_GRACE_DAYS = 7;
+  private static final int MAX_GRACE_DAYS = 90;
 
   CheckBoxPreference selfReportingCheckbox;
   CheckBoxPreference multiDeviceCheckbox;
@@ -243,8 +251,8 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
             (dialog, which) -> {
               try {
                 int days = Integer.parseInt(input.getText().toString().trim());
-                if (days < 1) days = 1;
-                if (days > 14) days = 14;
+                if (days < MIN_GRACE_DAYS) days = MIN_GRACE_DAYS;
+                if (days > MAX_GRACE_DAYS) days = MAX_GRACE_DAYS;
                 dcContext.setConfigInt(CONFIG_KEY_ROTATION_GRACE_DAYS, days);
                 updateGraceDaysSummary();
               } catch (NumberFormatException e) {

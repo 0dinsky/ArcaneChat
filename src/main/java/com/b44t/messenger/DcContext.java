@@ -178,8 +178,10 @@ public class DcContext {
    * Call this right after changing "key_gen_mode" if the change should
    * apply to this account right away.
    *
-   * Note: like any key rotation, this changes the account's fingerprint —
-   * contacts who verified this account will need to re-verify.
+   * Note: this only changes the account's fingerprint (requiring contacts
+   * who verified this account to re-verify) when switching between the
+   * classic and post-quantum primary key families. Otherwise only the
+   * encryption subkey is rotated and the fingerprint stays the same.
    *
    * @return true on success, false on failure.
    */
