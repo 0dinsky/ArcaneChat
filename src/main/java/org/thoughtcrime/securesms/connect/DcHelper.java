@@ -63,6 +63,7 @@ public class DcHelper {
   public static final String CONFIG_FORCE_ENCRYPTION = "force_encryption";
   public static final String CONFIG_KEY_GEN_MODE = "key_gen_mode";
   public static final String CONFIG_KEY_ROTATION_PERIOD = "key_rotation_period";
+  public static final String CONFIG_KEY_ROTATION_GRACE_DAYS = "key_rotation_grace_days";
 
   public static DcContext getContext(@NonNull Context context) {
     return ApplicationContext.getInstance(context).getDcContext();

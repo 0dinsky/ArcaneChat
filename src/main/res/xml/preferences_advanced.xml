@@ -39,6 +39,11 @@
             android:summary="@string/pref_forward_secrecy_explain" />
 
         <Preference
+            android:key="pref_key_rotation_grace"
+            android:title="@string/pref_key_rotation_grace"
+            android:summary="@string/pref_key_rotation_grace_explain" />
+
+        <Preference
             android:key="pref_rotate_keypair_now"
             android:title="@string/pref_rotate_keypair_now" />
 

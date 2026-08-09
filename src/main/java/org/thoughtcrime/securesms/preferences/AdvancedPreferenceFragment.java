@@ -4,6 +4,7 @@ import static android.app.Activity.RESULT_OK;
 import static android.text.InputType.TYPE_TEXT_VARIATION_URI;
 import static org.thoughtcrime.securesms.connect.DcHelper.CONFIG_BCC_SELF;
 import static org.thoughtcrime.securesms.connect.DcHelper.CONFIG_KEY_GEN_MODE;
+import static org.thoughtcrime.securesms.connect.DcHelper.CONFIG_KEY_ROTATION_GRACE_DAYS;
 import static org.thoughtcrime.securesms.connect.DcHelper.CONFIG_KEY_ROTATION_PERIOD;
 import static org.thoughtcrime.securesms.connect.DcHelper.CONFIG_STATS_SENDING;
 
@@ -44,13 +45,16 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
     implements DcEventCenter.DcEventDelegate {
   private static final String TAG = "AdvancedPreferenceFragment";
 
-  /** Recommended key rotation period (see `Config::KeyRotationPeriod` docs: 30-90 days). */
-  private static final int FORWARD_SECRECY_ROTATION_DAYS = 90;
+  /** Recommended key rotation period (see `Config::KeyRotationPeriod` docs: 30-60 days). */
+  private static final int FORWARD_SECRECY_ROTATION_DAYS = 60;
+  /** Default grace days when user has not set a custom value. */
+  private static final int DEFAULT_GRACE_DAYS = 2;
 
   CheckBoxPreference selfReportingCheckbox;
   CheckBoxPreference multiDeviceCheckbox;
   CheckBoxPreference postQuantumCheckbox;
   CheckBoxPreference forwardSecrecyCheckbox;
+  Preference keyRotationGraceButton;
   Preference rotateKeypairButton;
   private ActivityResultLauncher<Intent> screenLockLauncher;
 
@@ -147,6 +151,16 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
           });
     }
 
+    keyRotationGraceButton = this.findPreference("pref_key_rotation_grace");
+    if (keyRotationGraceButton != null) {
+      keyRotationGraceButton.setOnPreferenceClickListener(
+          preference -> {
+            showGraceDaysDialog();
+            return true;
+          });
+      updateGraceDaysSummary();
+    }
+
     Preference proxySettings = this.findPreference("proxy_settings_button");
     if (proxySettings != null) {
       proxySettings.setOnPreferenceClickListener(
@@ -194,7 +208,52 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
     if (forwardSecrecyCheckbox != null) {
       forwardSecrecyCheckbox.setChecked(0 != dcContext.getConfigInt(CONFIG_KEY_ROTATION_PERIOD));
     }
+    updateGraceDaysSummary();
     updateRotateKeypairSummary();
+  }
+
+  private void updateGraceDaysSummary() {
+    if (keyRotationGraceButton == null) {
+      return;
+    }
+    int days = dcContext.getConfigInt(CONFIG_KEY_ROTATION_GRACE_DAYS);
+    if (days <= 0) {
+      days = DEFAULT_GRACE_DAYS;
+    }
+    keyRotationGraceButton.setSummary(
+        getString(R.string.pref_key_rotation_grace_explain) + "\n(" + days + " days)");
+  }
+
+  private void showGraceDaysDialog() {
+    final EditText input = new EditText(requireContext());
+    input.setInputType(android.text.InputType.TYPE_CLASS_NUMBER);
+    int current = dcContext.getConfigInt(CONFIG_KEY_ROTATION_GRACE_DAYS);
+    if (current <= 0) {
+      current = DEFAULT_GRACE_DAYS;
+    }
+    input.setText(String.valueOf(current));
+    input.setSelection(input.getText().length());
+
+    new AlertDialog.Builder(requireContext())
+        .setTitle(R.string.pref_key_rotation_grace_dialog_title)
+        .setMessage(R.string.pref_key_rotation_grace_explain)
+        .setView(input)
+        .setPositiveButton(
+            android.R.string.ok,
+            (dialog, which) -> {
+              try {
+                int days = Integer.parseInt(input.getText().toString().trim());
+                if (days < 1) days = 1;
+                if (days > 14) days = 14;
+                dcContext.setConfigInt(CONFIG_KEY_ROTATION_GRACE_DAYS, days);
+                updateGraceDaysSummary();
+              } catch (NumberFormatException e) {
+                Toast.makeText(requireContext(), R.string.pref_rotate_keypair_now_failed, Toast.LENGTH_SHORT)
+                    .show();
+              }
+            })
+        .setNegativeButton(android.R.string.cancel, null)
+        .show();
   }
 
   private void updateRotateKeypairSummary() {

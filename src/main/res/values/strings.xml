@@ -832,16 +832,19 @@
     <string name="pref_encryption">Encryption</string>
     <string name="pref_manage_keys">Manage Keys</string>
     <string name="pref_post_quantum_encryption">Post-Quantum Encryption</string>
-    <string name="pref_post_quantum_encryption_explain">Generate new keys using a hybrid classic + post-quantum algorithm (ML-KEM-768+X25519). Applies to keys generated from now on; use "Regenerate Keys Now" to switch immediately. Compatible with contacts using classic Arcane Chat clients.</string>
+    <string name="pref_post_quantum_encryption_explain">Generate quantum-resistant keys: ML-DSA-65+Ed25519 signatures and ML-KEM-768+X25519 encryption. Applies to keys generated from now on; use “Regenerate Keys Now” to switch an existing account. Older clients can still encrypt to you (X25519 fallback) but cannot verify your PQ signatures.</string>
     <string name="pref_rotate_keypair_now">Regenerate Keys Now</string>
-    <string name="pref_rotate_keypair_now_explain_classic">Your key: Classic (ECDH/X25519)</string>
-    <string name="pref_rotate_keypair_now_explain_pq">Your key: Post-quantum (ML-KEM-768+X25519)</string>
+    <string name="pref_rotate_keypair_now_explain_classic">Your key: Classic (Ed25519 / ECDH-X25519)</string>
+    <string name="pref_rotate_keypair_now_explain_pq">Your key: Post-quantum (ML-DSA-65+Ed25519 / ML-KEM-768+X25519)</string>
     <string name="pref_rotate_keypair_now_confirm_title">Regenerate keys now?</string>
     <string name="pref_rotate_keypair_now_confirm_message">This creates a new keypair for this account right now, using the encryption type selected above. Contacts who have verified this account will need to verify it again. This cannot be undone.</string>
     <string name="pref_rotate_keypair_now_success">New keypair generated.</string>
     <string name="pref_rotate_keypair_now_failed">Could not generate a new keypair.</string>
     <string name="pref_forward_secrecy">Forward Secrecy</string>
-    <string name="pref_forward_secrecy_explain">Automatically regenerate your keys every 90 days and permanently erase old ones a few days later. Limits the damage if a key is ever compromised: only messages sent since the last rotation are at risk, not your whole history. Contacts who verified you will need to verify again after each rotation.</string>
+    <string name="pref_forward_secrecy_explain">Automatically regenerate your keys every 60 days and permanently erase old ones after a short grace period. Limits the damage if a key is ever compromised: only messages sent since the last rotation are at risk, not your whole history. Contacts who verified you will need to verify again after each rotation.</string>
+    <string name="pref_key_rotation_grace">Key erasure grace period</string>
+    <string name="pref_key_rotation_grace_explain">Days to keep a rotated-out secret key so in-flight messages can still be decrypted (1–14, default 2). Shorter = stronger forward secrecy; longer = more tolerance for slow email delivery.</string>
+    <string name="pref_key_rotation_grace_dialog_title">Grace period (days)</string>
     <string name="pref_chats">Chats</string>
     <string name="pref_in_chat_sounds">In-Chat Sounds</string>
     <string name="pref_view_log">View Log</string>
