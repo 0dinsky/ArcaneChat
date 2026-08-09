@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- common strings without special context -->
-    <string name="app_name">Delta Chat</string>
+    <string name="app_name">Arcane Chat</string>
     <string name="ok">OK</string>
     <string name="cancel">Zrušiť</string>
     <string name="clear_search">Zrušiť hľadanie</string>
@@ -327,7 +327,7 @@
     <string name="share_invite_link_explain">Každý, kto má tento odkaz, môže nájsť váš účet a začať s vami konverzáciu. Zdieľajte ho len s ľuďmi, ktorým dôverujete.</string>
     <string name="invite_friends">Pozvať priateľov</string>
     <!-- %1$s is replaced by the user's invitation link ("https://i.delta.chat/...") -->
-    <string name="invite_friends_text">Kontaktujte ma cez aplikáciu Delta Chat: %1$s</string>
+    <string name="invite_friends_text">Kontaktujte ma cez aplikáciu Arcane Chat: %1$s</string>
     <string name="menu_copy_selection_to_clipboard">Kopírovať výber</string>
     <string name="menu_copy_link_to_clipboard">Skopírovať odkaz</string>
     <string name="menu_copy_text_to_clipboard">Kopírovať text</string>
@@ -381,7 +381,7 @@
     <string name="title_share_location">Zdieľať polohu so všetkými členmi skupiny</string>
     <string name="device_talk">Správy zariadenia</string>
     <string name="device_talk_subtitle">Lokálne generované správy</string>
-    <string name="device_talk_explain">Správy v tejto konverzácií sú generované lokálne vašou aplikáciou Delta Chat. Jeho tvorcovia ho používajú na informovanie o aktualizáciách aplikácií a problémoch počas používania.</string>
+    <string name="device_talk_explain">Správy v tejto konverzácií sú generované lokálne vašou aplikáciou Arcane Chat. Jeho tvorcovia ho používajú na informovanie o aktualizáciách aplikácií a problémoch počas používania.</string>
     <string name="device_talk_welcome_message2">Skontaktujte sa!\n\n🙌 Na hlavnej obrazovke oboch zariadení klepnite na tlačidlo „QR kód“. Na jednom zariadení vyberte možnosť „Skenovať QR kód“ a nasmerujte ho na druhé zariadenie\n\n🌍 Ak nie ste v tej istej miestnosti, naskenujte kód prostredníctvom videohovoru alebo zdieľajte odkaz z obrazovky „QR pozývací kód“\n\nPotom: Vychutnajte si decentralizovaný zážitok z komunikácie. Na rozdiel od iných populárnych aplikácií tu neexistuje žiadna centrálna kontrola, sledovanie ani predaj vašich údajov, údajov vašich priateľov, kolegov či rodiny veľkým organizáciám.</string>
     <string name="edit_contact">Upraviť kontakt</string>
     <!-- Verb "to pin", making something sticky, not a noun or abbreviation for "pin number". -->
@@ -398,7 +398,7 @@
     <!-- Menu item beside an app/chat that adds an icon to the system's home screen. If the user taps that icon, the app/chat is opened directly. -->
     <string name="add_to_home_screen">Pridať na domovskú obrazovku</string>
     <string name="donate">Prispieť</string>
-    <string name="donate_device_msg">❤️ Vyzerá to, že sa vám Delta Chat páči!\n\nZvážte prosím príspevok, ktorý pomôže zabezpečiť, aby Delta Chat zostal pre všetkých zadarmo.\n\nHoci je Delta Chat zadarmo a je to projekt s otvoreným zdrojovým kódom, jeho vývoj stojí peniaze. Pomôžte nám udržať Delta Chat nezávislý a v budúcnosti ho vylepšiť ešte viac.\n\nhttps://delta.chat/donate</string>
+    <string name="donate_device_msg">❤️ Vyzerá to, že sa vám Arcane Chat páči!\n\nZvážte prosím príspevok, ktorý pomôže zabezpečiť, aby Arcane Chat zostal pre všetkých zadarmo.\n\nHoci je Arcane Chat zadarmo a je to projekt s otvoreným zdrojovým kódom, jeho vývoj stojí peniaze. Pomôžte nám udržať Arcane Chat nezávislý a v budúcnosti ho vylepšiť ešte viac.\n\nhttps://delta.chat/donate</string>
 
     <string name="mute_for_one_hour">Stíšiť na 1 hodinu</string>
     <string name="mute_for_eight_hours">Stíšiť na 8 hodiny</string>
@@ -623,15 +623,15 @@
     <!-- "Second Device" can also be translated as "Another Device", if that is catchier in the destination language. However, make sure to use the term consistently. -->
     <string name="multidevice_title">Pridať ďalšie zariadenie</string>
     <string name="multidevice_same_network_hint">Uistite sa, že obe zariadenia sú na rovnakej Wi-Fi sieti.</string>
-    <string name="multidevice_install_dc_on_other_device">Nainštalujte Delta Chat na vašom ďalšom zariadení (https://get.delta.chat)</string>
+    <string name="multidevice_install_dc_on_other_device">Nainštalujte Arcane Chat na vašom ďalšom zariadení (https://get.delta.chat)</string>
     <!-- "I Already Have a Profile / Add as Second Device” should be the same text as defined by the keys onboarding_alternative_logins and multidevice_receiver_title -->
-    <string name="multidevice_tap_scan_on_other_device">Otvorte Delta Chat, ťuknite na \"Existujúci účet / Pridať ako ďalšie zariadenie\" a naskenujte zobrazený kód</string>
+    <string name="multidevice_tap_scan_on_other_device">Otvorte Arcane Chat, ťuknite na \"Existujúci účet / Pridať ako ďalšie zariadenie\" a naskenujte zobrazený kód</string>
     <!-- Shown inside a "QR code card" with very limited space; please formulate the text as short as possible therefore. The placeholder will be replaced by the profile name eg. "Scan to set up second device for Alice" -->
     <string name="multidevice_qr_subtitle">Naskenujte pre nastavenie ďalšieho zariadenia pre %1$s</string>
     <string name="multidevice_receiver_title">Pridať ako ďalšie zariadenie</string>
     <string name="multidevice_open_settings_on_other_device">Na pôvodnom zariadení, choďte do \"Nastavenia / Pridať ďalšie zariadenie\" a naskenujte zobrazený kód</string>
     <string name="multidevice_receiver_scanning_ask">Skopírovať účet na toto zariadenie?</string>
-    <string name="multidevice_receiver_needs_update">Účet, ktorý sa snažíte importovať bol vytvorený novšou verziou Delta Chat. Ak chcete pokračovať, aktualizujte toto zariadenie na najnovšiu verziu Delta Chat.</string>
+    <string name="multidevice_receiver_needs_update">Účet, ktorý sa snažíte importovať bol vytvorený novšou verziou Arcane Chat. Ak chcete pokračovať, aktualizujte toto zariadenie na najnovšiu verziu Arcane Chat.</string>
     <string name="multidevice_abort">Zrušiť pridávanie nového zariadenia?</string>
     <string name="multidevice_transfer_done_devicemsg">ℹ️ Účet pridaný do ďalšieho zariadenia.</string>
     <!-- Shown beside progress bar, stay short -->
@@ -837,7 +837,7 @@
     <string name="profile_image_delete">Odstrániť profilový obrázok</string>
     <string name="pref_show_tray_icon">Zobraziť ikonu v systémovej lište</string>
     <string name="pref_edit_profile">Upraviť účet</string>
-    <string name="send_stats_to_devs">Zasielať štatistické údaje Delta Chat vývojárom</string>
+    <string name="send_stats_to_devs">Zasielať štatistické údaje Arcane Chat vývojárom</string>
     <!-- Emoji picker and categories -->
     <string name="emoji_search_results">Výsledky vyhľadávania</string>
     <string name="emoji_not_found">Nenašli sa žiadne emodži</string>
@@ -868,9 +868,9 @@
     <!-- %1$d will be replaced by the number of messages, you can assume plural/lots here. %2$s will be replaced by a timespan option. -->
     <string name="autodel_device_ask">Chcete odstrániť %1$d správy a všetky novo načítané správy %2$s v budúcnosti?\n\n• Zahŕňa to všetky médiá\n\n• Správy budú odstránené bez ohľadu na to, či boli alebo neboli videné\n\n• „Uložené správy \"bude preskočené z lokálneho mazania</string>
     <!-- deprecated -->
-    <string name="autodel_server_ask">Chcete odstrániť %1$d správy a všetky novo načítané správy %2$s v budúcnosti?\n\n⚠️ Zahŕňa to e-maily, médiá a uložené správy vo všetkých priečinkoch servera\n\n⚠️ Túto funkciu nepoužívajte, ak chcete uchovanie údajov na serveri\n\n⚠️ Túto funkciu nepoužívajte, ak okrem Delta Chatu používate aj iných e-mailových klientov</string>
+    <string name="autodel_server_ask">Chcete odstrániť %1$d správy a všetky novo načítané správy %2$s v budúcnosti?\n\n⚠️ Zahŕňa to e-maily, médiá a uložené správy vo všetkých priečinkoch servera\n\n⚠️ Túto funkciu nepoužívajte, ak chcete uchovanie údajov na serveri\n\n⚠️ Túto funkciu nepoužívajte, ak okrem Arcane Chatu používate aj iných e-mailových klientov</string>
     <!-- deprecated -->
-    <string name="autodel_server_enabled_hint">Patria sem e-maily, médiá a „Uložené správy“ vo všetkých priečinkoch servera. Túto funkciu nepoužívajte, ak chcete uchovať údaje na serveri alebo ak okrem Delta Chatu používate aj iných e-mailových klientov.</string>
+    <string name="autodel_server_enabled_hint">Patria sem e-maily, médiá a „Uložené správy“ vo všetkých priečinkoch servera. Túto funkciu nepoužívajte, ak chcete uchovať údaje na serveri alebo ak okrem Arcane Chatu používate aj iných e-mailových klientov.</string>
     <string name="autodel_confirm">Rozumiem, vymazať všetky tieto správy</string>
     <!-- "At once" in the meaning of "Immediately", without any intervening time. -->
     <string name="autodel_at_once">Naraz</string>
@@ -949,7 +949,7 @@
     <string name="devicemsg_storage_exceeding">⚠️ Úložisko vašeho poskytovateľa čoskoro prekročí limit, už%1$s%% sú využité.\n\n Je možné, že nebudete môcť prijímať správy, ak bude úložisko 100 %% využité.\n\n👉 Prosím skontrolujte, či môžete vo webovom rozhraní poskytovateľa vymazať staré údaje, a zvážte aktiváciu „Nastavenia / Odstrániť Staré Správy“. Aktuálne využitie úložiska si môžete kedykoľvek skontrolovať v časti „Nastavenia / Pripojenie“. </string>
     <!-- %1%s will be replaced by date and time in some human-readable format -->
     <string name="devicemsg_bad_time">Zdá sa, že dátum alebo čas vášho zariadenia je nepresný (%1$s).\n\nUpravte si hodiny ⏰🔧, aby ste zaistili správne prijímanie správ. </string>
-    <string name="devicemsg_update_reminder">⚠️ Vaša verzia Delta Chat-u môže byť zastaraná.\n\nMôže to spôsobiť problémy, pretože vaši chatový partneri používajú novšie verzie – a vám chýbajú najnovšie funkcie 😳\nAktualizácie nájdete na https://get.delta.chat alebo obchode s aplikáciami . </string>
+    <string name="devicemsg_update_reminder">⚠️ Vaša verzia Arcane Chat-u môže byť zastaraná.\n\nMôže to spôsobiť problémy, pretože vaši chatový partneri používajú novšie verzie – a vám chýbajú najnovšie funkcie 😳\nAktualizácie nájdete na https://get.delta.chat alebo obchode s aplikáciami . </string>
 
     <!-- Some options as "Add Second Device" or "Backup" may require the system PIN/Fingerprint/Gesture/Etc. to be entered in a system dialog. This hint is added to the system dialog, below a title as "Add Second Device" or "Backup". -->
     <string name="enter_system_secret_to_continue">Ak chcete pokračovať, zadajte heslo do systému.</string>
@@ -1027,7 +1027,7 @@
     <string name="ImageEditorHud_flip">Preklopiť</string>
     <string name="ImageEditorHud_rotate">Otočiť</string>
 
-    <string name="welcome_desktop">Víta vás Delta Chat</string>
+    <string name="welcome_desktop">Víta vás Arcane Chat</string>
     <string name="global_menu_preferences_language_desktop">Jazyk</string>
     <string name="global_menu_file_desktop">Súbor</string>
     <string name="global_menu_file_quit_desktop">Skončiť</string>
@@ -1042,10 +1042,10 @@
     <string name="global_menu_view_developer_desktop">Vývojár</string>
     <string name="global_menu_view_developer_tools_desktop">Nástroje pre vývojárov</string>
     <string name="global_menu_help_desktop">Pomocník</string>
-    <string name="delta_chat_homepage">Stránka Delta Chat</string>
+    <string name="delta_chat_homepage">Stránka Arcane Chat</string>
     <string name="global_menu_help_report_desktop">Nahlásiť problém</string>
-    <string name="global_menu_help_about_desktop">O spoločnosti Delta Chat</string>
-    <string name="global_menu_file_open_desktop">Otvoriť Delta Chat</string>
+    <string name="global_menu_help_about_desktop">O spoločnosti Arcane Chat</string>
+    <string name="global_menu_file_open_desktop">Otvoriť Arcane Chat</string>
     <string name="global_menu_minimize_to_tray">Minimalizovať</string>
     <string name="no_chat_selected_suggestion_desktop">Vyberte existujúce alebo vytvorte novú konverzáciu</string>
     <string name="write_message_desktop">Napíšte správu</string>
@@ -1062,7 +1062,7 @@
     <string name="message_detail_received_desktop">prijaté</string>
     <string name="menu.view.developer.open.log.folder">Otvoriť priečinok denníka</string>
     <string name="menu.view.developer.open.current.log.file">Otvoriť aktuálny súbor protokolu</string>
-    <string name="explain_desktop_minimized_disabled_tray_pref" tools:ignore="TypographyDashes">Ikonu v systémovej lište nie je možné vypnúť, pretože Delta Chat bol spustený s prepínačom --minimized.</string>
+    <string name="explain_desktop_minimized_disabled_tray_pref" tools:ignore="TypographyDashes">Ikonu v systémovej lište nie je možné vypnúť, pretože Arcane Chat bol spustený s prepínačom --minimized.</string>
     <!-- deprecated, used on desktop although there is not spell checker -->
     <string name="no_spellcheck_suggestions_found">Neboli nájdené žiadne návrhy opravy preklepov.</string>
     <string name="show_window">Zobraziť okno</string>
@@ -1101,7 +1101,7 @@
     <string name="import_device_contacts">Importovať kontakty zo zariadenia</string>
     <string name="import_device_contacts_hint">Pre písanie s kontaktmi z vášho zariadenie otvorte Nastavenia a povoľte Kontakty.</string>
     <!-- iOS notification settings -->
-    <string name="disabled_in_dc">Vypnuté v Delta Chat-e</string>
+    <string name="disabled_in_dc">Vypnuté v Arcane Chat-e</string>
     <string name="disabled_in_system_settings">Vypnuté v nastaveniach systém</string>
     <string name="bg_app_refresh_disabled">\"Obnovenie aplikácie na pozadí\" vypnuté v nastaveniach systém</string>
     <string name="notifications_avg_minutes">V priemere každých %1$d minút</string>
@@ -1109,15 +1109,15 @@
     <string name="last_check_at">Skontrolované %1$s</string>
     <string name="system_settings">Systémové nastavenia</string>
     <!-- iOS permissions, copy from "deltachat-ios/Info.plist", which is used on missing translations in "deltachat-ios/LANG.lproj/InfoPlist.strings" -->
-    <string name="InfoPlist_NSCameraUsageDescription">Delta Chat používa váš fotoaparát na snímanie a odosielanie fotografií a videí a na skenovanie QR kódov.</string>
-    <string name="InfoPlist_NSLocationAlwaysAndWhenInUseUsageDescription">Delta Chat vyžaduje oprávnenia na získanie polohy, aby ste mohli zdieľať Vašu polohu počas doby, ktorú ste stanovili.</string>
-    <string name="InfoPlist_NSLocationWhenInUseUsageDescription">Delta Chat vyžaduje oprávnenia na zdieľanie vašej polohy počas doby, kedy bude zdieľanie polohy zapnuté.</string>
-    <string name="InfoPlist_NSMicrophoneUsageDescription">Aplikácia Delta Chat používa váš mikrofón na zaznamenávanie a odosielanie hlasových správ a videí so zvukom.</string>
-    <string name="InfoPlist_NSPhotoLibraryUsageDescription">Delta Chat vám umožní zvoliť si, ktoré fotografie z vašej knižnice chcete odoslať.</string>
-    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">Delta Chat chce uložiť obrázky do vašej knižnice fotografií.</string>
-    <string name="pref_background_notifications_rationale">Ak chcete zachovať pripojenie k svojmu e-mailovému serveru a prijímať správy na pozadí, v ďalšom kroku ignorujte optimalizáciu batérie. \n\nDelta Chat využíva málo zdrojov a dbá na to, aby sa batéria nevybíjala.</string>
+    <string name="InfoPlist_NSCameraUsageDescription">Arcane Chat používa váš fotoaparát na snímanie a odosielanie fotografií a videí a na skenovanie QR kódov.</string>
+    <string name="InfoPlist_NSLocationAlwaysAndWhenInUseUsageDescription">Arcane Chat vyžaduje oprávnenia na získanie polohy, aby ste mohli zdieľať Vašu polohu počas doby, ktorú ste stanovili.</string>
+    <string name="InfoPlist_NSLocationWhenInUseUsageDescription">Arcane Chat vyžaduje oprávnenia na zdieľanie vašej polohy počas doby, kedy bude zdieľanie polohy zapnuté.</string>
+    <string name="InfoPlist_NSMicrophoneUsageDescription">Aplikácia Arcane Chat používa váš mikrofón na zaznamenávanie a odosielanie hlasových správ a videí so zvukom.</string>
+    <string name="InfoPlist_NSPhotoLibraryUsageDescription">Arcane Chat vám umožní zvoliť si, ktoré fotografie z vašej knižnice chcete odoslať.</string>
+    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">Arcane Chat chce uložiť obrázky do vašej knižnice fotografií.</string>
+    <string name="pref_background_notifications_rationale">Ak chcete zachovať pripojenie k svojmu e-mailovému serveru a prijímať správy na pozadí, v ďalšom kroku ignorujte optimalizáciu batérie. \n\nArcane Chat využíva málo zdrojov a dbá na to, aby sa batéria nevybíjala.</string>
     <!-- disabling "Reliable service" will hide a the maybe annoying permanent-notification with the drawback that new-message-notifications get potentially unreliable -->
-    <string name="perm_enable_bg_reminder_title">Klepnutím sem prijmete správy, zatiaľ čo je Delta Chat na pozadí.</string>
-    <string name="perm_enable_bg_already_done">Službe Delta Chat ste už povolili príjem správ na pozadí.\n\nAk správy stále neprichádzajú na pozadí, skontrolujte tiež svoje systémové nastavenia.</string>
+    <string name="perm_enable_bg_reminder_title">Klepnutím sem prijmete správy, zatiaľ čo je Arcane Chat na pozadí.</string>
+    <string name="perm_enable_bg_already_done">Službe Arcane Chat ste už povolili príjem správ na pozadí.\n\nAk správy stále neprichádzajú na pozadí, skontrolujte tiež svoje systémové nastavenia.</string>
 
     </resources>

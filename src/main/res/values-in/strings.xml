@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- common strings without special context -->
-    <string name="app_name">Delta Chat</string>
+    <string name="app_name">Arcane Chat</string>
     <string name="ok">OK</string>
     <string name="cancel">Batalkan</string>
     <string name="clear_search">Hapus pencarian</string>
@@ -40,7 +40,7 @@
     <!-- Verb "to mute". used to mute a chat, so that it is silenced e.g. does not make noise or cause notifications -->
     <string name="mute">Diam</string>
     <string name="ephemeral_messages">Pesan yang berhilangan</string>
-    <string name="ephemeral_messages_hint">Pengaturan ini berlaku untuk semua peserta yang menggunakan Delta Chat. Namun, mereka dapat menyalin, menyimpan, dan meneruskan pesan atau menggunakan klien email lainnya.</string>
+    <string name="ephemeral_messages_hint">Pengaturan ini berlaku untuk semua peserta yang menggunakan Arcane Chat. Namun, mereka dapat menyalin, menyimpan, dan meneruskan pesan atau menggunakan klien email lainnya.</string>
     <string name="save">Simpan</string>
     <string name="chat">Chat</string>
     <string name="media">Media</string>
@@ -241,7 +241,7 @@
     <string name="title_share_location">Bagikan lokasi kepada seluruh anggota grup</string>
     <string name="device_talk">Pesan perangkat</string>
     <string name="device_talk_subtitle">Pesan-pesan buatan lokal</string>
-    <string name="device_talk_explain">Pesan dalam obrolan ini dihasilkan dalam aplikasi Delta Chat anda secara lokal. Para penciptanya memakai obrolan ini untuk memberi tahu aplikasi mutakhir dan masalah-masalah selama digunakan.</string>
+    <string name="device_talk_explain">Pesan dalam obrolan ini dihasilkan dalam aplikasi Arcane Chat anda secara lokal. Para penciptanya memakai obrolan ini untuk memberi tahu aplikasi mutakhir dan masalah-masalah selama digunakan.</string>
     <string name="edit_contact">Edit kontak</string>
     <!-- Verb "to pin", making something sticky, not a noun or abbreviation for "pin number". -->
     <string name="pin_chat">Pin obrolan</string>
@@ -304,7 +304,7 @@
     <plurals name="chat_n_new_messages">
         <item quantity="other">%dpesan baru</item>
     </plurals>
-    <string name="chat_new_group_hint">Buat pesan pertama, perbolehkan yang lain untuk membalas dalam grup ini.\n\n• Tak masalah jika tidak semua anggota menggunakan Delta Chat.\n\n• Mengirim pesan pertama membutuhkan waktu.</string>
+    <string name="chat_new_group_hint">Buat pesan pertama, perbolehkan yang lain untuk membalas dalam grup ini.\n\n• Tak masalah jika tidak semua anggota menggunakan Arcane Chat.\n\n• Mengirim pesan pertama membutuhkan waktu.</string>
     <string name="chat_record_slide_to_cancel">Geser untuk batalkan</string>
     <string name="chat_record_explain">Ketuk dan tahan untuk merekam pesan suara, lepaskan untuk mengirim</string>
     <string name="chat_no_chats_yet_title">Kosongkan inbox.\nTekan \"+\" untuk memulai obrolan baru.</string>
@@ -545,7 +545,7 @@
     <string name="perm_explain_access_to_location_denied">Untuk melampirkan lokasi, lihat pengaturan aplikasi, pilih \"Perizinan\", dan aktifkan \"Lokasi\".</string>
     <!-- ImageEditorHud -->
     <string name="ImageEditorHud_draw_anywhere_to_blur">Gambar di mana saja untuk diburamkan</string>
-    <string name="welcome_desktop">Selamat Datang di Delta Chat</string>
+    <string name="welcome_desktop">Selamat Datang di Arcane Chat</string>
     <string name="global_menu_preferences_language_desktop">Bahasa</string>
     <string name="global_menu_file_desktop">Berkas</string>
     <string name="global_menu_file_quit_desktop">Keluar</string>
@@ -560,7 +560,7 @@
     <string name="global_menu_view_developer_tools_desktop">Alat pengembang</string>
     <string name="global_menu_help_desktop">Bantuan</string>
     <string name="global_menu_help_report_desktop">Laporkan masalah</string>
-    <string name="global_menu_help_about_desktop">Tentang Delta Chat</string>
+    <string name="global_menu_help_about_desktop">Tentang Arcane Chat</string>
     <string name="no_chat_selected_suggestion_desktop">Pilih obrolan atau buat sebuah obrolan baru</string>
     <string name="write_message_desktop">Tulis sebuah pesan</string>
     <string name="encryption_info_title_desktop">Info enkripsi</string>
@@ -583,6 +583,6 @@
     <string name="a11y_delivery_status_read">Status pengiriman: Dibaca</string>
     <string name="a11y_delivery_status_invalid">Status pengiriman tidak valid</string>
     <string name="a11y_background_preview_label">Pratampil latar belakang</string>
-    <string name="InfoPlist_NSPhotoLibraryUsageDescription">Delta Chat akan memungkinkan Anda memilih foto dari perpustakaan Anda untuk dikirim.</string>
-    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">Delta Chat ingin menyimpan gambar ke kumpulan foto anda.</string>
+    <string name="InfoPlist_NSPhotoLibraryUsageDescription">Arcane Chat akan memungkinkan Anda memilih foto dari perpustakaan Anda untuk dikirim.</string>
+    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">Arcane Chat ingin menyimpan gambar ke kumpulan foto anda.</string>
     </resources>

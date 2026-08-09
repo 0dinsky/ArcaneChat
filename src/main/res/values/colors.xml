@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <!-- DEFAULT (matching DeltaChat palette) -->
+    <!-- DEFAULT (matching ArcaneChat palette) -->
     <color name="def_primary">#ff415e6b</color>
     <color name="def_primary_lite">#4c6e7d</color>
     <color name="def_primary_alpha33">#552090ea</color>

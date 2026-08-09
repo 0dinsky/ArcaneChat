@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- common strings without special context -->
-    <string name="app_name">Delta Chat</string>
+    <string name="app_name">Arcane Chat</string>
     <string name="ok">OK</string>
     <string name="cancel">Otkaži</string>
     <string name="yes">Da</string>
@@ -229,7 +229,7 @@
     <!-- permissions -->
     <string name="perm_required_title">Potrebna je dozvola</string>
     <string name="perm_continue">Nastavi</string>
-    <string name="welcome_desktop">Dobro došli u Delta Chat</string>
+    <string name="welcome_desktop">Dobro došli u Arcane Chat</string>
     <string name="global_menu_preferences_language_desktop">Jezik</string>
     <string name="global_menu_file_desktop">Datoteka</string>
     <string name="global_menu_file_quit_desktop">Izlaz</string>

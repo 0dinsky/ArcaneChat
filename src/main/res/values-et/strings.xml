@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- common strings without special context -->
-    <string name="app_name">Delta Chat</string>
+    <string name="app_name">Arcane Chat</string>
     <string name="ok">Sobib</string>
     <string name="cancel">Katkesta</string>
     <string name="clear_search">Eemalda otsing</string>
@@ -311,7 +311,7 @@
     <string name="share_invite_link_explain">Kellel iganes on see link, saab vaadata sinu profiili ja alustada sinuga vestlust. Jaga seda nendega, keda sa tõeliselt usaldad.</string>
     <string name="invite_friends">Kutsu sõptu</string>
     <!-- %1$s is replaced by the user's invitation link ("https://i.delta.chat/...") -->
-    <string name="invite_friends_text">Suhtle minuga Delta Chati abil:\n%1$s</string>
+    <string name="invite_friends_text">Suhtle minuga Arcane Chati abil:\n%1$s</string>
     <string name="menu_copy_selection_to_clipboard">Kopeeri valik</string>
     <string name="menu_copy_link_to_clipboard">Kopeeri link</string>
     <string name="menu_copy_text_to_clipboard">Kopeeri tekst</string>
@@ -382,7 +382,7 @@
     <!-- Menu item beside an app/chat that adds an icon to the system's home screen. If the user taps that icon, the app/chat is opened directly. -->
     <string name="add_to_home_screen">Lisa avaekraanile</string>
     <string name="donate">Toeta arendust</string>
-    <string name="donate_device_msg">❤️ Tundub, et Delta Chat meeldib sulle!\n\nTagamaks, et Delta Chat jääb kõigi jaoks vabaks ning tasuta kasutatavaks, palun kaalu projekti rahalist toetamist.\n\nKuigi Delta Chat on vabalt pruugitav ja põhineb avatud lähtekoodil, siis arenduseks kulub paratamatult raha. Sinu toetus võimaldab Delta Chatil jääda sõltumatuks ning iga uue versiooniga muutuda aina paremaks.\n\nhttps://delta.chat/donate</string>
+    <string name="donate_device_msg">❤️ Tundub, et Arcane Chat meeldib sulle!\n\nTagamaks, et Arcane Chat jääb kõigi jaoks vabaks ning tasuta kasutatavaks, palun kaalu projekti rahalist toetamist.\n\nKuigi Arcane Chat on vabalt pruugitav ja põhineb avatud lähtekoodil, siis arenduseks kulub paratamatult raha. Sinu toetus võimaldab Arcane Chatil jääda sõltumatuks ning iga uue versiooniga muutuda aina paremaks.\n\nhttps://delta.chat/donate</string>
 
     <string name="mute_for_one_hour">Summuta üheks tunniks</string>
     <string name="mute_for_eight_hours">Summuta kaheksaks tunniks</string>
@@ -609,7 +609,7 @@
     <string name="multidevice_title">Lisa täiendav seade</string>
     <string name="multidevice_same_network_hint">Palun vaat, et mõlemad seadmed oleks samas WiFi võrgus</string>
     <string name="multidevice_this_creates_a_qr_code">Sellega luuakse QR-kood, mida täiendavast seadmest skaneerides on võimalik sinna kopeerida sinu profiili.\n\nPalun kontrolli, et ükski kõrvaline vaataja ega kaamera ei näeks järgnevat ekraanivaadet.</string>
-    <string name="multidevice_install_dc_on_other_device">Paigalda teise seadmesse Delta Chat (https://get.delta.chat)</string>
+    <string name="multidevice_install_dc_on_other_device">Paigalda teise seadmesse Arcane Chat (https://get.delta.chat)</string>
     <!-- "I Already Have a Profile / Add as Second Device” should be the same text as defined by the keys onboarding_alternative_logins and multidevice_receiver_title -->
     <string name="multidevice_tap_scan_on_other_device">Klõpsi valikut „Mul juba on profiil olemas / Lisa täiendava seadmena“ ja skaneeri siin näidatud koodi.</string>
     <!-- Shown inside a "QR code card" with very limited space; please formulate the text as short as possible therefore. The placeholder will be replaced by the profile name eg. "Scan to set up second device for Alice" -->
@@ -617,7 +617,7 @@
     <string name="multidevice_receiver_title">Lisa täiendava seadmena</string>
     <string name="multidevice_open_settings_on_other_device">Oma esimeses seadmes ava „Seadistused / Lisa täiendav seade“ ja skaneeri siintoodud koodi</string>
     <string name="multidevice_receiver_scanning_ask">Kas kopeerid oma profiili teisest seadmest sellesse seadmesse?</string>
-    <string name="multidevice_receiver_needs_update">Profiil, mida soovid importida, on pärit uuemast Delta Chati versioonist.\n\nJätkamaks täiendava seadme seadistamist palun uuenda selle seadme Delta Chat viimase versioonini.</string>
+    <string name="multidevice_receiver_needs_update">Profiil, mida soovid importida, on pärit uuemast Arcane Chati versioonist.\n\nJätkamaks täiendava seadme seadistamist palun uuenda selle seadme Arcane Chat viimase versioonini.</string>
     <string name="multidevice_abort">Kas katkestad täiendava seadme lisamise?</string>
     <string name="multidevice_abort_will_invalidate_copied_qr">Sellega muutub lõikelauale kopeeritud QR-kood mittekehtivaks.</string>
     <string name="multidevice_transfer_done_devicemsg">ℹ️ Profiil on kopeeritud sinu täiendavasse seadmesse.</string>
@@ -884,14 +884,14 @@
     <string name="profile_image_delete">Kustuta profiilipilt</string>
     <string name="pref_show_tray_icon">Näita süsteemisalve ikooni</string>
     <string name="pref_edit_profile">Muuda profiili</string>
-    <string name="send_stats_to_devs">Saada statistikat Delta Chati kasutajatele</string>
-    <string name="stats_device_message">Kas sa tahad aidata Delta Chati paremaks muuta? Siis luba rakendusel kord nädalas saata anonüümset statistikat kasutuse kohta.\n\n👉 Klõpsa siia… 👈</string>
-    <string name="stats_confirmation_dialog">Kas sa tahad aidata Delta Chati paremaks muuta? Siis luba rakendusel kord nädalas saata anonüümset statistikat kasutuse kohta.</string>
-    <string name="stats_thanks">Suur tänu! Soovi korral võid saatmise siit välja lülitada: „Seadistused“ → „Täiendavad seadistused“.\n\nKas sul on ka 5 minuti jagu aega osalemaks Delta Chati turvalisust käsitlevas teaduslikus uuringus?</string>
+    <string name="send_stats_to_devs">Saada statistikat Arcane Chati kasutajatele</string>
+    <string name="stats_device_message">Kas sa tahad aidata Arcane Chati paremaks muuta? Siis luba rakendusel kord nädalas saata anonüümset statistikat kasutuse kohta.\n\n👉 Klõpsa siia… 👈</string>
+    <string name="stats_confirmation_dialog">Kas sa tahad aidata Arcane Chati paremaks muuta? Siis luba rakendusel kord nädalas saata anonüümset statistikat kasutuse kohta.</string>
+    <string name="stats_thanks">Suur tänu! Soovi korral võid saatmise siit välja lülitada: „Seadistused“ → „Täiendavad seadistused“.\n\nKas sul on ka 5 minuti jagu aega osalemaks Arcane Chati turvalisust käsitlevas teaduslikus uuringus?</string>
     <string name="stats_disable_dialog">Statistika saatmine on juba kasutusel\n\nKas sa tahaksid ta välja lülitada?</string>
     <string name="disable">Lülita välja</string>
     <string name="stats_keep_sending">Jätka saatmist</string>
-    <string name="stats_msg_body">Selles manuses leidub anonüümne statistika rakenduse kasutuse kohta ja see aitab meil Delta Chatti paremaks muuta. Suur tänu!</string>
+    <string name="stats_msg_body">Selles manuses leidub anonüümne statistika rakenduse kasutuse kohta ja see aitab meil Arcane Chatti paremaks muuta. Suur tänu!</string>
 
     <!-- Emoji picker and categories -->
     <string name="emoji_search_results">Otsingutulemused</string>
@@ -1029,7 +1029,7 @@
     <string name="devicemsg_storage_exceeding">⚠️ Sinu poolt teenusepakkuja juures kasutatav andmeruum hakkab täis saama: %1$s%% on juba kasutusel.\n\nKui andmeruum on täis, siis sa ilmselt ei pruugi enam sõnumeid saada.\n\n👉 Palun kontrolli, kas sul on võimalik teenusepakkuja veebiliidesest vanu sõnumeid kustutada või veelgi parem on, kui kasutad automaatse kustutamise võimalust: „Seadistused“ → „Vestlused“ → „Kustuta vanad sõnumid“. Hetkel kasutatavat andmeruumi mahutu saad alati kontrollida siit: „Seadistused“ → „Ühenduvus“.</string>
     <!-- %1%s will be replaced by date and time in some human-readable format -->
     <string name="devicemsg_bad_time">⚠️ Sinu seadme kuupäev või kellaaeg tundub olema ebatäpne (%1$s).\n\nPalun seadista kella ⏰🔧 ja taga, et sõnumivahetus, sh selle krüptimine toimib korrektselt.</string>
-    <string name="devicemsg_update_reminder">⚠️ Sinu kasutatav Delta Chati versioon võib olla aegunud.\n\nKuna sinu vestluspartnerid ilmselt kasutavad uuemaid versioone, ja sinu oma ei oska uuemaid funktsionaalsusi, siis võib tekkida probleeme 😳\nUuenduste teavet leiad https://get.delta.chat saidist või oma rakendustepoest.</string>
+    <string name="devicemsg_update_reminder">⚠️ Sinu kasutatav Arcane Chati versioon võib olla aegunud.\n\nKuna sinu vestluspartnerid ilmselt kasutavad uuemaid versioone, ja sinu oma ei oska uuemaid funktsionaalsusi, siis võib tekkida probleeme 😳\nUuenduste teavet leiad https://get.delta.chat saidist või oma rakendustepoest.</string>
 
     <!-- Some options as "Add Second Device" or "Backup" may require the system PIN/Fingerprint/Gesture/Etc. to be entered in a system dialog. This hint is added to the system dialog, below a title as "Add Second Device" or "Backup". -->
     <string name="enter_system_secret_to_continue">Jätkamiseks eemalda lukustus</string>
@@ -1110,7 +1110,7 @@
 
     <!-- location streaming -->
     <string name="location_streaming_notification_text">Sa jada oma asukohta teistega</string>
-    <string name="location_rationale">Jagamaks reaalajas oma asukohta teiste vestluse liikmetega, palun luba Delta Chatil kasutada sinu asukohaandmeid.\n\nEt asukoha edastamine toimiks sujuvalt, on asukohaandmed kasutusel ka siis, kui rakendus on suletud või pole kasutusel.</string>
+    <string name="location_rationale">Jagamaks reaalajas oma asukohta teiste vestluse liikmetega, palun luba Arcane Chatil kasutada sinu asukohaandmeid.\n\nEt asukoha edastamine toimiks sujuvalt, on asukohaandmed kasutusel ka siis, kui rakendus on suletud või pole kasutusel.</string>
 
     <!-- permissions -->
     <string name="perm_required_title">Õigused on vajalikud</string>
@@ -1132,7 +1132,7 @@
     <string name="ImageEditorHud_flip">Pööra teistpidi</string>
     <string name="ImageEditorHud_rotate">Pööra</string>
 
-    <string name="welcome_desktop">Tere tulemast, see on Delta Chat</string>
+    <string name="welcome_desktop">Tere tulemast, see on Arcane Chat</string>
     <string name="global_menu_preferences_language_desktop">Keel</string>
     <string name="global_menu_file_desktop">Fail</string>
     <string name="global_menu_file_quit_desktop">Välju</string>
@@ -1147,11 +1147,11 @@
     <string name="global_menu_view_developer_desktop">Arendaja</string>
     <string name="global_menu_view_developer_tools_desktop">Arendustarvikud</string>
     <string name="global_menu_help_desktop">Abiteave</string>
-    <string name="delta_chat_homepage">Delta Chati koduleht</string>
+    <string name="delta_chat_homepage">Arcane Chati koduleht</string>
     <string name="contribute">Tee kaastööd</string>
     <string name="global_menu_help_report_desktop">Teata veast</string>
-    <string name="global_menu_help_about_desktop">Rakenduse teave: Delta Chat</string>
-    <string name="global_menu_file_open_desktop">Ava Delta Chat</string>
+    <string name="global_menu_help_about_desktop">Rakenduse teave: Arcane Chat</string>
+    <string name="global_menu_file_open_desktop">Ava Arcane Chat</string>
     <string name="global_menu_minimize_to_tray">Minimeeri</string>
     <string name="no_account_selected">Vali olemasolev profiil või loo uus profiil</string>
     <string name="no_chat_selected_suggestion_desktop">Vali olemasolev vestlus või liitu uuega</string>
@@ -1171,11 +1171,11 @@
     <string name="message_detail_received_desktop">vastuvõetud</string>
     <string name="menu.view.developer.open.log.folder">Ava logifailide kaust</string>
     <string name="menu.view.developer.open.current.log.file">Ava praegune logifail</string>
-    <string name="explain_desktop_minimized_disabled_tray_pref" tools:ignore="TypographyDashes">Kuna Delta Chat juba käivitati --minimized argumendiga, siis süsteemisalve ikooni ei saa välja lülitada.</string>
+    <string name="explain_desktop_minimized_disabled_tray_pref" tools:ignore="TypographyDashes">Kuna Arcane Chat juba käivitati --minimized argumendiga, siis süsteemisalve ikooni ei saa välja lülitada.</string>
     <!-- deprecated, used on desktop although there is not spell checker -->
     <string name="no_spellcheck_suggestions_found">Õigekirjasoovitusi ei leidu.</string>
     <string name="show_window">Näita akent</string>
-    <string name="data_found_other_installation_message">Sinu profiilid teisest Delta Chati paigaldusest ei ole kättesaadavad -erinevad paigaldused salvestavad oma andmed eraldi kohtadesse.\n\nOlemasolevate profiilide säilitamiseks:\n1. Sulge rakendus\n2. Ava teine Delta Chat - vajadusel paigalda see uuesti siit:%1$s\n3. Tee igast profiilist varukoopia menüüs „Seadistused/Vestlused“\n4. Käivita see versioon uuesti\n5. Taasta varukoopiad valikust „Mul juba on profiil olemas“\n\nVõi jätkad ilma oma varasemate profiilideta?</string>
+    <string name="data_found_other_installation_message">Sinu profiilid teisest Arcane Chati paigaldusest ei ole kättesaadavad -erinevad paigaldused salvestavad oma andmed eraldi kohtadesse.\n\nOlemasolevate profiilide säilitamiseks:\n1. Sulge rakendus\n2. Ava teine Arcane Chat - vajadusel paigalda see uuesti siit:%1$s\n3. Tee igast profiilist varukoopia menüüs „Seadistused/Vestlused“\n4. Käivita see versioon uuesti\n5. Taasta varukoopiad valikust „Mul juba on profiil olemas“\n\nVõi jätkad ilma oma varasemate profiilideta?</string>
 
     <!-- title of the "keybindings" dialog (for the keybindings names as such, where possible the normal command strings are used) -->
     <string name="keybindings">Klahvide seosed</string>
@@ -1221,7 +1221,7 @@
     <string name="import_device_contacts">Impordi seadme kontaktid</string>
     <string name="import_device_contacts_hint">Selleks, et saaksid suhelda oma nutiseame kontaktidega, ava seadistused ja lülita sisse valik „Kontaktid“.</string>
     <!-- iOS notification settings -->
-    <string name="disabled_in_dc">Pole Delta Chatis kasutusel</string>
+    <string name="disabled_in_dc">Pole Arcane Chatis kasutusel</string>
     <string name="disabled_in_system_settings">On süsteemi seadistustest välja lülitatud</string>
     <string name="bg_app_refresh_disabled">Rakenduse uuendamine taustal on süsteemi seadistustest välja lülitatud</string>
     <string name="notifications_avg_minutes">Keskmiselt iga %1$d minuti järel</string>
@@ -1234,19 +1234,19 @@
     <!-- use the same translation for "Shortcuts" as the system is using, often the term "Shortcut" stays untranslated; check eg. how the "Shortcuts" system app is called in your locale -->
     <string name="shortcuts_widget_title">Otseteed</string>
     <!-- use the same translation for "Widget" as the system is using; often the term "Widget" stays untranslated -->
-    <string name="shortcuts_widget_description">Objektide lisamiseks kasuta Delta Chati „Lisa vidinale“ võimalust</string>
+    <string name="shortcuts_widget_description">Objektide lisamiseks kasuta Arcane Chati „Lisa vidinale“ võimalust</string>
     <!-- use the same translation for "Widget" as the system is using; often the term "Widget" stays untranslated -->
     <string name="remove_from_widget">Eemalda vidinast</string>
     <!-- use the same translation for "Widget" as the system is using; often the term "Widget" stays untranslated -->
     <string name="add_to_widget">Lisa vidinale</string>
     <!-- iOS permissions, copy from "deltachat-ios/Info.plist", which is used on missing translations in "deltachat-ios/LANG.lproj/InfoPlist.strings" -->
-    <string name="InfoPlist_NSCameraUsageDescription">Delta Chat kasutab sinu nutiseadme kaamerat pildistamiseks, videote salvestamiseks ja QR-koodide skaneerimiseks.</string>
-    <string name="InfoPlist_NSLocationAlwaysAndWhenInUseUsageDescription">Delta Chat vajab õigust sinu asukoha jagamiseks nii kaua, kui sul see teenus on sisse lülitatud.</string>
-    <string name="InfoPlist_NSLocationWhenInUseUsageDescription">Delta Chat vajab õigust sinu asukoha jagamiseks nii kaua, kui sul see teenus on sisse lülitatud.</string>
-    <string name="InfoPlist_NSMicrophoneUsageDescription">Delta Chat kasutab sinu nutiseadme mikrofoni häälsõnumite ja videote heliriba salvestamiseks.</string>
-    <string name="InfoPlist_NSPhotoLibraryUsageDescription">Delta Chat võimaldab sul valida fotosid teistele edastamiseks.</string>
-    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">Delta Chat soovib pilte salvestada sinu fotode kogusse.</string>
-    <string name="InfoPlist_NSFaceIDUsageDescription">Delta Chat võib kasutada Face ID teenust sinu kohaliku profiili kaitsmiseks, varukoopia tegemiseks ja täiendavate seadmete seadistamiseks.</string>
+    <string name="InfoPlist_NSCameraUsageDescription">Arcane Chat kasutab sinu nutiseadme kaamerat pildistamiseks, videote salvestamiseks ja QR-koodide skaneerimiseks.</string>
+    <string name="InfoPlist_NSLocationAlwaysAndWhenInUseUsageDescription">Arcane Chat vajab õigust sinu asukoha jagamiseks nii kaua, kui sul see teenus on sisse lülitatud.</string>
+    <string name="InfoPlist_NSLocationWhenInUseUsageDescription">Arcane Chat vajab õigust sinu asukoha jagamiseks nii kaua, kui sul see teenus on sisse lülitatud.</string>
+    <string name="InfoPlist_NSMicrophoneUsageDescription">Arcane Chat kasutab sinu nutiseadme mikrofoni häälsõnumite ja videote heliriba salvestamiseks.</string>
+    <string name="InfoPlist_NSPhotoLibraryUsageDescription">Arcane Chat võimaldab sul valida fotosid teistele edastamiseks.</string>
+    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">Arcane Chat soovib pilte salvestada sinu fotode kogusse.</string>
+    <string name="InfoPlist_NSFaceIDUsageDescription">Arcane Chat võib kasutada Face ID teenust sinu kohaliku profiili kaitsmiseks, varukoopia tegemiseks ja täiendavate seadmete seadistamiseks.</string>
 
     <!-- android specific strings, developers: please take care to remove strings that are no longer used! -->
     <string name="pref_instant_delivery">Kohene kättetoimetamine</string>
@@ -1255,10 +1255,10 @@
     <string name="pref_reliable_service">Kasuta ühendust taustal</string>
     <string name="pref_reliable_service_explain">Põhjustab püsiteavituse</string>
 
-    <string name="pref_background_notifications_rationale">Tagamaks, et rakenduse võrguühendus jääb taustal tööle ning sõnumite vastuvõtmine jätkub, siis keela järgmises sammus selle rakenduse jaoks akukasutuse optimeerimine.\n\nDelta Chat kasutab väga vähe nutiseadme ressursse ning oleme eraldi pingutanud, et koormus akule oleks minimaalne.</string>
+    <string name="pref_background_notifications_rationale">Tagamaks, et rakenduse võrguühendus jääb taustal tööle ning sõnumite vastuvõtmine jätkub, siis keela järgmises sammus selle rakenduse jaoks akukasutuse optimeerimine.\n\nArcane Chat kasutab väga vähe nutiseadme ressursse ning oleme eraldi pingutanud, et koormus akule oleks minimaalne.</string>
     <!-- disabling "Reliable service" will hide a the maybe annoying permanent-notification with the drawback that new-message-notifications get potentially unreliable -->
-    <string name="perm_enable_bg_reminder_title">Kui soovid, et Delta Chat saaks sõnumeid ka taustateenusena toimides, siis klõpsi siin.</string>
-    <string name="perm_enable_bg_already_done">Sa juba oled Delta Chatil lubanud laadida sõnumeid taustal.\n\nKui see siiski ei toimi, siis palun kontrolli rakenduse õigusi süsteemi seadistustest.</string>
+    <string name="perm_enable_bg_reminder_title">Kui soovid, et Arcane Chat saaks sõnumeid ka taustateenusena toimides, siis klõpsi siin.</string>
+    <string name="perm_enable_bg_already_done">Sa juba oled Arcane Chatil lubanud laadida sõnumeid taustal.\n\nKui see siiski ei toimi, siis palun kontrolli rakenduse õigusi süsteemi seadistustest.</string>
 
     <!-- device messages for updates -->
     <string name="update_2_0">Mida on meil uut?\n\n💯 Läbiv krüptimine on töökindel ja seda nüüd igaveseks. Tabalukud 🔒 on läinud!\n\n✉️ Klassikalised e-kirjad, kus läbiv krüptimine on puudu, on märgitud ümbriku ikooniga\n\n😻 Uus ja tõhusam profiilivaade kõikide sinu kontaktide jaoks\n\n🔲 Uus nupp kiireks ligipääsuks vestluses kasutatavate rakendusteni\n\n❤️ Palun toeta meie arendust rahaliselt - nii saame jääda sõltumatuteks ja jätkata selle rakenduse täiustamist: %1$s</string>

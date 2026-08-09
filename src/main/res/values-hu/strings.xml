@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- common strings without special context -->
-    <string name="app_name">Delta Chat</string>
+    <string name="app_name">Arcane Chat</string>
     <string name="ok">OK</string>
     <string name="cancel">Mégse</string>
     <string name="clear_search">Keresés kiürítése</string>
@@ -282,7 +282,7 @@
     <string name="share_invite_link_explain">Ezen a hivatkozáson keresztül bárki megtekintheti az Ön profilját, és csevegést kezdeményezhet Önnel. Csak olyan emberekkel ossza meg, akikben megbízik.</string>
     <string name="invite_friends">Partnerek meghívása</string>
     <!-- %1$s is replaced by the user's invitation link ("https://i.delta.chat/...") -->
-    <string name="invite_friends_text">Lépjen kapcsolatba velem a Delta Chat-en:\n%1$s</string>
+    <string name="invite_friends_text">Lépjen kapcsolatba velem a Arcane Chat-en:\n%1$s</string>
     <string name="menu_copy_selection_to_clipboard">Kiválasztott(ak) másolása</string>
     <string name="menu_copy_link_to_clipboard">Hívatkozás másolása</string>
     <string name="menu_copy_text_to_clipboard">Szöveg másolása</string>
@@ -353,7 +353,7 @@
     <!-- Menu item beside an app/chat that adds an icon to the system's home screen. If the user taps that icon, the app/chat is opened directly. -->
     <string name="add_to_home_screen">Hozzáadás a kezdőképernyőhöz</string>
     <string name="donate">Adományozás</string>
-    <string name="donate_device_msg">❤️ Úgy tűnik, hogy tetszik önnek a Delta Chat!\n\nFontolja meg az adományozást, hogy a Delta Chat mindenki számára ingyenes maradhasson.\n\nUgyan a Delta Chat szabadon használható és nyílt forráskódú, de a fejlesztés pénzbe kerül. Segítsen nekünk, hogy a Delta Chat független maradhasson, és a jövőben még fantasztikusabbá váljon.\n\nhttps://delta.chat/donate</string>
+    <string name="donate_device_msg">❤️ Úgy tűnik, hogy tetszik önnek a Arcane Chat!\n\nFontolja meg az adományozást, hogy a Arcane Chat mindenki számára ingyenes maradhasson.\n\nUgyan a Arcane Chat szabadon használható és nyílt forráskódú, de a fejlesztés pénzbe kerül. Segítsen nekünk, hogy a Arcane Chat független maradhasson, és a jövőben még fantasztikusabbá váljon.\n\nhttps://delta.chat/donate</string>
 
     <string name="mute_for_one_hour">Némítás 1 órára</string>
     <string name="mute_for_eight_hours">Némítás 8 órára</string>
@@ -532,15 +532,15 @@
     <string name="multidevice_title">Második eszköz hozzáadása</string>
     <string name="multidevice_same_network_hint">Győződjön meg arról, hogy mindkét eszköz ugyanazon a Wi-Fi-n vagy hálózaton van-e</string>
     <string name="multidevice_this_creates_a_qr_code">Ez létrehoz egy QR-kódot, amit a második eszközön beolvashat a profil másolásához.\n\nÜgyeljen arra, hogy egy nem kívánatos megfigyelő vagy kamera ne láthassa a következő képernyőt.</string>
-    <string name="multidevice_install_dc_on_other_device">Telepítse a Delta Chatet a másik eszközére (https://get.delta.chat)</string>
+    <string name="multidevice_install_dc_on_other_device">Telepítse a Arcane Chatet a másik eszközére (https://get.delta.chat)</string>
     <!-- "I Already Have a Profile / Add as Second Device” should be the same text as defined by the keys onboarding_alternative_logins and multidevice_receiver_title -->
-    <string name="multidevice_tap_scan_on_other_device">Indítsa el a Delta Chatet, koppintson a „Már van profilom / Hozzáadás második eszközként” lehetőségre, és olvassa be az itt megjelenő QR-kódot.</string>
+    <string name="multidevice_tap_scan_on_other_device">Indítsa el a Arcane Chatet, koppintson a „Már van profilom / Hozzáadás második eszközként” lehetőségre, és olvassa be az itt megjelenő QR-kódot.</string>
     <!-- Shown inside a "QR code card" with very limited space; please formulate the text as short as possible therefore. The placeholder will be replaced by the profile name eg. "Scan to set up second device for Alice" -->
     <string name="multidevice_qr_subtitle">QR-kód beolvasása a második eszköz beállításához „%1$s” számára</string>
     <string name="multidevice_receiver_title">Hozzáadás második eszközként</string>
     <string name="multidevice_open_settings_on_other_device">Az első eszközön lépjen a „Beállítások / Második eszköz hozzáadása” menüpontra, és olvassa be az ott megjelenő QR-kódot.</string>
     <string name="multidevice_receiver_scanning_ask">Átmásolja a profilt a másik eszközről erre az eszközre?</string>
-    <string name="multidevice_receiver_needs_update">Az importálni kívánt profil egy újabb Delta Chat verzióból származik.\n\nA második eszköz beállításának folytatásához frissítse ezt az eszközt a Delta Chat legújabb verziójára.</string>
+    <string name="multidevice_receiver_needs_update">Az importálni kívánt profil egy újabb Arcane Chat verzióból származik.\n\nA második eszköz beállításának folytatásához frissítse ezt az eszközt a Arcane Chat legújabb verziójára.</string>
     <string name="multidevice_abort">A második eszköz beállításának megszakítása?</string>
     <string name="multidevice_abort_will_invalidate_copied_qr">Ez érvényteleníti a vágólapra másolt QR-kódot.</string>
     <string name="multidevice_transfer_done_devicemsg">ℹ️ A profil átkerül az Ön második eszközére.</string>
@@ -769,7 +769,7 @@
     <string name="profile_image_delete">Profilkép törlése</string>
     <string name="pref_show_tray_icon">Tálcaikon megjelenítése</string>
     <string name="pref_edit_profile">Profil szerkesztése</string>
-    <string name="send_stats_to_devs">Statisztikák küldése a Delta Chat fejlesztőinek</string>
+    <string name="send_stats_to_devs">Statisztikák küldése a Arcane Chat fejlesztőinek</string>
     <!-- Emoji picker and categories -->
     <string name="emoji_search_results">Keresési eredmények</string>
     <string name="emoji_not_found">Nem található emodzsi</string>
@@ -895,10 +895,10 @@
 
     <string name="devicemsg_self_deleted">Ön törölte a „Mentett üzenetek” csevegést.\n\nℹ️ A „Mentett üzenetek” funkció újbóli használatához hozzon létre egy új csevegést önmagával.</string>
     <!-- deprecated -->
-    <string name="devicemsg_storage_exceeding">⚠️ Az e-mail-szolgáltatójától kapott tárhelye hamarosan megtelik: %1$s%% már felhasználásra került.\n\n\nElképzelhető, hogy nem tud üzeneteket fogadni, ha a tárhelye megtelt.\n\n👉 Ellenőrizze, hogy a szolgáltatója webes felületén tudja-e törölni a DeltaChat-mappából az üzeneteket, és fontolja meg a „Beállítások / Csevegések és média / Üzenetek törlése a kiszolgálóról” engedélyezését. Az aktuális tárhelyhasználatot bármikor ellenőrizheti a „Beállítások / Tárhely” menüpontban.</string>
+    <string name="devicemsg_storage_exceeding">⚠️ Az e-mail-szolgáltatójától kapott tárhelye hamarosan megtelik: %1$s%% már felhasználásra került.\n\n\nElképzelhető, hogy nem tud üzeneteket fogadni, ha a tárhelye megtelt.\n\n👉 Ellenőrizze, hogy a szolgáltatója webes felületén tudja-e törölni a ArcaneChat-mappából az üzeneteket, és fontolja meg a „Beállítások / Csevegések és média / Üzenetek törlése a kiszolgálóról” engedélyezését. Az aktuális tárhelyhasználatot bármikor ellenőrizheti a „Beállítások / Tárhely” menüpontban.</string>
     <!-- %1%s will be replaced by date and time in some human-readable format -->
     <string name="devicemsg_bad_time">⚠️ Az eszközén lévő dátum vagy idő pontatlannak tűnik (%1$s).\n\nJavítsa meg az órát ⏰🔧 az üzenetek helyes fogadásának biztosítása érdekében.</string>
-    <string name="devicemsg_update_reminder">⚠️ Lehet, hogy a Delta Chat verziója elavult.\n\nEz problémákat okozhat, mivel a partnerei újabb verziókat használnak - továbbá hiányoznak a legújabb funkciók 😳\nEllenőrizze a https://get.delta.chat oldalon vagy az alkalmazásboltban a frissítéseket.</string>
+    <string name="devicemsg_update_reminder">⚠️ Lehet, hogy a Arcane Chat verziója elavult.\n\nEz problémákat okozhat, mivel a partnerei újabb verziókat használnak - továbbá hiányoznak a legújabb funkciók 😳\nEllenőrizze a https://get.delta.chat oldalon vagy az alkalmazásboltban a frissítéseket.</string>
 
     <!-- Some options as "Add Second Device" or "Backup" may require the system PIN/Fingerprint/Gesture/Etc. to be entered in a system dialog. This hint is added to the system dialog, below a title as "Add Second Device" or "Backup". -->
     <string name="enter_system_secret_to_continue">Feloldás a folytatáshoz</string>
@@ -972,12 +972,12 @@
     <!-- permissions -->
     <string name="perm_required_title">Engedély szükséges</string>
     <string name="perm_continue">Folytatás</string>
-    <string name="perm_explain_access_to_camera_denied">A fényképek-, videók- vagy QR-kódok rögzítéséhez lépjen a rendszer beállításaiba, válassza ki a „Alkalmazások és értesítések” menüpontot, válassza ki az DeltaChat alkalmazást, majd koppintson az „Engedélyek” menüpontra, és engedélyezze a hozzáférést a „Kamerához”.</string>
+    <string name="perm_explain_access_to_camera_denied">A fényképek-, videók- vagy QR-kódok rögzítéséhez lépjen a rendszer beállításaiba, válassza ki a „Alkalmazások és értesítések” menüpontot, válassza ki az ArcaneChat alkalmazást, majd koppintson az „Engedélyek” menüpontra, és engedélyezze a hozzáférést a „Kamerához”.</string>
     <!-- give the user an idea where to find the "Microphone" option. the hint is only shown if access was initially denied by the user. pick up wordings really used on the systems, but do not be overly precise: things shift around often and there are too many system we support to track every detail and click path -->
-    <string name="perm_explain_access_to_mic_denied">A hangüzenetek küldéséhez lépjen a rendszer beállításaiba, válassza ki az „Alkalmazások és értesítések” menüpontot, válassza ki a DeltaChat alkalmazást, majd koppintson az „Engedélyek” menüpontra, és engedélyezze a hozzáférést a „Mikrofonhoz”.</string>
-    <string name="perm_explain_access_to_storage_denied">A fájlok fogadásához vagy küldéséhez lépjen a rendszer beállításaiba, válassza ki az „Alkalmazások és értesítések” menüpontot, válassza ki a DeltaChat alkalmazást, majd koppintson az „Engedélyek” menüpontra, és engedélyezze a hozzáférést a „Tárhelyhez”.</string>
-    <string name="perm_explain_access_to_location_denied">A hely mellékeléséhez lépjen a rendszer beállításaiba, válassza ki az „Alkalmazások és értesítések” menüpontot, válassza ki a DeltaChat alkalmazást, majd koppintson az „Engedélyek” menüpontra, és engedélyezze a hozzáférést a „Helyadatokhoz”.</string>
-    <string name="perm_explain_access_to_notifications_denied">Az értesítések fogadásához lépjen a rendszer beállításaiba, válassza ki az „Alkalmazások és értesítések” menüpontot, válassza ki a DeltaChat alkalmazást, majd koppintson az „Engedélyek” menüpontra, és engedélyezze a hozzáférést a „Értesítésekhez”.</string>
+    <string name="perm_explain_access_to_mic_denied">A hangüzenetek küldéséhez lépjen a rendszer beállításaiba, válassza ki az „Alkalmazások és értesítések” menüpontot, válassza ki a ArcaneChat alkalmazást, majd koppintson az „Engedélyek” menüpontra, és engedélyezze a hozzáférést a „Mikrofonhoz”.</string>
+    <string name="perm_explain_access_to_storage_denied">A fájlok fogadásához vagy küldéséhez lépjen a rendszer beállításaiba, válassza ki az „Alkalmazások és értesítések” menüpontot, válassza ki a ArcaneChat alkalmazást, majd koppintson az „Engedélyek” menüpontra, és engedélyezze a hozzáférést a „Tárhelyhez”.</string>
+    <string name="perm_explain_access_to_location_denied">A hely mellékeléséhez lépjen a rendszer beállításaiba, válassza ki az „Alkalmazások és értesítések” menüpontot, válassza ki a ArcaneChat alkalmazást, majd koppintson az „Engedélyek” menüpontra, és engedélyezze a hozzáférést a „Helyadatokhoz”.</string>
+    <string name="perm_explain_access_to_notifications_denied">Az értesítések fogadásához lépjen a rendszer beállításaiba, válassza ki az „Alkalmazások és értesítések” menüpontot, válassza ki a ArcaneChat alkalmazást, majd koppintson az „Engedélyek” menüpontra, és engedélyezze a hozzáférést a „Értesítésekhez”.</string>
 
     <!-- ImageEditorHud -->
     <string name="ImageEditorHud_draw_anywhere_to_blur">Rajzoljon bárhová az elmosódáshoz</string>
@@ -989,7 +989,7 @@
     <string name="ImageEditorHud_flip">Tükrözés</string>
     <string name="ImageEditorHud_rotate">Forgatás</string>
 
-    <string name="welcome_desktop">Üdvözöljük a Delta Chatben!</string>
+    <string name="welcome_desktop">Üdvözöljük a Arcane Chatben!</string>
     <string name="global_menu_preferences_language_desktop">Válasszon nyelvet…</string>
     <string name="global_menu_file_desktop">Fájl</string>
     <string name="global_menu_file_quit_desktop">Kilépés</string>
@@ -1004,11 +1004,11 @@
     <string name="global_menu_view_developer_desktop">Fejlesztő</string>
     <string name="global_menu_view_developer_tools_desktop">Fejlesztői eszközök</string>
     <string name="global_menu_help_desktop">Súgó</string>
-    <string name="delta_chat_homepage">A Delta Chat weboldala</string>
+    <string name="delta_chat_homepage">A Arcane Chat weboldala</string>
     <string name="contribute">Közreműködés</string>
     <string name="global_menu_help_report_desktop">Jelentsen egy problémát</string>
-    <string name="global_menu_help_about_desktop">A Delta Chat-ről</string>
-    <string name="global_menu_file_open_desktop">Delta Chat megnyitása</string>
+    <string name="global_menu_help_about_desktop">A Arcane Chat-ről</string>
+    <string name="global_menu_file_open_desktop">Arcane Chat megnyitása</string>
     <string name="global_menu_minimize_to_tray">Kicsinyítés</string>
     <string name="no_chat_selected_suggestion_desktop">Válasszon ki egy csevegést vagy indítson egy újat</string>
     <string name="write_message_desktop">Írjon üzenetet</string>
@@ -1027,7 +1027,7 @@
     <string name="message_detail_received_desktop">érkezett</string>
     <string name="menu.view.developer.open.log.folder">Naplófájlok mappájának megnyitása</string>
     <string name="menu.view.developer.open.current.log.file">Jelenlegi naplófájl megnyitása</string>
-    <string name="explain_desktop_minimized_disabled_tray_pref" tools:ignore="TypographyDashes">A tálca ikonja nem kapcsolható ki, mivel a Delta Chat a --minimized kapcsolóval indult.</string>
+    <string name="explain_desktop_minimized_disabled_tray_pref" tools:ignore="TypographyDashes">A tálca ikonja nem kapcsolható ki, mivel a Arcane Chat a --minimized kapcsolóval indult.</string>
     <!-- deprecated, used on desktop although there is not spell checker -->
     <string name="no_spellcheck_suggestions_found">Nem találhatók helyesírási javaslatok.</string>
     <string name="show_window">Ablak megjelenítése</string>
@@ -1060,13 +1060,13 @@
     <string name="share_account_not_configured">A profil nincs konfigurálva.</string>
     <string name="cannot_play_audio_file">A hangfájl nem játszható le.</string>
     <!-- iOS camera permission alert -->
-    <string name="perm_ios_explain_access_to_camera_denied">A fényképek-, videók- vagy QR-kódok rögzítéséhez lépjen a rendszer beállításaiba, válassza ki a „Alkalmazások és értesítések” menüpontot, válassza ki az DeltaChat alkalmazást, majd koppintson az „Engedélyek” menüpontra, és engedélyezze a hozzáférést a „Kamerához”.</string>
+    <string name="perm_ios_explain_access_to_camera_denied">A fényképek-, videók- vagy QR-kódok rögzítéséhez lépjen a rendszer beállításaiba, válassza ki a „Alkalmazások és értesítések” menüpontot, válassza ki az ArcaneChat alkalmazást, majd koppintson az „Engedélyek” menüpontra, és engedélyezze a hozzáférést a „Kamerához”.</string>
     <string name="open_settings">Beállítások megnyitása</string>
     <!-- iOS device contact alert -->
     <string name="import_device_contacts">Eszköz névjegyeinek importálása</string>
-    <string name="import_device_contacts_hint">Az eszközén lévő névjegyekkel való csevegéshez lépjen a rendszer beállításaiba, válassza ki az „Alkalmazások és értesítések” menüpontot, válassza ki a DeltaChat alkalmazást, majd koppintson az „Engedélyek” menüpontra, és engedélyezze a hozzáférést a „Névjegyekhez”.</string>
+    <string name="import_device_contacts_hint">Az eszközén lévő névjegyekkel való csevegéshez lépjen a rendszer beállításaiba, válassza ki az „Alkalmazások és értesítések” menüpontot, válassza ki a ArcaneChat alkalmazást, majd koppintson az „Engedélyek” menüpontra, és engedélyezze a hozzáférést a „Névjegyekhez”.</string>
     <!-- iOS notification settings -->
-    <string name="disabled_in_dc">Letiltva a Delta Chatben</string>
+    <string name="disabled_in_dc">Letiltva a Arcane Chatben</string>
     <string name="disabled_in_system_settings">Letilva a rendszerbeállításokban</string>
     <string name="bg_app_refresh_disabled">„Háttérfrissítések” letiltva a rendszerbeállításokban</string>
     <string name="notifications_avg_minutes">Átlagosan %1$d percenként</string>
@@ -1079,19 +1079,19 @@
     <!-- use the same translation for "Shortcuts" as the system is using, often the term "Shortcut" stays untranslated; check eg. how the "Shortcuts" system app is called in your locale -->
     <string name="shortcuts_widget_title">Parancsikonok</string>
     <!-- use the same translation for "Widget" as the system is using; often the term "Widget" stays untranslated -->
-    <string name="shortcuts_widget_description">Használja a Delta Chat „Hozzáadás modulhoz” funkcióját az elemek hozzáadásához</string>
+    <string name="shortcuts_widget_description">Használja a Arcane Chat „Hozzáadás modulhoz” funkcióját az elemek hozzáadásához</string>
     <!-- use the same translation for "Widget" as the system is using; often the term "Widget" stays untranslated -->
     <string name="remove_from_widget">Eltávolítás a modulból</string>
     <!-- use the same translation for "Widget" as the system is using; often the term "Widget" stays untranslated -->
     <string name="add_to_widget">Hozzáadás modulhoz</string>
     <!-- iOS permissions, copy from "deltachat-ios/Info.plist", which is used on missing translations in "deltachat-ios/LANG.lproj/InfoPlist.strings" -->
-    <string name="InfoPlist_NSCameraUsageDescription">A Delta Chat az eszköze kameráját használja fényképek és videók készítésére és küldésére, valamint QR-kódok beolvasására.</string>
-    <string name="InfoPlist_NSLocationAlwaysAndWhenInUseUsageDescription">A Delta Chatnek engedélyre van szüksége ahhoz, hogy megoszthassa az ön tartózkodási helyét arra az időtartamra, amelyre engedélyezte a helyadatok megosztását.</string>
-    <string name="InfoPlist_NSLocationWhenInUseUsageDescription">A Delta Chatnek engedélyre van szüksége ahhoz, hogy megoszthassa az ön tartózkodási helyét arra az időtartamra, amelyre engedélyezte a helyadatok megosztását.</string>
-    <string name="InfoPlist_NSMicrophoneUsageDescription">A Delta Chat az eszköze mikrofonját használja a hangüzenetek és a hangos videók rögzítésére, valamint küldésére.</string>
-    <string name="InfoPlist_NSPhotoLibraryUsageDescription">A Delta Chat segítségével kiválaszthatja, hogy mely fényképeket szeretné elküldeni a könyvtárából.</string>
-    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">A Delta Chat el akarja menteni a képeket az eszköze fotótárába.</string>
-    <string name="InfoPlist_NSFaceIDUsageDescription">A Delta Chat használhatja az arcfelimerést az Ön helyi profiljának biztonsági mentésének létrehozásához és a második eszköz biztonságos beállításához.</string>
+    <string name="InfoPlist_NSCameraUsageDescription">A Arcane Chat az eszköze kameráját használja fényképek és videók készítésére és küldésére, valamint QR-kódok beolvasására.</string>
+    <string name="InfoPlist_NSLocationAlwaysAndWhenInUseUsageDescription">A Arcane Chatnek engedélyre van szüksége ahhoz, hogy megoszthassa az ön tartózkodási helyét arra az időtartamra, amelyre engedélyezte a helyadatok megosztását.</string>
+    <string name="InfoPlist_NSLocationWhenInUseUsageDescription">A Arcane Chatnek engedélyre van szüksége ahhoz, hogy megoszthassa az ön tartózkodási helyét arra az időtartamra, amelyre engedélyezte a helyadatok megosztását.</string>
+    <string name="InfoPlist_NSMicrophoneUsageDescription">A Arcane Chat az eszköze mikrofonját használja a hangüzenetek és a hangos videók rögzítésére, valamint küldésére.</string>
+    <string name="InfoPlist_NSPhotoLibraryUsageDescription">A Arcane Chat segítségével kiválaszthatja, hogy mely fényképeket szeretné elküldeni a könyvtárából.</string>
+    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">A Arcane Chat el akarja menteni a képeket az eszköze fotótárába.</string>
+    <string name="InfoPlist_NSFaceIDUsageDescription">A Arcane Chat használhatja az arcfelimerést az Ön helyi profiljának biztonsági mentésének létrehozásához és a második eszköz biztonságos beállításához.</string>
 
     <!-- android specific strings, developers: please take care to remove strings that are no longer used! -->
     <string name="pref_instant_delivery">Azonnali kézbesítés</string>
@@ -1100,10 +1100,10 @@
     <string name="pref_reliable_service">Kényszerített háttérkapcsolat</string>
     <string name="pref_reliable_service_explain">Egy állandó értesítést jelenít meg</string>
 
-    <string name="pref_background_notifications_rationale">Az e-mail-kiszolgálóval való kapcsolat fenntartásához és az üzenetek háttérben történő fogadásához mellőzze az akkumulátor-optimalizálást a következő lépésben.\n\nA Delta Chat kevés erőforrást használ, és ügyel arra, hogy ne merítse az akkumulátort.</string>
+    <string name="pref_background_notifications_rationale">Az e-mail-kiszolgálóval való kapcsolat fenntartásához és az üzenetek háttérben történő fogadásához mellőzze az akkumulátor-optimalizálást a következő lépésben.\n\nA Arcane Chat kevés erőforrást használ, és ügyel arra, hogy ne merítse az akkumulátort.</string>
     <!-- disabling "Reliable service" will hide a the maybe annoying permanent-notification with the drawback that new-message-notifications get potentially unreliable -->
-    <string name="perm_enable_bg_reminder_title">Koppintson ide az üzenetek fogadásához, miközben a Delta Chat a háttérben fut.</string>
-    <string name="perm_enable_bg_already_done">Már engedélyezve van a Delta Chat számára, hogy a háttérben üzeneteket fogadjon.\n\nHa az üzenetek még mindig nem érkeznek meg a háttérben, ellenőrizze a rendszerbeállításokat is.</string>
+    <string name="perm_enable_bg_reminder_title">Koppintson ide az üzenetek fogadásához, miközben a Arcane Chat a háttérben fut.</string>
+    <string name="perm_enable_bg_already_done">Már engedélyezve van a Arcane Chat számára, hogy a háttérben üzeneteket fogadjon.\n\nHa az üzenetek még mindig nem érkeznek meg a háttérben, ellenőrizze a rendszerbeállításokat is.</string>
 
     <!-- device messages for updates -->
     <string name="update_2_0">Újdonságok:\n\n💯 A végpontok közötti titkosítás most már megbízható és örökre megmarad. A lakatok 🔒 eltűntek!\n\n✉️ A végpontok közötti titkosítás nélküli klasszikus e-mailek betűszimbólummal vannak jelölve\n\n😻 Új, továbbfejlesztett profilképernyő az összes névjegyhez\n\n🔲 Új gomb a csevegésben használt alkalmazások gyors eléréséhez\n\n❤️ Ha teheti, adományozzon nekünk, hogy függetlenek maradhassunk és továbbra is fejlesztéseket tudjunk végrehajtani: %1$s</string>
