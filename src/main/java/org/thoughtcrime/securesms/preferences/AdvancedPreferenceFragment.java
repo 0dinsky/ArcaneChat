@@ -4,6 +4,7 @@ import static android.app.Activity.RESULT_OK;
 import static android.text.InputType.TYPE_TEXT_VARIATION_URI;
 import static org.thoughtcrime.securesms.connect.DcHelper.CONFIG_BCC_SELF;
 import static org.thoughtcrime.securesms.connect.DcHelper.CONFIG_KEY_GEN_MODE;
+import static org.thoughtcrime.securesms.connect.DcHelper.CONFIG_KEY_ROTATION_PERIOD;
 import static org.thoughtcrime.securesms.connect.DcHelper.CONFIG_STATS_SENDING;
 
 import android.content.Context;
@@ -43,9 +44,13 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
     implements DcEventCenter.DcEventDelegate {
   private static final String TAG = "AdvancedPreferenceFragment";
 
+  /** Recommended key rotation period (see `Config::KeyRotationPeriod` docs: 30-90 days). */
+  private static final int FORWARD_SECRECY_ROTATION_DAYS = 90;
+
   CheckBoxPreference selfReportingCheckbox;
   CheckBoxPreference multiDeviceCheckbox;
   CheckBoxPreference postQuantumCheckbox;
+  CheckBoxPreference forwardSecrecyCheckbox;
   Preference rotateKeypairButton;
   private ActivityResultLauncher<Intent> screenLockLauncher;
 
@@ -131,6 +136,17 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
       rotateKeypairButton.setOnPreferenceClickListener(new RotateKeypairListener());
     }
 
+    forwardSecrecyCheckbox = this.findPreference("pref_forward_secrecy");
+    if (forwardSecrecyCheckbox != null) {
+      forwardSecrecyCheckbox.setOnPreferenceChangeListener(
+          (preference, newValue) -> {
+            boolean enabled = (Boolean) newValue;
+            dcContext.setConfigInt(
+                CONFIG_KEY_ROTATION_PERIOD, enabled ? FORWARD_SECRECY_ROTATION_DAYS : 0);
+            return true;
+          });
+    }
+
     Preference proxySettings = this.findPreference("proxy_settings_button");
     if (proxySettings != null) {
       proxySettings.setOnPreferenceClickListener(
@@ -174,6 +190,9 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
     multiDeviceCheckbox.setChecked(0 != dcContext.getConfigInt(CONFIG_BCC_SELF));
     if (postQuantumCheckbox != null) {
       postQuantumCheckbox.setChecked(0 != dcContext.getConfigInt(CONFIG_KEY_GEN_MODE));
+    }
+    if (forwardSecrecyCheckbox != null) {
+      forwardSecrecyCheckbox.setChecked(0 != dcContext.getConfigInt(CONFIG_KEY_ROTATION_PERIOD));
     }
     updateRotateKeypairSummary();
   }
