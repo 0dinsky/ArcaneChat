@@ -286,17 +286,33 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
         .show();
   }
 
+  /**
+   * Summary under "Regenerate Keys Now" reflects both the *desired* mode
+   * (key_gen_mode toggle) and the *actual* encryption subkey on the account.
+   * Toggling PQ alone does not change keys — only rotate/regenerate does —
+   * so without this the label stayed stuck on the old algorithm family.
+   */
   private void updateRotateKeypairSummary() {
     if (rotateKeypairButton == null) {
       return;
     }
+    boolean wantPq = 0 != dcContext.getConfigInt(CONFIG_KEY_GEN_MODE);
     String kind = dcContext.getSelfEncryptionKind();
-    if ("pq".equals(kind)) {
+    if (kind == null) {
+      kind = "";
+    }
+    boolean havePq = "pq".equals(kind);
+
+    if (wantPq && havePq) {
       rotateKeypairButton.setSummary(R.string.pref_rotate_keypair_now_explain_pq);
-    } else if ("classic".equals(kind)) {
+    } else if (!wantPq && !havePq) {
       rotateKeypairButton.setSummary(R.string.pref_rotate_keypair_now_explain_classic);
+    } else if (wantPq && !havePq) {
+      // Toggle on, published key still classic — user must regenerate.
+      rotateKeypairButton.setSummary(R.string.pref_rotate_keypair_now_explain_pq_pending);
     } else {
-      rotateKeypairButton.setSummary(null);
+      // Toggle off, but published key still has ML-KEM subkey.
+      rotateKeypairButton.setSummary(R.string.pref_rotate_keypair_now_explain_classic_pending);
     }
   }
 

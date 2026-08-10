@@ -1302,8 +1302,10 @@
     <string name="pref_post_quantum_encryption">Постквантовое шифрование</string>
     <string name="pref_post_quantum_encryption_explain">Добавляет квантово-устойчивый алгоритм рядом с классическим. Не забудьте обновить ключи!</string>
     <string name="pref_rotate_keypair_now">Обновить ключи сейчас</string>
-    <string name="pref_rotate_keypair_now_explain_classic">Ваш ключ: только classic (Ed25519 / ECDH-X25519)</string>
-    <string name="pref_rotate_keypair_now_explain_pq">Ваш ключ: классика + пост-квантовый алгоритм для ключей и подписей.</string>
+    <string name="pref_rotate_keypair_now_explain_classic">Активный ключ: только classic (Ed25519 / ECDH-X25519)</string>
+    <string name="pref_rotate_keypair_now_explain_pq">Активный ключ: classic-личность + PQ-шифрование (adaptive PQ-подписи для PQ-контактов)</string>
+    <string name="pref_rotate_keypair_now_explain_pq_pending">Режим PQ включён, но ключи ещё classic — нажмите, чтобы применить hybrid-шифрование и PQ-ключ подписи</string>
+    <string name="pref_rotate_keypair_now_explain_classic_pending">Режим classic, но в ключе ещё есть PQ — нажмите, чтобы пересобрать только classic-ключи</string>
     <string name="pref_rotate_keypair_now_confirm_title">Обновить ключи сейчас?</string>
     <string name="pref_rotate_keypair_now_confirm_message">Заменит текущие ключи и подписи на пост-квантовые. Контакты вас не потеряют.</string>
     <string name="pref_rotate_keypair_now_success">Ключи обновлены.</string>

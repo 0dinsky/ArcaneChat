@@ -839,8 +839,10 @@
 
 Use “Regenerate Keys Now” after toggling so an existing account picks up the change.</string>
     <string name="pref_rotate_keypair_now">Regenerate Keys Now</string>
-    <string name="pref_rotate_keypair_now_explain_classic">Your key: Classic only (Ed25519 / ECDH-X25519)</string>
-    <string name="pref_rotate_keypair_now_explain_pq">Your key: Classic identity + PQ encryption (and adaptive PQ signatures toward PQ contacts)</string>
+    <string name="pref_rotate_keypair_now_explain_classic">Active key: Classic only (Ed25519 / ECDH-X25519)</string>
+    <string name="pref_rotate_keypair_now_explain_pq">Active key: Classic identity + PQ encryption (adaptive PQ signatures for PQ contacts)</string>
+    <string name="pref_rotate_keypair_now_explain_pq_pending">PQ mode is on, but keys are still classic — press to apply hybrid encryption + PQ signing key</string>
+    <string name="pref_rotate_keypair_now_explain_classic_pending">Classic mode is on, but keys still have PQ material — press to regenerate classic-only keys</string>
     <string name="pref_rotate_keypair_now_confirm_title">Regenerate keys now?</string>
     <string name="pref_rotate_keypair_now_confirm_message">Updates encryption subkeys to match the Post-Quantum setting above and ensures a dedicated PQ signing key exists when PQ is on. Your Autocrypt fingerprint stays the same; verified contacts do not need to re-verify. This cannot be undone.</string>
     <string name="pref_rotate_keypair_now_success">Keys updated.</string>
