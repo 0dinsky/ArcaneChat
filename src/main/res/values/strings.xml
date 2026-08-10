@@ -832,16 +832,16 @@
     <string name="pref_encryption">Encryption</string>
     <string name="pref_manage_keys">Manage Keys</string>
     <string name="pref_post_quantum_encryption">Post-Quantum Encryption</string>
-    <string name="pref_post_quantum_encryption_explain">Generate quantum-resistant keys: ML-DSA-65+Ed25519 signatures and ML-KEM-768+X25519 encryption. Applies to keys generated from now on; use “Regenerate Keys Now” to switch an existing account. Older clients can still encrypt to you (X25519 fallback) but cannot verify your PQ signatures.</string>
+    <string name="pref_post_quantum_encryption_explain">Add a quantum-resistant ML-KEM-768+X25519 encryption subkey alongside your classic one. Your signing key and fingerprint stay classic (Ed25519), so every contact — PQ-aware or not — can still read your key and verify your messages. Contacts whose client understands the extra subkey use it automatically for quantum-resistant encryption; everyone else keeps using the classic one, with zero setup on either side. Applies to keys generated from now on; use “Regenerate Keys Now” to add or remove it on an existing account.</string>
     <string name="pref_rotate_keypair_now">Regenerate Keys Now</string>
-    <string name="pref_rotate_keypair_now_explain_classic">Your key: Classic (Ed25519 / ECDH-X25519)</string>
-    <string name="pref_rotate_keypair_now_explain_pq">Your key: Post-quantum (ML-DSA-65+Ed25519 / ML-KEM-768+X25519)</string>
+    <string name="pref_rotate_keypair_now_explain_classic">Your key: Classic only (Ed25519 / ECDH-X25519)</string>
+    <string name="pref_rotate_keypair_now_explain_pq">Your key: Classic + Post-quantum (Ed25519 signing; ECDH-X25519 and ML-KEM-768+X25519 encryption)</string>
     <string name="pref_rotate_keypair_now_confirm_title">Regenerate keys now?</string>
-    <string name="pref_rotate_keypair_now_confirm_message">This creates a new keypair for this account right now, using the encryption type selected above. If you\'re switching between Classic and Post-Quantum, your fingerprint changes and contacts who verified this account will need to verify it again. Otherwise only the encryption subkey is rotated, your fingerprint stays the same, and no one needs to re-verify. This cannot be undone.</string>
+    <string name="pref_rotate_keypair_now_confirm_message">This creates a new encryption subkey for this account right now, adding or removing post-quantum support as selected above. Your fingerprint stays the same and contacts who verified this account do not need to verify it again. This cannot be undone.</string>
     <string name="pref_rotate_keypair_now_success">New keypair generated.</string>
     <string name="pref_rotate_keypair_now_failed">Could not generate a new keypair.</string>
     <string name="pref_forward_secrecy">Forward Secrecy</string>
-    <string name="pref_forward_secrecy_explain">Automatically rotate your encryption subkey every 60 days and permanently erase the old one after the grace period below. Limits the damage if a key is ever compromised: only messages sent since the last rotation are at risk, not your whole history. Your fingerprint stays the same and contacts don\'t need to re-verify — unless you also switch between Classic and Post-Quantum, which does change the fingerprint.</string>
+    <string name="pref_forward_secrecy_explain">Automatically rotate your encryption subkey(s) every 60 days and permanently erase the old ones after the grace period below. Limits the damage if a key is ever compromised: only messages sent since the last rotation are at risk, not your whole history. Your fingerprint stays the same and contacts don\'t need to re-verify.</string>
     <string name="pref_key_rotation_grace">Key erasure grace period</string>
     <string name="pref_key_rotation_grace_explain">Days to keep a rotated-out subkey\'s secret material so in-flight messages and other devices that haven\'t re-synced yet can still decrypt (7–90, default 30). Shorter = stronger forward secrecy but risks breaking multi-device; longer = safer for multi-device and slow email delivery.</string>
     <string name="pref_key_rotation_grace_dialog_title">Grace period (days)</string>

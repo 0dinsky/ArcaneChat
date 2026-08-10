@@ -172,16 +172,16 @@ public class DcContext {
   }
 
   /**
-   * Immediately generates a fresh keypair (honoring the current
+   * Immediately generates a fresh encryption subkey (honoring the current
    * "key_gen_mode" config value, e.g. post-quantum if enabled) and makes it
    * the active key, without waiting for "key_rotation_period" to elapse.
    * Call this right after changing "key_gen_mode" if the change should
    * apply to this account right away.
    *
-   * Note: this only changes the account's fingerprint (requiring contacts
-   * who verified this account to re-verify) when switching between the
-   * classic and post-quantum primary key families. Otherwise only the
-   * encryption subkey is rotated and the fingerprint stays the same.
+   * Note: this only ever rotates the encryption subkey. The account's
+   * fingerprint stays the same and contacts who verified this account never
+   * need to re-verify because of this — including when toggling post-quantum
+   * on or off.
    *
    * @return true on success, false on failure.
    */
