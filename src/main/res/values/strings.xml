@@ -832,14 +832,22 @@
     <string name="pref_encryption">Encryption</string>
     <string name="pref_manage_keys">Manage Keys</string>
     <string name="pref_post_quantum_encryption">Post-Quantum Encryption</string>
-    <string name="pref_post_quantum_encryption_explain">Add a quantum-resistant ML-KEM-768+X25519 encryption subkey alongside your classic one. Your signing key and fingerprint stay classic (Ed25519), so every contact — PQ-aware or not — can still read your key and verify your messages. Contacts whose client understands the extra subkey use it automatically for quantum-resistant encryption; everyone else keeps using the classic one, with zero setup on either side. Applies to keys generated from now on; use “Regenerate Keys Now” to add or remove it on an existing account.</string>
+    <string name="pref_post_quantum_encryption_explain">Adds a quantum-resistant ML-KEM encryption subkey next to your classic one. Your identity fingerprint stays classic (Ed25519), so default Delta Chat and other classic clients keep working with zero setup.
+
+• Encryption: PQ-aware contacts use ML-KEM automatically; everyone else uses classic ECDH.
+• Signatures: messages are always signed with your classic key. An extra post-quantum (ML-DSA) signature is added only when every recipient already supports PQ encryption — classic-only contacts never see PQ signature packets.
+
+Use “Regenerate Keys Now” after toggling so an existing account picks up the change.</string>
     <string name="pref_rotate_keypair_now">Regenerate Keys Now</string>
     <string name="pref_rotate_keypair_now_explain_classic">Your key: Classic only (Ed25519 / ECDH-X25519)</string>
-    <string name="pref_rotate_keypair_now_explain_pq">Your key: Classic + Post-quantum (Ed25519 signing; ECDH-X25519 and ML-KEM-768+X25519 encryption)</string>
+    <string name="pref_rotate_keypair_now_explain_pq">Your key: Classic identity + PQ encryption (and adaptive PQ signatures toward PQ contacts)</string>
     <string name="pref_rotate_keypair_now_confirm_title">Regenerate keys now?</string>
-    <string name="pref_rotate_keypair_now_confirm_message">This creates a new encryption subkey for this account right now, adding or removing post-quantum support as selected above. Your fingerprint stays the same and contacts who verified this account do not need to verify it again. This cannot be undone.</string>
-    <string name="pref_rotate_keypair_now_success">New keypair generated.</string>
-    <string name="pref_rotate_keypair_now_failed">Could not generate a new keypair.</string>
+    <string name="pref_rotate_keypair_now_confirm_message">Updates encryption subkeys to match the Post-Quantum setting above and ensures a dedicated PQ signing key exists when PQ is on. Your Autocrypt fingerprint stays the same; verified contacts do not need to re-verify. This cannot be undone.</string>
+    <string name="pref_rotate_keypair_now_success">Keys updated.</string>
+    <string name="pref_rotate_keypair_now_failed">Could not update keys.</string>
+    <string name="pref_post_quantum_enable_apply_title">Apply post-quantum keys?</string>
+    <string name="pref_post_quantum_enable_apply_message">Post-quantum mode is on. Generate the hybrid encryption subkey and PQ signing key for this account now? Your fingerprint stays the same.</string>
+    <string name="pref_post_quantum_enable_apply_later">Later</string>
     <string name="pref_forward_secrecy">Forward Secrecy</string>
     <string name="pref_forward_secrecy_explain">Automatically rotate your encryption subkey(s) every 60 days and permanently erase the old ones after the grace period below. Limits the damage if a key is ever compromised: only messages sent since the last rotation are at risk, not your whole history. Your fingerprint stays the same and contacts don\'t need to re-verify.</string>
     <string name="pref_key_rotation_grace">Key erasure grace period</string>

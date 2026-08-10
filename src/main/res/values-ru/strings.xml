@@ -1298,4 +1298,18 @@
 
     <!-- device messages for updates -->
     <string name="update_2_0">Что нового?\n\n💯 Сквозное шифрование стало постоянной и надёжной функцией. Значки замков 🔒 убраны!\n\n✉️ Обычные письма без сквозного шифрования помечены значком конверта\n\n😻 Обновлённый экран профиля для всех контактов\n\n🔲 Новая кнопка быстрого доступа к приложениям, используемым в чате\n\n❤️ Пожалуйста, сделайте пожертвование, чтобы помочь нам сохранить независимость и продолжать работу над улучшениями: %1$s</string>
+
+    <string name="pref_post_quantum_encryption">Постквантовое шифрование</string>
+    <string name="pref_post_quantum_encryption_explain">Добавляет квантово-устойчивый ML-KEM subkey рядом с классическим. Отпечаток личности остаётся classic (Ed25519) — обычный Delta Chat и другие classic-клиенты работают без настройки.\n\n• Шифрование: PQ-контакты используют ML-KEM автоматически; остальные — classic ECDH.\n• Подписи: всегда classic. Дополнительная постквантовая (ML-DSA) подпись только если у всех получателей есть PQ-шифрование — classic-контакты не получают PQ-пакеты подписи.\n\nПосле переключения нажмите «Обновить ключи сейчас», чтобы применить на существующем аккаунте.</string>
+    <string name="pref_rotate_keypair_now">Обновить ключи сейчас</string>
+    <string name="pref_rotate_keypair_now_explain_classic">Ваш ключ: только classic (Ed25519 / ECDH-X25519)</string>
+    <string name="pref_rotate_keypair_now_explain_pq">Ваш ключ: classic-личность + PQ-шифрование (и adaptive PQ-подписи для PQ-контактов)</string>
+    <string name="pref_rotate_keypair_now_confirm_title">Обновить ключи сейчас?</string>
+    <string name="pref_rotate_keypair_now_confirm_message">Обновит encryption subkeys по настройке «Постквантовое шифрование» и при необходимости создаст отдельный PQ-ключ подписи. Отпечаток Autocrypt не меняется; Verified-контактам не нужно переподтверждать. Действие необратимо.</string>
+    <string name="pref_rotate_keypair_now_success">Ключи обновлены.</string>
+    <string name="pref_rotate_keypair_now_failed">Не удалось обновить ключи.</string>
+    <string name="pref_post_quantum_enable_apply_title">Применить постквантовые ключи?</string>
+    <string name="pref_post_quantum_enable_apply_message">Постквантовый режим включён. Сгенерировать hybrid encryption subkey и PQ-ключ подписи для этого аккаунта сейчас? Отпечаток не изменится.</string>
+    <string name="pref_post_quantum_enable_apply_later">Позже</string>
+
 </resources>

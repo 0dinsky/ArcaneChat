@@ -139,6 +139,28 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
           (preference, newValue) -> {
             boolean enabled = (Boolean) newValue;
             dcContext.setConfigInt(CONFIG_KEY_GEN_MODE, enabled ? 1 : 0);
+            updateRotateKeypairSummary();
+            if (enabled) {
+              // Offer immediate key update so hybrid subkey + PQ signing key exist now.
+              new AlertDialog.Builder(requireContext())
+                  .setTitle(R.string.pref_post_quantum_enable_apply_title)
+                  .setMessage(R.string.pref_post_quantum_enable_apply_message)
+                  .setPositiveButton(
+                      R.string.ok,
+                      (d, which) -> runRotateKeypairNow())
+                  .setNegativeButton(R.string.pref_post_quantum_enable_apply_later, null)
+                  .show();
+            } else {
+              // Turning PQ off: offer to drop PQ material from the published key.
+              new AlertDialog.Builder(requireContext())
+                  .setTitle(R.string.pref_rotate_keypair_now_confirm_title)
+                  .setMessage(R.string.pref_rotate_keypair_now_confirm_message)
+                  .setPositiveButton(
+                      R.string.ok,
+                      (d, which) -> runRotateKeypairNow())
+                  .setNegativeButton(R.string.pref_post_quantum_enable_apply_later, null)
+                  .show();
+            }
             return true;
           });
     }
@@ -303,6 +325,33 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
     }
   }
 
+  private void runRotateKeypairNow() {
+    Context appContext = requireActivity().getApplicationContext();
+    new Thread(
+            () -> {
+              boolean success = dcContext.rotateKeypairNow();
+              if (!isAdded()) {
+                return;
+              }
+              requireActivity()
+                  .runOnUiThread(
+                      () -> {
+                        if (!isAdded()) {
+                          return;
+                        }
+                        Toast.makeText(
+                                appContext,
+                                success
+                                    ? R.string.pref_rotate_keypair_now_success
+                                    : R.string.pref_rotate_keypair_now_failed,
+                                Toast.LENGTH_SHORT)
+                            .show();
+                        updateRotateKeypairSummary();
+                      });
+            })
+        .start();
+  }
+
   private class RotateKeypairListener implements Preference.OnPreferenceClickListener {
     @Override
     public boolean onPreferenceClick(@NonNull Preference preference) {
@@ -311,32 +360,7 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
           .setMessage(R.string.pref_rotate_keypair_now_confirm_message)
           .setPositiveButton(
               R.string.ok,
-              (dialogInterface, i) -> {
-                Context appContext = requireActivity().getApplicationContext();
-                new Thread(
-                        () -> {
-                          boolean success = dcContext.rotateKeypairNow();
-                          if (!isAdded()) {
-                            return;
-                          }
-                          requireActivity()
-                              .runOnUiThread(
-                                  () -> {
-                                    if (!isAdded()) {
-                                      return;
-                                    }
-                                    Toast.makeText(
-                                            appContext,
-                                            success
-                                                ? R.string.pref_rotate_keypair_now_success
-                                                : R.string.pref_rotate_keypair_now_failed,
-                                            Toast.LENGTH_SHORT)
-                                        .show();
-                                    updateRotateKeypairSummary();
-                                  });
-                        })
-                    .start();
-              })
+              (dialogInterface, i) -> runRotateKeypairNow())
           .setNegativeButton(R.string.cancel, null)
           .show();
       return true;
