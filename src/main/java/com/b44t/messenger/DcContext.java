@@ -172,25 +172,14 @@ public class DcContext {
   }
 
   /**
-   * Immediately generates a fresh encryption subkey (honoring the current
-   * "key_gen_mode" config value, e.g. post-quantum if enabled) and makes it
-   * the active key, without waiting for "key_rotation_period" to elapse.
-   * Call this right after changing "key_gen_mode" if the change should
-   * apply to this account right away.
-   *
-   * Note: this only ever rotates the encryption subkey. The account's
-   * fingerprint stays the same and contacts who verified this account never
-   * need to re-verify because of this — including when toggling post-quantum
-   * on or off.
-   *
-   * @return true on success, false on failure.
+   * Generate a fresh encryption subkey honoring current key_gen_mode (e.g. post-quantum).
+   * Fingerprint stays the same; contacts do not need to re-verify.
+   * @return true on success.
    */
   public native boolean rotateKeypairNow();
 
   /**
-   * Returns which algorithm family this account's own current encryption
-   * key uses: "classic", "pq" (post-quantum hybrid), or "" if there is no
-   * key yet or it could not be determined.
+   * Algorithm family of this account's encryption key: "classic", "pq", or "".
    */
   public native String getSelfEncryptionKind();
 

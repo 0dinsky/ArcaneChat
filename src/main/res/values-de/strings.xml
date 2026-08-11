@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- common strings without special context -->
-    <string name="app_name">Arcane Chat</string>
+    <string name="app_name">Delta Chat</string>
     <string name="ok">OK</string>
     <string name="cancel">Abbruch</string>
     <string name="clear_search">Suche löschen</string>
@@ -55,7 +55,7 @@
     <!-- Adjective "smth is muted". used to describe a muted or silenced chat, that e.g. does not make noise or cause notifications -->
     <string name="muted">Stumm</string>
     <string name="ephemeral_messages">Verschwindende Nachrichten</string>
-    <string name="ephemeral_messages_hint">Gilt für alle Gruppenmitglieder, die Arcane Chat verwenden. Nachrichten können kopiert, gespeichert oder weitergeleitet werden.</string>
+    <string name="ephemeral_messages_hint">Gilt für alle Gruppenmitglieder, die Delta Chat verwenden. Nachrichten können kopiert, gespeichert oder weitergeleitet werden.</string>
     <string name="save">Speichern</string>
     <string name="chat">Chat</string>
     <string name="media">Medien</string>
@@ -311,7 +311,7 @@
     <string name="share_invite_link_explain">Teile den Link nur mit Personen, denen du vertraust. Alle, die diesen Link haben, können einen Chat mit dir starten.</string>
     <string name="invite_friends">Freunde einladen</string>
     <!-- %1$s is replaced by the user's invitation link ("https://i.delta.chat/...") -->
-    <string name="invite_friends_text">Kontaktiere mich auf Arcane Chat:\n%1$s</string>
+    <string name="invite_friends_text">Kontaktiere mich auf Delta Chat:\n%1$s</string>
     <string name="menu_copy_selection_to_clipboard">Auswahl kopieren</string>
     <string name="menu_copy_link_to_clipboard">Link kopieren</string>
     <string name="menu_copy_text_to_clipboard">Text kopieren</string>
@@ -382,7 +382,7 @@
     <!-- Menu item beside an app/chat that adds an icon to the system's home screen. If the user taps that icon, the app/chat is opened directly. -->
     <string name="add_to_home_screen">Zum Startbildschirm hinzufügen</string>
     <string name="donate">Spenden</string>
-    <string name="donate_device_msg">❤️ Arcane Chat gefällt dir anscheinend sehr gut!\n\nBitte spende, damit Arcane Chat weiterhin unabhängig bleibt.\n\nArcane Chat ist zwar kostenlos und Open Source, die Entwicklung kostet jedoch Geld. Hilf uns, Arcane Chat unabhängig zu halten und in Zukunft noch besser zu machen.\n\nhttps://delta.chat/donate</string>
+    <string name="donate_device_msg">❤️ Delta Chat gefällt dir anscheinend sehr gut!\n\nBitte spende, damit Delta Chat weiterhin unabhängig bleibt.\n\nDelta Chat ist zwar kostenlos und Open Source, die Entwicklung kostet jedoch Geld. Hilf uns, Delta Chat unabhängig zu halten und in Zukunft noch besser zu machen.\n\nhttps://delta.chat/donate</string>
 
     <string name="mute_for_one_hour">Stumm für 1 Stunde</string>
     <string name="mute_for_eight_hours">Stumm für 8 Stunden</string>
@@ -609,15 +609,15 @@
     <string name="multidevice_title">Zweitgerät hinzufügen</string>
     <string name="multidevice_same_network_hint">Beide Geräte müssen im selben Wi-Fi oder Netzwerk sein.</string>
     <string name="multidevice_this_creates_a_qr_code">Erstellt einen QR-Code, den ein Zweitgerät scannen kann, um das Profil zu kopieren.\n\nStelle sicher, dass keine unerwünschten Beobachter oder Kameras den folgenden Bildschirm sehen können.</string>
-    <string name="multidevice_install_dc_on_other_device">Arcane Chat auf dem anderen Gerät installieren (https://get.delta.chat)</string>
+    <string name="multidevice_install_dc_on_other_device">Delta Chat auf dem anderen Gerät installieren (https://get.delta.chat)</string>
     <!-- "I Already Have a Profile / Add as Second Device” should be the same text as defined by the keys onboarding_alternative_logins and multidevice_receiver_title -->
-    <string name="multidevice_tap_scan_on_other_device">Arcane Chat starten, \"Ich habe bereits ein Profil / Als Zweitgerät hinzufügen\" wählen und den QR-Code scannen</string>
+    <string name="multidevice_tap_scan_on_other_device">Delta Chat starten, \"Ich habe bereits ein Profil / Als Zweitgerät hinzufügen\" wählen und den QR-Code scannen</string>
     <!-- Shown inside a "QR code card" with very limited space; please formulate the text as short as possible therefore. The placeholder will be replaced by the profile name eg. "Scan to set up second device for Alice" -->
     <string name="multidevice_qr_subtitle">Scannen, um ein zweites Gerät für %1$s hinzuzufügen</string>
     <string name="multidevice_receiver_title">Als Zweitgerät hinzufügen</string>
-    <string name="multidevice_open_settings_on_other_device">Auf dem ersten Gerät, öffne Arcane Chat, dann \"Einstellungen / Zweitgerät hinzufügen\" und scanne den dort angezeigten Code</string>
+    <string name="multidevice_open_settings_on_other_device">Auf dem ersten Gerät, öffne Delta Chat, dann \"Einstellungen / Zweitgerät hinzufügen\" und scanne den dort angezeigten Code</string>
     <string name="multidevice_receiver_scanning_ask">Das Profil vom anderen Gerät auf dieses Gerät kopieren?</string>
-    <string name="multidevice_receiver_needs_update">Das Profil, das du importieren möchtest, stammt aus einer neueren Delta-Chat-Version.\n\nUm Fortzufahren, aktualisiere dieses Gerät bitte auf die neueste Version von Arcane Chat.</string>
+    <string name="multidevice_receiver_needs_update">Das Profil, das du importieren möchtest, stammt aus einer neueren Delta-Chat-Version.\n\nUm Fortzufahren, aktualisiere dieses Gerät bitte auf die neueste Version von Delta Chat.</string>
     <string name="multidevice_abort">Einrichtung des Zweitgeräts beenden?</string>
     <string name="multidevice_abort_will_invalidate_copied_qr">Dadurch wird der auf die Zwischenablage kopierte QR-Code ungültig.</string>
     <string name="multidevice_transfer_done_devicemsg">ℹ️ Profil wurde auf dein Zweitgerät übertragen.</string>
@@ -677,6 +677,12 @@
     <!-- Question shown when group's/channel's QR code is scanned from onboarding screen -->
     <string name="instant_onboarding_confirm_group">Ein neues Profil erstellen und \"%1$s\" beitreten?</string>
 
+    <string name="team">Team</string>
+    <string name="team_profile">Teamprofil</string>
+    <string name="team_profile_explain">Ein „Teamprofil“ wird gemeinsam von einer Gruppe oder einer Organisation verwaltet.\n\n⚠️ Teamprofil-Funktionen sind experimentell und können sich ändern.</string>
+    <string name="team_name">Teamname</string>
+    <string name="create_team_profile">Teamprofil erstellen</string>
+
     <string name="welcome_chat_over_email">Sicherer dezentraler Chat</string>
     <string name="scan_invitation_code">Einladungscode scannen</string>
     <string name="login_title">Login</string>
@@ -713,16 +719,18 @@
     <string name="remove_transport">Relay entfernen</string>
     <string name="edit_transport">Relay bearbeiten</string>
     <string name="used_for_sending">Zum Senden verwendet</string>
+    <!-- deprecated -->
     <string name="hide_from_contacts">Vor Kontakten verstecken</string>
+    <!-- deprecated -->
     <string name="hidden_from_contacts">Vor Kontakten versteckt</string>
     <string name="enforce_e2ee">Verschlüsselung für alle Relays erzwingen</string>
     <!-- Hint for the list of relays -->
-    <string name="transport_list_hint">Nachrichten werden auf allen Relays empfangen.\n\n⚠️ Wenn Sie hier Änderungen vornehmen, stellen Sie sicher, dass auf allen Ihren Geräten mindestens Version 2.47.0 installiert ist. Andernfalls könnten auf älteren Versionen Nachrichten verloren gehen.</string>
+    <string name="transport_list_hint">Nachrichten werden auf allen Relays empfangen.</string>
     <!-- shown if a QR code was scanned that can be used as a relay -->
     <string name="confirm_add_transport">Relay hinzufügen?</string>
     <string name="invalid_transport_qr">Der gescannte QR-Code enthält keine gültiges Relay.</string>
     <!-- placeholder will be replaced by a relay server name -->
-    <string name="confirm_remove_relay_x">Relay \"%1$s\" entfernen?</string>
+    <string name="confirm_remove_relay_x">Relay \"%1$s\" entfernen?\n\nVor dem endgültigen Löschen wird es schrittweise deaktiviert, um deinen Kontakten einen nahtlosen Übergang zu ermöglichen.</string>
     <!-- deprecated -->
     <string name="confirm_remove_or_hide_transport_x">Relay \"%1$s\" entfernen?\n\nKontakte, die nur dieses Relay kennen, erreichen dich möglicherweise erst wieder, wenn du ihnen erneut eine Nachricht schickst.\n\nIm Zweifelsfall, verstecke das Relay anstelle es zu löschen.</string>
     <string name="login_certificate_checks">Zertifikatsüberprüfung</string>
@@ -878,14 +886,14 @@
     <string name="profile_image_delete">Profilbild löschen</string>
     <string name="pref_show_tray_icon">Benachrichtigungssymbol anzeigen</string>
     <string name="pref_edit_profile">Profil bearbeiten</string>
-    <string name="send_stats_to_devs">Statistik an Arcane Chat Entwickler senden</string>
-    <string name="stats_device_message">Möchtest du helfen, Arcane Chat zu verbessern, indem du wöchentlich anonyme Nutzungsstatistiken sendest?\n\n👉 Hier tippen … 👈</string>
-    <string name="stats_confirmation_dialog">Möchtest du helfen, Arcane Chat zu verbessern, indem du wöchentlich anonyme Nutzungsstatistiken sendest?</string>
-    <string name="stats_thanks">Danke! Du kannst das Senden der Statistik jederzeit unter \"Einstellungen / Erweitert\" ausschalten.\n\nHast du zusätzlich 5 Minuten Zeit, um an einer wissenschaftlichen Studie zur Sicherheit von Arcane Chat teilzunehmen?</string>
+    <string name="send_stats_to_devs">Statistik an Delta Chat Entwickler senden</string>
+    <string name="stats_device_message">Möchtest du helfen, Delta Chat zu verbessern, indem du wöchentlich anonyme Nutzungsstatistiken sendest?\n\n👉 Hier tippen … 👈</string>
+    <string name="stats_confirmation_dialog">Möchtest du helfen, Delta Chat zu verbessern, indem du wöchentlich anonyme Nutzungsstatistiken sendest?</string>
+    <string name="stats_thanks">Danke! Du kannst das Senden der Statistik jederzeit unter \"Einstellungen / Erweitert\" ausschalten.\n\nHast du zusätzlich 5 Minuten Zeit, um an einer wissenschaftlichen Studie zur Sicherheit von Delta Chat teilzunehmen?</string>
     <string name="stats_disable_dialog">Das Senden von Statistiken ist bereits eingeschaltet.\n\nMöchtest du es ausschalten?</string>
     <string name="disable">Ausschalten</string>
     <string name="stats_keep_sending">Weiter senden</string>
-    <string name="stats_msg_body">Der Anhang enthält anonyme Statistiken, die uns helfen, Arcane Chat zu verbessern. Vielen Dank! Für weitere Infos, siehe https://delta.chat/help#statssending </string>
+    <string name="stats_msg_body">Der Anhang enthält anonyme Statistiken, die uns helfen, Delta Chat zu verbessern. Vielen Dank! Für weitere Infos, siehe https://delta.chat/help#statssending </string>
 
     <!-- Emoji picker and categories -->
     <string name="emoji_search_results">Suchergebnisse</string>
@@ -1104,17 +1112,17 @@
 
     <!-- location streaming -->
     <string name="location_streaming_notification_text">Du teilst deinen Standort</string>
-    <string name="location_rationale">Damit du deinen aktuellen Standort teilen kannst, musst du Arcane Chat die Nutzung deiner Standortdaten erlauben.\n\nDamit die Standortanzeige nahtlos funktioniert, werden Standortdaten auch dann verwendet, wenn die App geschlossen ist oder nicht genutzt wird.</string>
+    <string name="location_rationale">Damit du deinen aktuellen Standort teilen kannst, musst du Delta Chat die Nutzung deiner Standortdaten erlauben.\n\nDamit die Standortanzeige nahtlos funktioniert, werden Standortdaten auch dann verwendet, wenn die App geschlossen ist oder nicht genutzt wird.</string>
 
     <!-- permissions -->
     <string name="perm_required_title">Berechtigung erforderlich</string>
     <string name="perm_continue">Weiter</string>
-    <string name="perm_explain_access_to_camera_denied">Um Fotos oder Videos aufzunehmen, bitte in den System-Einstellungen ArcaneChat den Zugriff auf die Kamera erlauben. </string>
+    <string name="perm_explain_access_to_camera_denied">Um Fotos oder Videos aufzunehmen, bitte in den System-Einstellungen DeltaChat den Zugriff auf die Kamera erlauben. </string>
     <!-- give the user an idea where to find the "Microphone" option. the hint is only shown if access was initially denied by the user. pick up wordings really used on the systems, but do not be overly precise: things shift around often and there are too many system we support to track every detail and click path -->
     <string name="perm_explain_access_to_mic_denied">Um Audio-Nachrichten zu senden, bitte in den System- oder App-Einstellungen den Zugriff auf das Mikrophon erlauben.</string>
-    <string name="perm_explain_access_to_storage_denied">Um Dateien zu empfangen oder zu versenden, bitte in den System-Einstellungen Arcane Chat den Zugriff auf den Speicher erlauben.</string>
-    <string name="perm_explain_access_to_location_denied">Um einen Standort anzuhängen, bitte in den Systemeinstellungen ArcaneChat den Zugriff auf \"Standort\" erlauben.</string>
-    <string name="perm_explain_access_to_notifications_denied">Um Benachrichtigungen zu erhalten, öffne \"Systemeinstellungen / Apps / Arcane Chat\" und aktiviere \"Benachrichtigungen\".</string>
+    <string name="perm_explain_access_to_storage_denied">Um Dateien zu empfangen oder zu versenden, bitte in den System-Einstellungen Delta Chat den Zugriff auf den Speicher erlauben.</string>
+    <string name="perm_explain_access_to_location_denied">Um einen Standort anzuhängen, bitte in den Systemeinstellungen DeltaChat den Zugriff auf \"Standort\" erlauben.</string>
+    <string name="perm_explain_access_to_notifications_denied">Um Benachrichtigungen zu erhalten, öffne \"Systemeinstellungen / Apps / Delta Chat\" und aktiviere \"Benachrichtigungen\".</string>
 
     <!-- ImageEditorHud -->
     <string name="ImageEditorHud_draw_anywhere_to_blur">Zeichne zum Verwischen in beliebige Bereiche</string>
@@ -1126,7 +1134,7 @@
     <string name="ImageEditorHud_flip">Spiegeln</string>
     <string name="ImageEditorHud_rotate">Drehen</string>
 
-    <string name="welcome_desktop">Willkommen bei Arcane Chat</string>
+    <string name="welcome_desktop">Willkommen bei Delta Chat</string>
     <string name="global_menu_preferences_language_desktop">Sprache</string>
     <string name="global_menu_file_desktop">Datei</string>
     <string name="global_menu_file_quit_desktop">Beenden</string>
@@ -1141,11 +1149,11 @@
     <string name="global_menu_view_developer_desktop">EntwicklerIn</string>
     <string name="global_menu_view_developer_tools_desktop">Entwicklungswerkzeug</string>
     <string name="global_menu_help_desktop">Hilfe</string>
-    <string name="delta_chat_homepage">Arcane Chat Homepage</string>
+    <string name="delta_chat_homepage">Delta Chat Homepage</string>
     <string name="contribute">Mitwirken</string>
     <string name="global_menu_help_report_desktop">Ein Problem melden</string>
-    <string name="global_menu_help_about_desktop">Über Arcane Chat</string>
-    <string name="global_menu_file_open_desktop">Arcane Chat öffnen</string>
+    <string name="global_menu_help_about_desktop">Über Delta Chat</string>
+    <string name="global_menu_file_open_desktop">Delta Chat öffnen</string>
     <string name="global_menu_minimize_to_tray">Minimieren</string>
     <string name="no_account_selected">Profil auswählen oder ein neues Profil erstellen</string>
     <string name="no_chat_selected_suggestion_desktop">Chat auswählen oder neuen Chat erstellen.</string>
@@ -1165,7 +1173,7 @@
     <string name="message_detail_received_desktop">Empfangen</string>
     <string name="menu.view.developer.open.log.folder">Log-Ordner öffnen</string>
     <string name="menu.view.developer.open.current.log.file">Aktuelle Logdatei öffnen</string>
-    <string name="explain_desktop_minimized_disabled_tray_pref" tools:ignore="TypographyDashes">Benachrichtigungssymbol kann nicht deaktiviert werden, da Arcane Chat mit der Option --minimized gestartet wurde.</string>
+    <string name="explain_desktop_minimized_disabled_tray_pref" tools:ignore="TypographyDashes">Benachrichtigungssymbol kann nicht deaktiviert werden, da Delta Chat mit der Option --minimized gestartet wurde.</string>
     <!-- deprecated, used on desktop although there is not spell checker -->
     <string name="no_spellcheck_suggestions_found">Keine Rechtschreibvorschläge gefunden.</string>
     <string name="show_window">Fenster anzeigen</string>
@@ -1215,7 +1223,7 @@
     <string name="import_device_contacts">Kontakte vom Gerät importieren</string>
     <string name="import_device_contacts_hint">Um mit Kontakten auf deinem Gerät zu chatten, öffne die Systemeinstellungen und aktiviere \"Kontakte\".</string>
     <!-- iOS notification settings -->
-    <string name="disabled_in_dc">Deaktiviert in Arcane Chat</string>
+    <string name="disabled_in_dc">Deaktiviert in Delta Chat</string>
     <string name="disabled_in_system_settings">Deaktiviert in den Systemeinstellungen</string>
     <string name="bg_app_refresh_disabled">\"App Hintergrundaktivität\" deaktiviert in den Systemeinstellungen</string>
     <string name="notifications_avg_minutes">Im Mittel alle %1$d Minuten</string>
@@ -1228,19 +1236,19 @@
     <!-- use the same translation for "Shortcuts" as the system is using, often the term "Shortcut" stays untranslated; check eg. how the "Shortcuts" system app is called in your locale -->
     <string name="shortcuts_widget_title">Shortcuts</string>
     <!-- use the same translation for "Widget" as the system is using; often the term "Widget" stays untranslated -->
-    <string name="shortcuts_widget_description">Arcane Chat\'s \"Zum Widget hinzufügen\" verwenden, um Chats hinzuzufügen</string>
+    <string name="shortcuts_widget_description">Delta Chat\'s \"Zum Widget hinzufügen\" verwenden, um Chats hinzuzufügen</string>
     <!-- use the same translation for "Widget" as the system is using; often the term "Widget" stays untranslated -->
     <string name="remove_from_widget">Aus Widget entfernen</string>
     <!-- use the same translation for "Widget" as the system is using; often the term "Widget" stays untranslated -->
     <string name="add_to_widget">Zum Widget hinzufügen</string>
     <!-- iOS permissions, copy from "deltachat-ios/Info.plist", which is used on missing translations in "deltachat-ios/LANG.lproj/InfoPlist.strings" -->
-    <string name="InfoPlist_NSCameraUsageDescription">Arcane Chat verwendet die Kamera, um Fotos aufzunehmen und zu versenden und um QR-Codes zu scannen.</string>
-    <string name="InfoPlist_NSLocationAlwaysAndWhenInUseUsageDescription">Arcane Chat benötigt die Standort-Berechtigung, um deinen Standort für den Zeitraum, in dem du die Standortfreigabe aktiviert hast, zu teilen.</string>
-    <string name="InfoPlist_NSLocationWhenInUseUsageDescription">Arcane Chat benötigt die Standort-Berechtigung, um deinen Standort für den Zeitraum, in dem du die Standortfreigabe aktiviert hast, zu teilen.</string>
-    <string name="InfoPlist_NSMicrophoneUsageDescription">Arcane Chat verwendet das Mikrofon, um Sprachnachrichten und Videos mit Sound aufzunehmen und zu versenden.</string>
-    <string name="InfoPlist_NSPhotoLibraryUsageDescription">Arcane Chat verwendet die Fotos, um dir die Möglichkeit zu geben, diese auszuwählen und zu versenden.</string>
-    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">Arcane Chat möchte Bilder in deiner Fotobibliothek speichern.</string>
-    <string name="InfoPlist_NSFaceIDUsageDescription">Arcane Chat kann Face-ID verwenden, um dein lokales Profil, Backups und die Einrichtung eines zweiten Geräts zu schützen.</string>
+    <string name="InfoPlist_NSCameraUsageDescription">Delta Chat verwendet die Kamera, um Fotos aufzunehmen und zu versenden und um QR-Codes zu scannen.</string>
+    <string name="InfoPlist_NSLocationAlwaysAndWhenInUseUsageDescription">Delta Chat benötigt die Standort-Berechtigung, um deinen Standort für den Zeitraum, in dem du die Standortfreigabe aktiviert hast, zu teilen.</string>
+    <string name="InfoPlist_NSLocationWhenInUseUsageDescription">Delta Chat benötigt die Standort-Berechtigung, um deinen Standort für den Zeitraum, in dem du die Standortfreigabe aktiviert hast, zu teilen.</string>
+    <string name="InfoPlist_NSMicrophoneUsageDescription">Delta Chat verwendet das Mikrofon, um Sprachnachrichten und Videos mit Sound aufzunehmen und zu versenden.</string>
+    <string name="InfoPlist_NSPhotoLibraryUsageDescription">Delta Chat verwendet die Fotos, um dir die Möglichkeit zu geben, diese auszuwählen und zu versenden.</string>
+    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">Delta Chat möchte Bilder in deiner Fotobibliothek speichern.</string>
+    <string name="InfoPlist_NSFaceIDUsageDescription">Delta Chat kann Face-ID verwenden, um dein lokales Profil, Backups und die Einrichtung eines zweiten Geräts zu schützen.</string>
 
     <!-- android specific strings, developers: please take care to remove strings that are no longer used! -->
     <string name="pref_instant_delivery">Sofortige Benachrichtigungen</string>
@@ -1249,10 +1257,10 @@
     <string name="pref_reliable_service">Hintergrundverbindung erzwingen</string>
     <string name="pref_reliable_service_explain">Verursacht eine permanente Benachrichtigung</string>
 
-    <string name="pref_background_notifications_rationale">Um die Verbindung aufrechtzuerhalten und Nachrichten im Hintergrund zu empfangen, ignorieren im nächsten Schritt die \"Akku-Optimierungen\".\n\nArcane Chat verbraucht nur minimale Ressourcen und achtet darauf, den Akku zu schonen.</string>
+    <string name="pref_background_notifications_rationale">Um die Verbindung aufrechtzuerhalten und Nachrichten im Hintergrund zu empfangen, ignorieren im nächsten Schritt die \"Akku-Optimierungen\".\n\nDelta Chat verbraucht nur minimale Ressourcen und achtet darauf, den Akku zu schonen.</string>
     <!-- disabling "Reliable service" will hide a the maybe annoying permanent-notification with the drawback that new-message-notifications get potentially unreliable -->
-    <string name="perm_enable_bg_reminder_title">Tippen hier, um Nachrichten zu empfangen, während Arcane Chat im Hintergrund läuft.</string>
-    <string name="perm_enable_bg_already_done">Du hast Arcane Chat bereits erlaubt, Nachrichten im Hintergrund zu empfangen.\n\nFalls keine Nachrichten eingehen, überprüfe bitte auch die Systemeinstellungen.</string>
+    <string name="perm_enable_bg_reminder_title">Tippen hier, um Nachrichten zu empfangen, während Delta Chat im Hintergrund läuft.</string>
+    <string name="perm_enable_bg_already_done">Du hast Delta Chat bereits erlaubt, Nachrichten im Hintergrund zu empfangen.\n\nFalls keine Nachrichten eingehen, überprüfe bitte auch die Systemeinstellungen.</string>
 
     <!-- device messages for updates -->
     <string name="update_2_0">Was ist neu?\n\n💯 Die Ende-zu-Ende-Verschlüsselung ist jetzt dauerhaft. Vorhängeschlösser 🔒 gibt es nicht mehr!\n\n✉️ Klassische E-Mails ohne Ende-zu-Ende-Verschlüsselung sind mit einem Umschlag-Symbol gekennzeichnet\n\n😻 Neues, verbessertes Profil für alle Kontakte\n\n🔲 Neue Schaltfläche für den schnellen Zugriff auf Apps, die in einem Chat verwendet werden\n\n❤️ Bitte spende und hilf uns, unabhängig zu bleiben und weiterhin Verbesserungen zu bringen: %1$s</string>

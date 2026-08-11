@@ -156,7 +156,7 @@ public class ApplicationContext extends MultiDexApplication {
               "Android " + Build.VERSION.RELEASE + ":\n" + stringWriter.getBuffer().toString();
           errorMsg += "\n" + LogViewFragment.grabLogcat();
           String subject =
-              "Arcane Chat " + BuildConfig.VERSION_NAME + "-" + BuildConfig.FLAVOR + " Crash Report";
+              "ArcaneChat " + BuildConfig.VERSION_NAME + "-" + BuildConfig.FLAVOR + " Crash Report";
           Intent intent = new Intent(android.content.Intent.ACTION_SEND);
           intent.setType("text/plain");
           intent.putExtra(android.content.Intent.EXTRA_SUBJECT, subject);

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- common strings without special context -->
-    <string name="app_name">Arcane Chat</string>
+    <string name="app_name">Delta Chat</string>
     <string name="ok">Ados</string>
     <string name="cancel">Utzi</string>
     <string name="clear_search">Garbitu bilaketa</string>
@@ -204,6 +204,9 @@
     <string name="contact">Kontaktua</string>
     <string name="bot">Bot</string>
     <string name="camera">Kamera</string>
+    <string name="front_camera">Aurreko kamera</string>
+    <string name="back_camera">Atzeko kamera</string>
+    <string name="microphone">Mikrofonoa</string>
     <!-- As in "start a video recording" or "take a photo"; eg. the description of the "shutter button" in cameras -->
     <string name="capture">Harrapatu</string>
     <!-- Switch eg. from front to back camera -->
@@ -308,7 +311,7 @@
     <string name="share_invite_link_explain">Esteka hau duen edonork ikus dezake zure profila eta txat bat hasi zurekin. Partekatu konfiantzazko pertsonekin bakarrik.</string>
     <string name="invite_friends">Gonbidatu lagunak</string>
     <!-- %1$s is replaced by the user's invitation link ("https://i.delta.chat/...") -->
-    <string name="invite_friends_text">Jarri nirekin harremanetan Arcane Chat bidez:\n%1$s</string>
+    <string name="invite_friends_text">Jarri nirekin harremanetan Delta Chat bidez:\n%1$s</string>
     <string name="menu_copy_selection_to_clipboard">Kopiatu hautaketa</string>
     <string name="menu_copy_link_to_clipboard">Kopiatu esteka</string>
     <string name="menu_copy_text_to_clipboard">Kopiatu testua</string>
@@ -362,7 +365,7 @@
     <string name="title_share_location">Partekatu kokalekua kide guztiekin</string>
     <string name="device_talk">Gailuaren mezuak</string>
     <string name="device_talk_subtitle">Lokalki sortutako mezuak</string>
-    <string name="device_talk_explain">Txat honetako mezuak zure Arcane Chat aplikazioak sortu ditu lokalki. Egileek aplikazioaren eguneraketei buruz eta erabileran arazoei buruz informatzeko erabiltzen dute.</string>
+    <string name="device_talk_explain">Txat honetako mezuak zure Delta Chat aplikazioak sortu ditu lokalki. Egileek aplikazioaren eguneraketei buruz eta erabileran arazoei buruz informatzeko erabiltzen dute.</string>
     <string name="device_talk_welcome_message2">Jarri harremanetan!\n\n🙌 Sakatu \"QR kodea\" bi gailuen pantaila nagusian. Hautatu \"Eskaneatu QR kodea\" gailu batean eta zuzendu bestera\n\n🌍 Gela berean ez bazaudete, eskaneatu bideo-dei baten bidez edo partekatu gonbidapen-esteka bat \"Eskaneatu QR kodea\" ataletik\n\nOndoren: Gozatu mezulari deszentralizatuaren esperientziaz. Ezagunagoak diren beste aplikazio batzuek ez bezala, kontrol zentralik gabe eta zu, zure lagunak, lankideak edo familia erakunde handiei jarraitu edo saldu gabe.</string>
     <string name="edit_contact">Editatu kontaktua</string>
     <!-- Verb "to pin", making something sticky, not a noun or abbreviation for "pin number". -->
@@ -379,7 +382,7 @@
     <!-- Menu item beside an app/chat that adds an icon to the system's home screen. If the user taps that icon, the app/chat is opened directly. -->
     <string name="add_to_home_screen">Gehitu hasierako pantailan</string>
     <string name="donate">Egin dohaintza</string>
-    <string name="donate_device_msg">❤️ Badirudi Arcane Chat-ekin gozatzen ari zarela!\n\nMesedez, pentsatu dohaintza bat egitea Arcane Chat guztiontzat doakoa izan dadin laguntzeko.\n\nArcane Chat-en erabilera doakoa eta kode irekikoa den arren, garapenak dirua balio du. Lagundu iezaguzu Arcane Chat independente mantentzen eta etorkizunean are hobea egiten.\n\nhttps://delta.chat/donate</string>
+    <string name="donate_device_msg">❤️ Badirudi Delta Chat-ekin gozatzen ari zarela!\n\nMesedez, pentsatu dohaintza bat egitea Delta Chat guztiontzat doakoa izan dadin laguntzeko.\n\nDelta Chat-en erabilera doakoa eta kode irekikoa den arren, garapenak dirua balio du. Lagundu iezaguzu Delta Chat independente mantentzen eta etorkizunean are hobea egiten.\n\nhttps://delta.chat/donate</string>
 
     <string name="mute_for_one_hour">Mututu ordubete</string>
     <string name="mute_for_eight_hours">Mututu 8 ordu</string>
@@ -436,14 +439,18 @@
     <string name="canceled_call">Bertan behera utzitako deia</string>
     <string name="missed_call">Galdutako deia</string>
     <string name="already_in_call">Dei batean dagoeneko</string>
+    <string name="call_back">Deitu berriro</string>
     <string name="call_answered_elsewhere">Deia beste gailu batean erantzun da</string>
     <string name="call_requires_camera_permission">Kamerarako baimena behar da bideo-deiak egiteko</string>
     <string name="call_requires_mic_permission">Mikrofonorako baimena behar da bideo-deiak egiteko</string>
+    <string name="call_grant_mic_permission">Ukitu mikrofonorako sarbidea emateko</string>
     <string name="call_requires_connection">Ezin da deia hasi. Ziurtatu gailuak interneterako konexioa duela eta saiatu berriro.</string>
     <!-- Used e.g. in a notifications to describe an ongoing call. "Call" is a noun here, in the meaning of "This is the call with ..." where the placeholder is replaced by the name of the contact. -->
     <string name="call_with">Deia %1$s(r)ekin</string>
     <!-- Use e.g. in a notifications during ringing. Placeholder is relaced by the name of the contact being called. -->
     <string name="calling_person">%1$s deitzen...</string>
+    <string name="audio_output">Audio sarrera</string>
+
     <!-- get confirmations -->
     <!-- confirmation for leaving groups or channels. If a subject is needed, "Are you sure you want to leave the chat?" would work as well -->
     <string name="ask_leave_group">Ziur irten nahi duzula?</string>
@@ -502,7 +509,7 @@
     <string name="chat_new_one_to_one_hint">Bidali mezu bat %1$s(r)i.</string>
     <!-- consider keeping the term "channel" as in WhatsApp or Telegram -->
     <string name="chat_new_channel_hint">Kanalak zure mezuak jende askori aldi berean helarazteko tresnak dira.</string>
-    <string name="chat_new_group_hint">Idatzi lehen mezua, besteek taldera erantzutea baimenduz\n\n• Ez du axola denek ez badute Arcane Chat erabiltzen.\n\n• Lehen mezua bidaltzeko denbora bat behar daiteke.</string>
+    <string name="chat_new_group_hint">Idatzi lehen mezua, besteek taldera erantzutea baimenduz\n\n• Ez du axola denek ez badute Delta Chat erabiltzen.\n\n• Lehen mezua bidaltzeko denbora bat behar daiteke.</string>
     <string name="chat_record_slide_to_cancel">Irristatu ezeztatzeko</string>
     <string name="chat_record_explain">Sakatu eta mantendu ahots-mezu bat grabatzeko, askatu bidaltzeko.</string>
     <string name="chat_no_chats_yet_title">Sarrera-ontzi hutsa.\nSakatu \"+\" txat berria hasteko.</string>
@@ -602,15 +609,15 @@
     <string name="multidevice_title">Gehitu bigarren gailua</string>
     <string name="multidevice_same_network_hint">Ziurtatu gailu biak Wi-Fi edo sare berera konektatuta daudela.</string>
     <string name="multidevice_this_creates_a_qr_code">Honek QR kode bat sortuko du, bigarren gailuak eskaneatu eta profila kopiatu dezan.\n\nZiurtatu zuk nahi ez duzun inork ez ezein kamerak ezin duela ondorengo pantaila ikusi.</string>
-    <string name="multidevice_install_dc_on_other_device">Instalatu Arcane Chat zure beste gailuan (https://get.delta.chat)</string>
+    <string name="multidevice_install_dc_on_other_device">Instalatu Delta Chat zure beste gailuan (https://get.delta.chat)</string>
     <!-- "I Already Have a Profile / Add as Second Device” should be the same text as defined by the keys onboarding_alternative_logins and multidevice_receiver_title -->
-    <string name="multidevice_tap_scan_on_other_device">Abiarazi Arcane Chat, sakatu “Badut profil bat / Gehitu bigarren gailu gisa” eta eskaneatu hemen agertzen den kodea.</string>
+    <string name="multidevice_tap_scan_on_other_device">Abiarazi Delta Chat, sakatu “Badut profil bat / Gehitu bigarren gailu gisa” eta eskaneatu hemen agertzen den kodea.</string>
     <!-- Shown inside a "QR code card" with very limited space; please formulate the text as short as possible therefore. The placeholder will be replaced by the profile name eg. "Scan to set up second device for Alice" -->
     <string name="multidevice_qr_subtitle">Eskaneatu %1$s(r)entzat bigarren gailu bat konfiguratzeko</string>
     <string name="multidevice_receiver_title">Gehitu bigarren gailu gisa</string>
-    <string name="multidevice_open_settings_on_other_device">Lehenengo gailuan, abiarazi Arcane Chat, joan hona: “Ezarpenak / Gehitu bigarren gailua“, eta eskaneatu bertan agertzen den kodea.</string>
+    <string name="multidevice_open_settings_on_other_device">Lehenengo gailuan, abiarazi Delta Chat, joan hona: “Ezarpenak / Gehitu bigarren gailua“, eta eskaneatu bertan agertzen den kodea.</string>
     <string name="multidevice_receiver_scanning_ask">Kopiatu kontua beste gailutik gailu honetara?</string>
-    <string name="multidevice_receiver_needs_update">Inportatu nahi duzun kontua Arcane Chat-en bertsio berriago batena da.\n\nBigarren gailua konfiguratzen jarraitzeko, mesedez, eguneratu gailu hau Arcane Chat-en azken bertsiora.</string>
+    <string name="multidevice_receiver_needs_update">Inportatu nahi duzun kontua Delta Chat-en bertsio berriago batena da.\n\nBigarren gailua konfiguratzen jarraitzeko, mesedez, eguneratu gailu hau Delta Chat-en azken bertsiora.</string>
     <string name="multidevice_abort">Bertan behera utzi bigarren gailuaren konfigurazioa?</string>
     <string name="multidevice_abort_will_invalidate_copied_qr">Honek arbelean kopiatutako QR kodea baliogabetuko du.</string>
     <string name="multidevice_transfer_done_devicemsg">ℹ️ Kontua zure bigarren gailura transferitu da.</string>
@@ -670,6 +677,12 @@
     <!-- Question shown when group's/channel's QR code is scanned from onboarding screen -->
     <string name="instant_onboarding_confirm_group">Sortu profil berri bat eta sartu \"%1$s\"(e)n?</string>
 
+    <string name="team">Taldea</string>
+    <string name="team_profile">Taldearen profila</string>
+    <string name="team_profile_explain">\"Taldearen profila\" talde batek edo erakunde batek kudeatzen du kolektiboki.\n\n️⚠️  Taldearen profilak esperimentalak dira eta alda daitezke.</string>
+    <string name="team_name">Taldearen izena</string>
+    <string name="create_team_profile">Sortu taldearen profila</string>
+
     <string name="welcome_chat_over_email">Txat deszentralizatu segurua</string>
     <string name="scan_invitation_code">Eskaneatu gonbidapen kodea</string>
     <string name="login_title">Hasi saioa</string>
@@ -706,7 +719,9 @@
     <string name="remove_transport">Ezabatu errelea</string>
     <string name="edit_transport">Editatu errelea</string>
     <string name="used_for_sending">Bidaltzeko erabilita</string>
+    <!-- deprecated -->
     <string name="hide_from_contacts">Ezkutatu kontaktuetatik</string>
+    <!-- deprecated -->
     <string name="hidden_from_contacts">Kontaktuetatik ezkutatuta</string>
     <string name="enforce_e2ee">Behartu zifraketa errele guztietarako</string>
     <!-- Hint for the list of relays -->
@@ -869,14 +884,14 @@
     <string name="profile_image_delete">Ezabatu abatarra</string>
     <string name="pref_show_tray_icon">Erakutsi sistema-erretilu ikonoa</string>
     <string name="pref_edit_profile">Editatu kontua</string>
-    <string name="send_stats_to_devs">Bidali estatistikak Arcane Chat-eko garatzaileei</string>
-    <string name="stats_device_message">Arcane Chat hobetzen lagundu eta ikerketa babestu nahi duzu astero erabilera-estatistika anonimoak bidalita?\n\n👉 Sakatu hemen… 👈</string>
-    <string name="stats_confirmation_dialog">Arcane Chat hobetzen lagundu eta ikerketa babestu nahi duzu astero erabilera-estatistika anonimoak bidalita?</string>
-    <string name="stats_thanks">Eskerrik asko! Bidalketa edozein unetan desgaitu dezakezu \"Ezarpenak -> Aurreratua\" atalean.\n\nBestalde, Arcane Chat-en segurtasunari buruzko ikerketa zientifiko batean parte hartzeko 5 minutu dituzu?</string>
+    <string name="send_stats_to_devs">Bidali estatistikak Delta Chat-eko garatzaileei</string>
+    <string name="stats_device_message">Delta Chat hobetzen lagundu eta ikerketa babestu nahi duzu astero erabilera-estatistika anonimoak bidalita?\n\n👉 Sakatu hemen… 👈</string>
+    <string name="stats_confirmation_dialog">Delta Chat hobetzen lagundu eta ikerketa babestu nahi duzu astero erabilera-estatistika anonimoak bidalita?</string>
+    <string name="stats_thanks">Eskerrik asko! Bidalketa edozein unetan desgaitu dezakezu \"Ezarpenak -> Aurreratua\" atalean.\n\nBestalde, Delta Chat-en segurtasunari buruzko ikerketa zientifiko batean parte hartzeko 5 minutu dituzu?</string>
     <string name="stats_disable_dialog">Estatistiken bidalketa gaituta dago jada.\n\nDesaktibatu nahi duzu?</string>
     <string name="disable">Desgaitu</string>
     <string name="stats_keep_sending">Bidaltzen jarraitu</string>
-    <string name="stats_msg_body">Eranskinak erabilera-estatistika anonimoak ditu, Arcane Chat hobetzen laguntzen digutenak. Ikusi https://delta.chat/help#statssending informazio gehiago lortzeko. Eskerrik asko!</string>
+    <string name="stats_msg_body">Eranskinak erabilera-estatistika anonimoak ditu, Delta Chat hobetzen laguntzen digutenak. Ikusi https://delta.chat/help#statssending informazio gehiago lortzeko. Eskerrik asko!</string>
 
     <!-- Emoji picker and categories -->
     <string name="emoji_search_results">Bilatu emaitzak</string>
@@ -1014,7 +1029,7 @@
     <string name="devicemsg_storage_exceeding">⚠️ Zure hornitzailearen biltegiratzea agortzear dago: %%-tik %1$s erabili dituzu dagoeneko.\n\nLitekeena da mezuak jaso ezin izatea biltegiratzea beteta badago.\n\n👉 Mesedez, egiaztatu datu zaharrak hornitzailearen web-interfazean ezaba ditzakezun eta kontuan hartu \"Ezarpenak / Txatak / Ezabatu mezu zaharrak\" aukera aktibatzea. Zure uneko biltegiratze-erabilera edozein unetan egiaztatu dezakezu \"Ezarpenak / Konektibitatea\" atalean.</string>
     <!-- %1%s will be replaced by date and time in some human-readable format -->
     <string name="devicemsg_bad_time">⚠️ Zure gailuko data edo ordua okerra dela dirudi (%1$s).\n\nEgokitu zure erlojua ⏰🔧 zure mezuak zuzen jasotzen direla ziurtatzeko.</string>
-    <string name="devicemsg_update_reminder">⚠️ Zure Arcane Chat bertsioa zaharkituta egon daiteke.\n\nHorrek arazoak sor ditzake zure txat-kideek bertsio berriagoak erabiltzen dituztelako - eta azken funtzioak falta dituzulako 😳\nMesedez, egiaztatu https://get.delta.chat edo zure aplikazio-denda eguneratzeak ikusteko.</string>
+    <string name="devicemsg_update_reminder">⚠️ Zure Delta Chat bertsioa zaharkituta egon daiteke.\n\nHorrek arazoak sor ditzake zure txat-kideek bertsio berriagoak erabiltzen dituztelako - eta azken funtzioak falta dituzulako 😳\nMesedez, egiaztatu https://get.delta.chat edo zure aplikazio-denda eguneratzeak ikusteko.</string>
 
     <!-- Some options as "Add Second Device" or "Backup" may require the system PIN/Fingerprint/Gesture/Etc. to be entered in a system dialog. This hint is added to the system dialog, below a title as "Add Second Device" or "Backup". -->
     <string name="enter_system_secret_to_continue">Desblokeatu jarraitzeko</string>
@@ -1095,17 +1110,17 @@
 
     <!-- location streaming -->
     <string name="location_streaming_notification_text">Zure kokapena partekatzen ari zara</string>
-    <string name="location_rationale">Zure zuzeneko kokapena txat-kideekin partekatzeko, baimendu Arcane Chat-ek zure lokalizazio-datuak erabiltzea.\n\nZuzeneko kokapenak modu egokian funtziona dezan, lokalizazio-datuak erabiltzen dira baita aplikazioa itxita dagoenean edo erabiltzen ez denean ere.</string>
+    <string name="location_rationale">Zure zuzeneko kokapena txat-kideekin partekatzeko, baimendu Delta Chat-ek zure lokalizazio-datuak erabiltzea.\n\nZuzeneko kokapenak modu egokian funtziona dezan, lokalizazio-datuak erabiltzen dira baita aplikazioa itxita dagoenean edo erabiltzen ez denean ere.</string>
 
     <!-- permissions -->
     <string name="perm_required_title">Baimena behar da</string>
     <string name="perm_continue">Jarraitu</string>
-    <string name="perm_explain_access_to_camera_denied">Arcane Chat-ek kamerara sarbidea behar du argazkiak edo bideoak ateratzeko, baina behin betiko ukatu zaio. Joan aplikazioaren ezarpen menura, hautatu \"Baimenak\" eta gaitu \"Kamera\".</string>
+    <string name="perm_explain_access_to_camera_denied">Delta Chat-ek kamerara sarbidea behar du argazkiak edo bideoak ateratzeko, baina behin betiko ukatu zaio. Joan aplikazioaren ezarpen menura, hautatu \"Baimenak\" eta gaitu \"Kamera\".</string>
     <!-- give the user an idea where to find the "Microphone" option. the hint is only shown if access was initially denied by the user. pick up wordings really used on the systems, but do not be overly precise: things shift around often and there are too many system we support to track every detail and click path -->
-    <string name="perm_explain_access_to_mic_denied">Arcane Chat-ek mikrofonoa erabiltzeko baimena behar du ahots-mezuak bidali ahal izateko, baina behin betiko ukatu zaio. Joan aplikazioaren ezarpenetara, hautatu \"Baimenak\" eta gaitu \"Mikrofonoa\".</string>
-    <string name="perm_explain_access_to_storage_denied">Arcane Chat-ek biltegiratze baimena behar du argazkiak, bideoak edo audioa erantsi edo esportatzeko, baina behin betiko ukatu zaio. Joan aplikazioaren ezarpen menura, hautatu \"baimenak\", eta gaitu \"Biltegiratzea\"</string>
-    <string name="perm_explain_access_to_location_denied">Arcane Chat-ek kokaleku aatzitzeko baimena behar du kokalekua eransteko, baina behin betiko ukatu zaio. Joan aplikazioaren ezarpen menura, hautatu \"baimenak\", eta gaitu \"Kokalekua\".</string>
-    <string name="perm_explain_access_to_notifications_denied">Jakinarazpenak jasotzeko, hona jo \"Sistemaren ezarpenak / Aplikazioak / Arcane Chat\" eta gaitu \"Jakinarazpenak\".</string>
+    <string name="perm_explain_access_to_mic_denied">Delta Chat-ek mikrofonoa erabiltzeko baimena behar du ahots-mezuak bidali ahal izateko, baina behin betiko ukatu zaio. Joan aplikazioaren ezarpenetara, hautatu \"Baimenak\" eta gaitu \"Mikrofonoa\".</string>
+    <string name="perm_explain_access_to_storage_denied">Delta Chat-ek biltegiratze baimena behar du argazkiak, bideoak edo audioa erantsi edo esportatzeko, baina behin betiko ukatu zaio. Joan aplikazioaren ezarpen menura, hautatu \"baimenak\", eta gaitu \"Biltegiratzea\"</string>
+    <string name="perm_explain_access_to_location_denied">Delta Chat-ek kokaleku aatzitzeko baimena behar du kokalekua eransteko, baina behin betiko ukatu zaio. Joan aplikazioaren ezarpen menura, hautatu \"baimenak\", eta gaitu \"Kokalekua\".</string>
+    <string name="perm_explain_access_to_notifications_denied">Jakinarazpenak jasotzeko, hona jo \"Sistemaren ezarpenak / Aplikazioak / Delta Chat\" eta gaitu \"Jakinarazpenak\".</string>
 
     <!-- ImageEditorHud -->
     <string name="ImageEditorHud_draw_anywhere_to_blur">Marraztu edonon lausotzeko</string>
@@ -1117,7 +1132,7 @@
     <string name="ImageEditorHud_flip">Irauli</string>
     <string name="ImageEditorHud_rotate">Biratu</string>
 
-    <string name="welcome_desktop">Ongi etorri Arcane Chat-era</string>
+    <string name="welcome_desktop">Ongi etorri Delta Chat-era</string>
     <string name="global_menu_preferences_language_desktop">Hautatu hizkuntza...</string>
     <string name="global_menu_file_desktop">Fitxategia</string>
     <string name="global_menu_file_quit_desktop">Irten</string>
@@ -1132,11 +1147,11 @@
     <string name="global_menu_view_developer_desktop">Garatzailea</string>
     <string name="global_menu_view_developer_tools_desktop">Garatzaile-tresnak</string>
     <string name="global_menu_help_desktop">Laguntza</string>
-    <string name="delta_chat_homepage">Arcane Chat-en hasiera orria</string>
+    <string name="delta_chat_homepage">Delta Chat-en hasiera orria</string>
     <string name="contribute">Lagundu</string>
     <string name="global_menu_help_report_desktop">Eman arazo baten berri</string>
-    <string name="global_menu_help_about_desktop">Arcane Chat-i buruz</string>
-    <string name="global_menu_file_open_desktop">Ireki Arcane Chat</string>
+    <string name="global_menu_help_about_desktop">Delta Chat-i buruz</string>
+    <string name="global_menu_file_open_desktop">Ireki Delta Chat</string>
     <string name="global_menu_minimize_to_tray">Txikitu</string>
     <string name="no_account_selected">Aukeratu profil bat profil berria sortzeko</string>
     <string name="no_chat_selected_suggestion_desktop">Hautatu txat bat edo sortu txat berri bat</string>
@@ -1156,11 +1171,11 @@
     <string name="message_detail_received_desktop">jasota</string>
     <string name="menu.view.developer.open.log.folder">Ireki egunkarien karpeta</string>
     <string name="menu.view.developer.open.current.log.file">Ireki uneko egunkari-fitxategia</string>
-    <string name="explain_desktop_minimized_disabled_tray_pref" tools:ignore="TypographyDashes">Erretiluko ikonoa ezin da desgaitu, Arcane Chat --minimized aukerarekin abiarazi baita.</string>
+    <string name="explain_desktop_minimized_disabled_tray_pref" tools:ignore="TypographyDashes">Erretiluko ikonoa ezin da desgaitu, Delta Chat --minimized aukerarekin abiarazi baita.</string>
     <!-- deprecated, used on desktop although there is not spell checker -->
     <string name="no_spellcheck_suggestions_found">Ez dago ortografia-iradokizunik.</string>
     <string name="show_window">Erakutsi leihoa</string>
-    <string name="data_found_other_installation_message">Ezin zara Arcane Chat-eko beste instalazio bateko zure profiletara sartu, instalazio bakoitzak bere kokalekuan gordetzen baititu datuak.\n\nDauden profilak gordetzeko:\n1. Irten\n2. Ireki Arcane Chat-en beste instalazioa; behar izanez gero, berrinstalatu %1$s-(e)tik.\n3. Egin profil bakoitzaren segurtasun-kopia bat «Ezarpenak/Txatak» atalean.\n4. Abiarazi berriro aplikazioaren bertsio hau\n5. Leheneratu segurtasun-kopiak «Badut kontu bat» aukera erabiliz\n\nZure aurreko profilik gabe jarraitu nahi duzu?</string>
+    <string name="data_found_other_installation_message">Ezin zara Delta Chat-eko beste instalazio bateko zure profiletara sartu, instalazio bakoitzak bere kokalekuan gordetzen baititu datuak.\n\nDauden profilak gordetzeko:\n1. Irten\n2. Ireki Delta Chat-en beste instalazioa; behar izanez gero, berrinstalatu %1$s-(e)tik.\n3. Egin profil bakoitzaren segurtasun-kopia bat «Ezarpenak/Txatak» atalean.\n4. Abiarazi berriro aplikazioaren bertsio hau\n5. Leheneratu segurtasun-kopiak «Badut kontu bat» aukera erabiliz\n\nZure aurreko profilik gabe jarraitu nahi duzu?</string>
 
     <!-- title of the "keybindings" dialog (for the keybindings names as such, where possible the normal command strings are used) -->
     <string name="keybindings">Tekla-konbinazioak</string>
@@ -1206,7 +1221,7 @@
     <string name="import_device_contacts">Inportatu gailuko kontaktuak</string>
     <string name="import_device_contacts_hint">Zure gailuko kontaktuekin txateatzeko, ireki ezarpenak eta gaitu \"Kontaktuak\".</string>
     <!-- iOS notification settings -->
-    <string name="disabled_in_dc">Desgaitu Arcane Chat-en</string>
+    <string name="disabled_in_dc">Desgaitu Delta Chat-en</string>
     <string name="disabled_in_system_settings">Desgaitu sistemaren ezarpenetan</string>
     <string name="bg_app_refresh_disabled">\"Atzeko planoko aplikazioak freskatzea\" desgaituta dago sistemaren ezarpenetan</string>
     <string name="notifications_avg_minutes">Batez beste, %1$d minutuan behin</string>
@@ -1219,19 +1234,19 @@
     <!-- use the same translation for "Shortcuts" as the system is using, often the term "Shortcut" stays untranslated; check eg. how the "Shortcuts" system app is called in your locale -->
     <string name="shortcuts_widget_title">Lasterbideak</string>
     <!-- use the same translation for "Widget" as the system is using; often the term "Widget" stays untranslated -->
-    <string name="shortcuts_widget_description">Erabili Arcane Chat-en \"Gehitu widget-era\" elementuak gehitzeko</string>
+    <string name="shortcuts_widget_description">Erabili Delta Chat-en \"Gehitu widget-era\" elementuak gehitzeko</string>
     <!-- use the same translation for "Widget" as the system is using; often the term "Widget" stays untranslated -->
     <string name="remove_from_widget">Kendu widget-etik</string>
     <!-- use the same translation for "Widget" as the system is using; often the term "Widget" stays untranslated -->
     <string name="add_to_widget">Gehitu widget-era</string>
     <!-- iOS permissions, copy from "deltachat-ios/Info.plist", which is used on missing translations in "deltachat-ios/LANG.lproj/InfoPlist.strings" -->
     <string name="InfoPlist_NSCameraUsageDescription">Kamera atzitzeko baimena emateak argazkiak eta bideoak ateratzea ahalbidetzen dizu.</string>
-    <string name="InfoPlist_NSLocationAlwaysAndWhenInUseUsageDescription">Arcane Chat-ek zure kokapena partekatzeko baimena behar du, kokapena partekatzea aktibatuta duzun denbora-tartean.</string>
-    <string name="InfoPlist_NSLocationWhenInUseUsageDescription">Arcane Chat-ek zure kokapena partekatzeko baimena behar du, kokapena partekatzea aktibatuta duzun denbora-tartean.</string>
+    <string name="InfoPlist_NSLocationAlwaysAndWhenInUseUsageDescription">Delta Chat-ek zure kokapena partekatzeko baimena behar du, kokapena partekatzea aktibatuta duzun denbora-tartean.</string>
+    <string name="InfoPlist_NSLocationWhenInUseUsageDescription">Delta Chat-ek zure kokapena partekatzeko baimena behar du, kokapena partekatzea aktibatuta duzun denbora-tartean.</string>
     <string name="InfoPlist_NSMicrophoneUsageDescription">Mikrofonoa atzitzeko baimena emateak audioa grabatzea ahalbidetzen dizu.</string>
     <string name="InfoPlist_NSPhotoLibraryUsageDescription">Argazkien bilduma atzitzeko baimena emateak bertatik argazkiak igotzea ahalbidetzen dizu.</string>
-    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">Arcane Chat-ek zure argazki galerian irudiak gorde nahi ditu.</string>
-    <string name="InfoPlist_NSFaceIDUsageDescription">Arcane Chat-ek Face ID erabil dezake zure tokiko profila, babeskopien sorkuntza eta bigarren gailu baten konfigurazioa babesteko.</string>
+    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">Delta Chat-ek zure argazki galerian irudiak gorde nahi ditu.</string>
+    <string name="InfoPlist_NSFaceIDUsageDescription">Delta Chat-ek Face ID erabil dezake zure tokiko profila, babeskopien sorkuntza eta bigarren gailu baten konfigurazioa babesteko.</string>
 
     <!-- android specific strings, developers: please take care to remove strings that are no longer used! -->
     <string name="pref_instant_delivery">Berehalako bidalketa</string>
@@ -1240,10 +1255,10 @@
     <string name="pref_reliable_service">Behartu atzeko planoko konexioa</string>
     <string name="pref_reliable_service_explain">Jakinarazpen iraunkorra sortzen du</string>
 
-    <string name="pref_background_notifications_rationale">Konexioari eutsi eta mezuak atzeko planoan jasotzeko, baztertu bateriaren optimizazioak hurrengo urratsean.\n\nArcane Chat-ek baliabide gutxi erabiltzen ditu eta kontu handiz jokatzen du bateria ez agortzeko.</string>
+    <string name="pref_background_notifications_rationale">Konexioari eutsi eta mezuak atzeko planoan jasotzeko, baztertu bateriaren optimizazioak hurrengo urratsean.\n\nDelta Chat-ek baliabide gutxi erabiltzen ditu eta kontu handiz jokatzen du bateria ez agortzeko.</string>
     <!-- disabling "Reliable service" will hide a the maybe annoying permanent-notification with the drawback that new-message-notifications get potentially unreliable -->
-    <string name="perm_enable_bg_reminder_title">Sakatu hemen mezuak jasotzeko Arcane Chat bigarren planoan dagoenean.</string>
-    <string name="perm_enable_bg_already_done">Dagoeneko baimendu diozu Arcane Chat aplikazioari bigarren planoan mezuak jasotzea,\n\nOraindik ere mezuak heltzen ez badira, egiaztatu ere zure sistemaren ezarpenak.</string>
+    <string name="perm_enable_bg_reminder_title">Sakatu hemen mezuak jasotzeko Delta Chat bigarren planoan dagoenean.</string>
+    <string name="perm_enable_bg_already_done">Dagoeneko baimendu diozu Delta Chat aplikazioari bigarren planoan mezuak jasotzea,\n\nOraindik ere mezuak heltzen ez badira, egiaztatu ere zure sistemaren ezarpenak.</string>
 
     <!-- device messages for updates -->
     <string name="update_2_0">Zer berri?\n\n💯 Muturretik muturrerako zifratze fidagarria eta betirakoa da orain. Sarrailak 🔒 joan dira!\n\n✉️ Muturretik muturrerako zifratzerik gabeko posta elektroniko klasikoa gutun-azal ikur batekin markatuta dago\n\n😻 Profil-bistaratze berri hobetua zure kontaktu guztientzat\n\n🔲 Txat batean erabilitako aplikazioetara azkar sartzeko botoi berria\n\n❤️ Mesedez, egin dohaintza independente jarraitzen laguntzeko eta hobekuntzak ekartzen jarraitzeko: %1$s</string>

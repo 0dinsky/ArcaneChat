@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- common strings without special context -->
-    <string name="app_name">Arcane Chat</string>
+    <string name="app_name">Delta Chat</string>
     <string name="ok">Gerai</string>
     <string name="cancel">Atsisakyti</string>
     <string name="clear_search">Išvalyti paiešką</string>
@@ -21,9 +21,11 @@
     <string name="strict">Griežtas</string>
     <string name="open">Atverti</string>
     <string name="download">Atsisiųsti</string>
-    <string name="downloading">Atsisiunčiama…</string>
+    <string name="downloading">Atsiunčiama…</string>
     <string name="open_attachment">Atverti priedą</string>
     <string name="join">Prisijungti</string>
+    <string name="join_group">Prisijungti prie grupės</string>
+    <string name="join_channel">Prisijungti prie kanalo</string>
     <string name="rejoin">Prisijungti iš naujo</string>
     <string name="delete">Ištrinti</string>
     <string name="delete_for_me">Ištrinti man</string>
@@ -47,8 +49,12 @@
     <string name="archive">Archyvuoti</string>
     <!-- Verb "to unarchive", as in "remove a chat from the archive", opposite of the previous string -->
     <string name="unarchive">Išarchyvuoti</string>
+    <!-- Verb "to mute". used to mute a chat, so that it is silenced e.g. does not make noise or cause notifications -->
+    <string name="mute">Išjungti pranešimus</string>
+    <!-- Adjective "smth is muted". used to describe a muted or silenced chat, that e.g. does not make noise or cause notifications -->
+    <string name="muted">Pranešimai išjungti</string>
     <string name="ephemeral_messages">Išnykstančios žinutės</string>
-    <string name="ephemeral_messages_hint">Šie nustatymai taikomi visiems Arcane Chat besinaudojantiems dalyviams. Vis dėlto, jie gali kopijuoti, įrašyti ir persiųsti žinutes arba naudoti kitas el. pašto kliento programas.</string>
+    <string name="ephemeral_messages_hint">Šie nustatymai taikomi visiems Delta Chat besinaudojantiems dalyviams. Vis dėlto, jie gali kopijuoti, įrašyti ir persiųsti žinutes arba naudoti kitas el. pašto kliento programas.</string>
     <string name="save">Įrašyti</string>
     <string name="media">Medija</string>
     <string name="apps_and_media">Programėlės ir medija</string>
@@ -107,6 +113,8 @@
     <!-- Refers to the time a contact was last seen. Shown below contact name in the profile. The placeholder will be replaced by a relative point in time as "3 minutes ago" (see https://momentjs.com for more examples and languages) -->
     <string name="last_seen_relative">Adresatas paskutinį kartą matytas %1$s</string>
     <string name="last_seen_unknown">Adresatas paskutinį kartą matytas: Nežinoma</string>
+    <!-- Call duration as shown in the call bubbles in case the call is less than one minute. If the context is not clear enough, one may want to add the word "Duration". -->
+    <string name="call_duration_less_than_a_minute">Mažiau nei 1 minutė</string>
     <!-- Shown beside messages that are "N minutes old". Prefer short strings, or well-known abbreviations. -->
     <plurals name="n_minutes">
         <item quantity="one">%d min.</item>
@@ -186,8 +194,13 @@
     <string name="documents">Dokumentai</string>
     <string name="contact">Adresatas</string>
     <string name="camera">Kamera</string>
+    <string name="front_camera">Priekinė kamera</string>
+    <string name="back_camera">Galinė kamera</string>
+    <string name="microphone">Mikrofonas</string>
     <!-- Switch eg. from front to back camera -->
     <string name="switch_camera">Perjungti kamerą</string>
+    <!-- Toggle camera on/off eg. during an video call -->
+    <string name="toggle_camera">Perjungti kamerą</string>
     <string name="toggle_fullscreen">Perjungti viso ekrano veikseną</string>
     <string name="location">Vieta</string>
     <string name="locations">Vietos</string>
@@ -277,7 +290,7 @@
     <string name="share_invite_link_explain">Kiekvienas, turintis šią nuorodą, gali peržiūrėti jūsų profilį ar pradėti su jumis pokalbį. Bendrinkite ją tik su žmonėmis, kuriais pasitikite.</string>
     <string name="invite_friends">Pakviesti draugus</string>
     <!-- %1$s is replaced by the user's invitation link ("https://i.delta.chat/...") -->
-    <string name="invite_friends_text">Susisiekite su manimi Arcane Chat programoje:\n%1$s</string>
+    <string name="invite_friends_text">Susisiekite su manimi Delta Chat programoje:\n%1$s</string>
     <string name="menu_copy_selection_to_clipboard">Kopijuoti žymėjimą</string>
     <string name="menu_copy_link_to_clipboard">Kopijuoti nuorodą</string>
     <string name="menu_copy_text_to_clipboard">Kopijuoti tekstą</string>
@@ -341,7 +354,7 @@
     <string name="reply_privately">Atsakyti privačiai</string>
     <string name="source_code">Pirminis kodas</string>
     <string name="donate">Paaukoti</string>
-    <string name="donate_device_msg">❤️ Atrodo, kad mėgaujatės naudodami Arcane Chat!\n\nApsvarstykite galimybę paaukoti, kad užtikrintumėte, jog Arcane Chat ir toliau visiems būtų nemokama.\n\nNors Arcane Chat yra nemokama ir atvirojo kodo, jos plėtojimas kainuoja pinigus. Padėkite mums išlaikyti Arcane Chat nepriklausomą ir paversti ją ateityje dar labiau nuostabia.\n\nhttps://delta.chat/donate</string>
+    <string name="donate_device_msg">❤️ Atrodo, kad mėgaujatės naudodami Delta Chat!\n\nApsvarstykite galimybę paaukoti, kad užtikrintumėte, jog Delta Chat ir toliau visiems būtų nemokama.\n\nNors Delta Chat yra nemokama ir atvirojo kodo, jos plėtojimas kainuoja pinigus. Padėkite mums išlaikyti Delta Chat nepriklausomą ir paversti ją ateityje dar labiau nuostabia.\n\nhttps://delta.chat/donate</string>
 
     <string name="mute_for_one_hour">Išjungti 1 valandai</string>
     <string name="mute_for_eight_hours">Išjungti 8 valandoms</string>
@@ -387,7 +400,15 @@
     <!-- deprecated, use "Video call" instead -->
     <string name="incoming_video_call">Gaunamasis vaizdo skambutis</string>
     <string name="missed_call">Praleistas skambutis</string>
+    <string name="call_back">Atskambinti</string>
     <string name="call_answered_elsewhere">Atsiliepta kitame įrenginyje</string>
+    <string name="call_requires_camera_permission">Vaizdo skambučiams reikalingas leidimas naudoti kamerą</string>
+    <string name="call_requires_mic_permission">Skambučiams reikalingas leidimas naudoti mikrofoną</string>
+    <string name="call_grant_mic_permission">Bakstelėkite norėdami suteikti prieigą prie mikrofono</string>
+    <!-- Used e.g. in a notifications to describe an ongoing call. "Call" is a noun here, in the meaning of "This is the call with ..." where the placeholder is replaced by the name of the contact. -->
+    <string name="call_with">Skambutis su %1$s</string>
+    <string name="audio_output">Garso išvestis</string>
+
     <!-- get confirmations -->
     <!-- confirmation for leaving groups or channels. If a subject is needed, "Are you sure you want to leave the chat?" would work as well -->
     <string name="ask_leave_group">Ar tikrai norite išeiti?</string>
@@ -446,7 +467,7 @@
     </plurals>
     <!-- The placeholder will be replaced by the name of the recipient in a one-to-one chat. -->
     <string name="chat_new_one_to_one_hint">Siųsti žinutę naudotojui %1$s.</string>
-    <string name="chat_new_group_hint">Rašykite pirmąją žinutę, taip leisdami kitiems atsakyti šioje grupėje..\n\n• Nieko tokio, jei ne visi dalyviai naudoja Arcane Chat.\n\n• Pirmosios žinutės pristatymas gali šiek tiek užtrukti.</string>
+    <string name="chat_new_group_hint">Rašykite pirmąją žinutę, taip leisdami kitiems atsakyti šioje grupėje..\n\n• Nieko tokio, jei ne visi dalyviai naudoja Delta Chat.\n\n• Pirmosios žinutės pristatymas gali šiek tiek užtrukti.</string>
     <string name="chat_record_slide_to_cancel">Perbraukite, norėdami atsisakyti</string>
     <string name="chat_record_explain">Bakstelėkite ir laikykite, norėdami įrašyti balso žinutę. Atleiskite, norėdami išsiųsti</string>
     <string name="chat_no_chats_yet_title">Nėra pokalbių.\nPaspauskite „+“ norėdami pradėti naują pokalbį.</string>
@@ -522,16 +543,16 @@
     <string name="multidevice_title">Pridėti antrąjį įrenginį</string>
     <string name="multidevice_same_network_hint">Įsitikinkite, kad abu įrenginiai yra prisijungę prie to pačio belaidžio (Wi-Fi) arba laidinio tinklo</string>
     <string name="multidevice_this_creates_a_qr_code">Tai sukuria QR kodą, kurį antrasis įrenginys gali nuskenuoti, kad nukopijuotų profilį.\n\nĮsitikinkite, kad joks pašalinis stebėtojas ar kamera nematys lango, kuris bus parodytas paspaudus mygtuką.</string>
-    <string name="multidevice_install_dc_on_other_device">Įsidiekite Arcane Chat kitame savo įrenginyje (https://get.delta.chat)</string>
+    <string name="multidevice_install_dc_on_other_device">Įsidiekite Delta Chat kitame savo įrenginyje (https://get.delta.chat)</string>
     <!-- "I Already Have a Profile / Add as Second Device” should be the same text as defined by the keys onboarding_alternative_logins and multidevice_receiver_title -->
-    <string name="multidevice_tap_scan_on_other_device">Paleiskite Arcane Chat, bakstelėkite „Aš jau turiu profilį / Pridėti kaip antrąjį įrenginį“ ir nuskenuokite čia rodomą kodą</string>
+    <string name="multidevice_tap_scan_on_other_device">Paleiskite Delta Chat, bakstelėkite „Aš jau turiu profilį / Pridėti kaip antrąjį įrenginį“ ir nuskenuokite čia rodomą kodą</string>
     <!-- Shown inside a "QR code card" with very limited space; please formulate the text as short as possible therefore. The placeholder will be replaced by the profile name eg. "Scan to set up second device for Alice" -->
     <string name="multidevice_qr_subtitle">Nuskenuokite norėdami nustatyti antrąjį įrenginį, skirtą %1$s</string>
     <string name="multidevice_receiver_title">Pridėti kaip antrąjį įrenginį</string>
     <string name="multidevice_open_settings_on_other_device">Pirmajame įrenginyje pereikite į „Nustatymai / Pridėti antrąjį įrenginį“ ir nuskenuokite ten rodomą kodą</string>
     <string name="multidevice_receiver_scanning_ask">Kopijuoti profilį iš kito įrenginio į šį įrenginį?</string>
-    <string name="multidevice_receiver_needs_update">Profilis, kurį norite importuoti, yra iš naujesnės Arcane Chat versijos.\n\nNorėdami tęsti ir nustatyti antrąjį įrenginį, atnaujinkite šiame įrenginyje Arcane Chat į naujausią versiją.</string>
-    <string name="multidevice_abort">Nutraukti antrojo įrenginio nustatymą?</string>
+    <string name="multidevice_receiver_needs_update">Profilis, kurį norite importuoti, yra iš naujesnės Delta Chat versijos.\n\nNorėdami tęsti ir nustatyti antrąjį įrenginį, atnaujinkite šiame įrenginyje Delta Chat į naujausią versiją.</string>
+    <string name="multidevice_abort">Nutraukti antrojo įrenginio paruošimą?</string>
     <string name="multidevice_abort_will_invalidate_copied_qr">Tai padarys į iškarpinę nukopijuotą QR kodą negaliojantį.</string>
     <string name="multidevice_transfer_done_devicemsg">ℹ️ Profilis perduotas į jūsų antrąjį įrenginį.</string>
     <!-- Shown beside progress bar, stay short -->
@@ -588,6 +609,12 @@
     <!-- Question shown when group's/channel's QR code is scanned from onboarding screen -->
     <string name="instant_onboarding_confirm_group">Sukurti naują profilį ir prisijungti prie „%1$s“?</string>
 
+    <string name="team">Komanda</string>
+    <string name="team_profile">Komandos profilis</string>
+    <string name="team_profile_explain">„Komandos profilį“ drauge tvarko grupė žmonių ar organizacija.\n\n⚠️ Komandos profiliai yra eksperimentinė ypatybė ir gali būti pakeista.</string>
+    <string name="team_name">Komandos pavadinimas</string>
+    <string name="create_team_profile">Sukurti komandos profilį</string>
+
     <string name="welcome_chat_over_email">Saugūs decentralizuoti pokalbiai</string>
     <string name="scan_invitation_code">Skenuoti pakvietimo kodą</string>
     <string name="login_title">Prisijungti</string>
@@ -621,6 +648,10 @@
     <string name="add_transport">Pridėti retransliavimą</string>
     <string name="remove_transport">Šalinti retransliavimą</string>
     <string name="edit_transport">Taisyti retransliavimą</string>
+    <!-- deprecated -->
+    <string name="hide_from_contacts">Slėpti nuo adresatų</string>
+    <!-- deprecated -->
+    <string name="hidden_from_contacts">Paslėpta nuo adresatų</string>
     <!-- shown if a QR code was scanned that can be used as a relay -->
     <string name="confirm_add_transport">Pridėti šį retransliavimą?</string>
     <string name="invalid_transport_qr">Nuskenuotame QR kode nėra tinkamo retransliavimo.</string>
@@ -649,13 +680,14 @@
     <string name="delete_account_explain_with_name">Visi „%s“ paskyros duomenys šiame įrenginyje bus ištrinti, įskaitant jūsų ištisinio šifravimo sąranką, adresatus, pokalbius, žinutes ir mediją. Šį veiksmą nebeįmanoma bus atšaukti.</string>
     <string name="unconfigured_account">Nesukonfigūruota paskyra</string>
     <string name="unconfigured_account_hint">Atverkite paskyrą norėdami ją konfigūruoti.</string>
+    <string name="try_connect_now">Bandyti prisijungti dabar</string>
     <string name="sync_all">Sinchronizuoti visas</string>
     <!-- Translations: %1$s will be replaced by a more detailed error message -->
     <string name="configuration_failed_with_error">Konfigūracija patyrė nesėkmę. Klaida: %1$s</string>
 
     <!-- share and forward messages -->
     <!-- Translators: shown above a chat/contact list when selecting recipients to forward messages -->
-    <string name="forward_to">Kam persiųsti …</string>
+    <string name="forward_to">Kam persiųsti…</string>
     <string name="share_abort">Bendrinimas nutrauktas dėl trūkstamų leidimų.</string>
 
     <!-- preferences -->
@@ -672,6 +704,7 @@
     <string name="pref_enter_sends">Įvedimo (Enter) klavišas išsiunčia</string>
     <string name="pref_enter_sends_explain">Paspaudus įvedimo (Enter) klavišą, bus išsiunčiamos tekstinės žinutės</string>
     <string name="pref_outgoing_media_quality">Išsiunčiamosios medijos kokybė</string>
+    <string name="pref_outgoing_media_quality_hint">Norėdami siųsti mediją pradinės kokybės, pridėkite ją į žinutę kaip „Failą“. Tai naudoja žymiai daugiau jūsų ir gavėjų duomenų.</string>
     <string name="pref_outgoing_balanced">Subalansuota</string>
     <string name="pref_outgoing_worse">Blogesnė kokybė, mažas dydis</string>
     <string name="pref_vibrate">Vibruoti</string>
@@ -682,6 +715,8 @@
     <string name="pref_notifications">Pranešimai</string>
     <string name="pref_mention_notifications">Paminėjimai</string>
     <string name="pref_mention_notifications_explain">Grupėse, kuriose išjungti pranešimai, pranešti apie jums adresuotas žinutes, tokias kaip atsakymai ar reakcijos</string>
+    <!-- Title for the "Calls" notification setting. This is a plural noun, not a verb. -->
+    <string name="pref_calls">Skambučiai</string>
     <string name="pref_notifications_show">Rodyti</string>
     <string name="pref_notifications_priority">Pirmenybė</string>
     <string name="pref_notifications_explain">Įjungti sistemos pranešimus apie naujas žinutes</string>
@@ -704,6 +739,8 @@
     <string name="pref_incognito_keyboard_explain">Prašyti klaviatūros išjungti suasmenintą mokymąsi</string>
     <string name="pref_read_receipts">Pranešimai apie skaitymą</string>
     <string name="pref_read_receipts_explain">Jei pranešimai apie skaitymą yra išjungti, jūs negalėsite matyti pranešimų apie skaitymą iš kitų žmonių.</string>
+    <!-- Title above a list of contacts who read a message -->
+    <string name="read_by">Perskaitė</string>
     <string name="pref_server">Serveris</string>
     <string name="pref_encryption">Šifravimas</string>
     <string name="pref_manage_keys">Tvarkyti raktus</string>
@@ -759,15 +796,18 @@
     <string name="profile_image_delete">Ištrinti profilio nuotrauką</string>
     <string name="pref_show_tray_icon">Rodyti dėklo piktogramą</string>
     <string name="pref_edit_profile">Taisyti profilį</string>
-    <string name="send_stats_to_devs">Siųsti statistiką Arcane Chat plėtotojams</string>
-    <string name="stats_device_message">Ar norite padėti tobulinti Arcane Chat ir pagelbėti tyrimams, kas savaitę siunčiant anoniminę statistiką apie naudojimąsi Arcane Chat?\n\n👉 Bakstelėkite čia… 👈</string>
-    <string name="stats_confirmation_dialog">Ar norite padėti tobulinti Arcane Chat ir pagelbėti tyrimams, kas savaitę siunčiant anoniminę statistiką apie naudojimąsi Arcane Chat?</string>
+    <string name="send_stats_to_devs">Siųsti statistiką Delta Chat plėtotojams</string>
+    <string name="stats_device_message">Ar norite padėti tobulinti Delta Chat ir pagelbėti tyrimams, kas savaitę siunčiant anoniminę statistiką apie naudojimąsi Delta Chat?\n\n👉 Bakstelėkite čia… 👈</string>
+    <string name="stats_confirmation_dialog">Ar norite padėti tobulinti Delta Chat ir pagelbėti tyrimams, kas savaitę siunčiant anoniminę statistiką apie naudojimąsi Delta Chat?</string>
+    <string name="stats_disable_dialog">Statistikos siuntimas jau yra įjungtas.\n\nAr norite jį išjungti?</string>
     <string name="disable">Išjungti</string>
     <string name="stats_keep_sending">Siųsti ir toliau</string>
+    <string name="stats_msg_body">Priede yra anoniminė naudojimosi statistika, kuri mums padeda tobulinti Delta Chat. Išsamesnei informacijai žiūrėkite https://delta.chat/help#statssending . Dėkojame!</string>
+
     <!-- Emoji picker and categories -->
     <string name="emoji_search_results">Paieškos rezultatai</string>
     <string name="emoji_not_found">Nerasta jokių šypsniukų</string>
-    <string name="emoji_recent">Paskiausi</string>
+    <string name="emoji_recent">Paskiausiai naudoti</string>
     <string name="emoji_people">Žmonės ir kūnas</string>
     <string name="emoji_nature">Gyvūnai ir gamta</string>
     <string name="emoji_foods">Maistas ir gėrimai</string>
@@ -861,6 +901,7 @@
     <!-- %1$s will be replaced by the number of weeks (always >1) the timer is set to, %2$s will be replaced by name of the contact -->
     <string name="ephemeral_timer_weeks_by_other">%2$s nustatė išnykstančių žinučių laikmatį į %1$s sav. </string>
     <string name="chat_unencrypted_explanation">Žinutės šiame pokalbyje naudoja klasikinius el. laiškus ir nėra šifruotos ištisinio perdavimo būdu.</string>
+    <string name="messages_are_e2ee">Žinutės yra šifruotos ištisinio perdavimo būdu.</string>
     <string name="chat_protection_enabled_tap_to_learn_more">Žinutės yra šifruotos ištisinio perdavimo būdu. Bakstelėkite norėdami sužinoti daugiau.</string>
     <string name="chat_protection_enabled_explanation">Visos žinutės šiame pokalbyje yra šifruotos ištisinio perdavimo būdu.\n\nIštisinis šifravimas išlaiko žinutes tarp jūsų ir jūsų pokalbio partnerių privačias. Netgi serveriai, teikėjai ar retransliavimai negali jų perskaityti.</string>
     <string name="invalid_unencrypted_tap_to_learn_more">⚠️ %1$s reikalauja ištisinio šifravimo, kuris kol kas nėra nustatytas šiam pokalbiui. Bakstelėkite norėdami sužinoti daugiau.</string>
@@ -869,7 +910,7 @@
     <string name="devicemsg_self_deleted">Jūs ištrynėte „Įrašytų žinučių“ pokalbį.\n\nℹ️ Norėdami vėl naudotis „Įrašytų žinučių“ ypatybe, sukurkite naują pokalbį su savimi.</string>
     <!-- %1%s will be replaced by date and time in some human-readable format -->
     <string name="devicemsg_bad_time">⚠️ Atrodo, kad jūsų įrenginyje yra nustatyta netiksli data ar laikas (%1$s).\n\nSuderinkite savo laikrodį ⏰🔧 kad užtikrintumėte, jog žinutės bus gaunamos teisingai.</string>
-    <string name="devicemsg_update_reminder">⚠️ Gali būti, kad jūsų Arcane Chat versija yra pasenusi.\n\nTai gali sukelti problemų, nes jūsų pokalbių partneriai naudoja naujesnę versiją ir jūs netenkate galimybės naudotis naujausiomis ypatybėmis 😳\nPatikrinkite, ar yra atnaujinimų, apsilankę adresu https://get.delta.chat arba atvėrę programėlių parduotuvę.</string>
+    <string name="devicemsg_update_reminder">⚠️ Gali būti, kad jūsų Delta Chat versija yra pasenusi.\n\nTai gali sukelti problemų, nes jūsų pokalbių partneriai naudoja naujesnę versiją ir jūs netenkate galimybės naudotis naujausiomis ypatybėmis 😳\nPatikrinkite, ar yra atnaujinimų, apsilankę adresu https://get.delta.chat arba atvėrę programėlių parduotuvę.</string>
 
     <!-- Some options as "Add Second Device" or "Backup" may require the system PIN/Fingerprint/Gesture/Etc. to be entered in a system dialog. This hint is added to the system dialog, below a title as "Add Second Device" or "Backup". -->
     <string name="enter_system_secret_to_continue">Atrakinkite, norėdami tęsti</string>
@@ -878,13 +919,14 @@
     <string name="qr_code">QR kodas</string>
     <string name="load_qr_code_as_image">Įkelti QR kodą kaip paveikslą</string>
     <string name="qrscan_title">Nuskenuoti QR kodą</string>
-    <string name="qrscan_hint">Laikykite savo kamerą virš QR kodo</string>
+    <string name="qrscan_hint">Laikykite kamerą virš QR kodo</string>
     <string name="qrscan_failed">Nepavyko dekoduoti QR kodo</string>
     <string name="qrscan_ask_join_group">Ar norite prisijungti prie grupės \"%1$s\"?</string>
     <string name="qrscan_ask_join_channel">Ar norite prisijungti prie kanalo „%1$s“?</string>
     <string name="qrscan_contains_text">Nuskenuoto QR kodo tekstas:\n\n%1$s</string>
     <string name="qrscan_contains_url">Nuskenuoto QR kodo URL:\n\n%1$s</string>
     <string name="qrscan_fingerprint_label">Kontrolinis kodas</string>
+    <string name="withdraw_verifycontact_explain">Kiti žmonės gali nuskenuoti šį QR kodą, kad su jumis susisiektų.\n\nJūs galite jį atstatyti, kad esamas QR kodas ar pakvietimo nuoroda daugiau nebeveiktų.</string>
     <string name="withdraw_qr_code">Pasyvinti QR kodą</string>
     <string name="revive_verifycontact_explain">Šis QR kodas buvo atstatytas ir daugiau nebėra aktyvus.</string>
     <string name="revive_qr_code">Aktyvuoti QR kodą</string>
@@ -918,6 +960,8 @@
     <!-- first placeholder is the name of the chat -->
     <string name="confirm_replace_draft">Pokalbyje „%1$s“ jau yra žinutės juodraštis. Ar norite jį pakeisti?</string>
     <string name="mailto_link_could_not_be_decoded">nepavyko dekoduoti mailto nuorodos: %1$s</string>
+    <string name="remove_attachment">Šalinti priedą</string>
+
     <!-- notifications -->
     <string name="notify_reply_button">Atsakyti</string>
     <string name="notify_new_message">Nauja žinutė</string>
@@ -928,6 +972,7 @@
     <string name="notify_name_only">Tik vardą</string>
     <string name="notify_no_name_or_message">Jokio vardo ar žinutės</string>
     <string name="notifications_disabled">Pranešimai išjungti</string>
+    <string name="unreliable_bg_notifications">Įjunkite „Priverstinai naudoti foninį ryšį“ norėdami patikimai gauti pranešimus</string>
     <string name="new_messages">Naujos žinutės</string>
     <!-- Body text for a generic "New messages" notification. Shown if we do not have more information about a new messages. Note, that the string is also referenced at https://github.com/deltachat/notifiers -->
     <string name="new_messages_body">Yra naujų žinučių</string>
@@ -942,7 +987,7 @@
     <string name="ImageEditorHud_flip">Apversti</string>
     <string name="ImageEditorHud_rotate">Pasukti</string>
 
-    <string name="welcome_desktop">Sveiki atvykę į Arcane Chat</string>
+    <string name="welcome_desktop">Sveiki atvykę į Delta Chat</string>
     <string name="global_menu_preferences_language_desktop">Pasirinkti kalbą...</string>
     <string name="global_menu_file_desktop">Failas</string>
     <string name="global_menu_file_quit_desktop">Išjungti</string>
@@ -957,11 +1002,11 @@
     <string name="global_menu_view_developer_desktop">Plėtotojas</string>
     <string name="global_menu_view_developer_tools_desktop">Plėtotojo įrankiai</string>
     <string name="global_menu_help_desktop">Žinynas</string>
-    <string name="delta_chat_homepage">Arcane Chat internetinė svetainė</string>
+    <string name="delta_chat_homepage">Delta Chat internetinė svetainė</string>
     <string name="contribute">Talkinti</string>
     <string name="global_menu_help_report_desktop">Pranešti apie klaidą</string>
-    <string name="global_menu_help_about_desktop">Apie Arcane Chat</string>
-    <string name="global_menu_file_open_desktop">Atverti Arcane Chat</string>
+    <string name="global_menu_help_about_desktop">Apie Delta Chat</string>
+    <string name="global_menu_file_open_desktop">Atverti Delta Chat</string>
     <string name="global_menu_minimize_to_tray">Suskleisti</string>
     <string name="no_chat_selected_suggestion_desktop">Pasirinkite arba sukurkite naują pokalbį</string>
     <string name="write_message_desktop">Rašykite žinutę</string>
@@ -978,11 +1023,25 @@
     <string name="message_detail_received_desktop">Gauta</string>
     <string name="menu.view.developer.open.log.folder">Atverti žurnalų aplanką</string>
     <string name="menu.view.developer.open.current.log.file">Atverti dabartinio žurnalo failą</string>
-    <string name="explain_desktop_minimized_disabled_tray_pref" tools:ignore="TypographyDashes">Dėklo piktograma negali būti išjungta, nes Arcane Chat buvo paleista naudojant --minimized parinktį.</string>
+    <string name="explain_desktop_minimized_disabled_tray_pref" tools:ignore="TypographyDashes">Dėklo piktograma negali būti išjungta, nes Delta Chat buvo paleista naudojant --minimized parinktį.</string>
     <!-- deprecated, used on desktop although there is not spell checker -->
     <string name="no_spellcheck_suggestions_found">Nerasta jokių rašybos pasiūlymų.</string>
     <string name="show_window">Rodyti langą</string>
+    <!-- subtitle in the "keybindings" dialog -->
+    <string name="navigation_shortcut_section">Naršymas</string>
+    <!-- subtitle in the "keybindings" dialog -->
+    <string name="message_input_shortcut_section">Žinutės įvestis</string>
+    <!-- subtitle in the "keybindings" dialog -->
+    <string name="message_selected_shortcut_section">Pažymėta žinutė</string>
     <string name="switch_between_chats">Perjungti tarp pokalbių</string>
+    <string name="scroll_messages">Slinkti žinutes</string>
+    <!-- command to put the cursor to the search input field -->
+    <string name="focus_search_input">Fokusuoti paieškos lauką</string>
+    <!-- command to put the cursor to the message input field -->
+    <string name="focus_message_input">Fokusuoti žinutės įvesties lauką</string>
+    <string name="force_refresh_network">Priverstinai atnaujinti tinklo ryšį</string>
+    <string name="insert_newline">Įterpti naują eilutę</string>
+
     <!-- accessibility, the general idea is to use the normal strings for accessibility hints wherever possible -->
     <string name="a11y_delivery_status_error">Pristatymo būsena: Klaida</string>
     <string name="a11y_delivery_status_sending">Pristatymo būsena: Siunčiama</string>
@@ -1004,25 +1063,25 @@
     <!-- iOS device contact alert -->
     <string name="import_device_contacts">Importuoti įrenginio adresatus</string>
     <!-- iOS notification settings -->
-    <string name="disabled_in_dc">Išjungta Arcane Chat programėlėje</string>
+    <string name="disabled_in_dc">Išjungta Delta Chat programėlėje</string>
     <string name="disabled_in_system_settings">Išjungta sistemos nustatymuose</string>
     <string name="notifications_avg_minutes">Vidutiniškai kas %1$d min.</string>
     <string name="notifications_avg_hours">Vidutiniškai kas %1$d val.</string>
     <string name="last_check_at">Tikrinta %1$s</string>
     <string name="system_settings">Sistemos nustatymai</string>
-    <string name="InfoPlist_NSMicrophoneUsageDescription">Arcane Chat naudoja mikrofoną, kad įrašytų ir siųstų balso žinutes bei vaizdo įrašus su garsu.</string>
-    <string name="InfoPlist_NSPhotoLibraryUsageDescription">Arcane Chat leis jums pasirinkti, kurias nuotraukas iš savo kolekcijos išsiųsti.</string>
-    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">Arcane Chat nori įrašyti paveikslus į jūsų nuotraukų kolekciją.</string>
+    <string name="InfoPlist_NSMicrophoneUsageDescription">Delta Chat naudoja mikrofoną, kad įrašytų ir siųstų balso žinutes bei vaizdo įrašus su garsu.</string>
+    <string name="InfoPlist_NSPhotoLibraryUsageDescription">Delta Chat leis jums pasirinkti, kurias nuotraukas iš savo kolekcijos išsiųsti.</string>
+    <string name="InfoPlist_NSPhotoLibraryAddUsageDescription">Delta Chat nori įrašyti paveikslus į jūsų nuotraukų kolekciją.</string>
     <!-- android specific strings, developers: please take care to remove strings that are no longer used! -->
     <string name="pref_instant_delivery">Greitas pristatymas</string>
     <string name="pref_background_notifications">Naudoti foninį ryšį</string>
     <string name="pref_reliable_service">Priverstinai naudoti foninį ryšį</string>
     <string name="pref_reliable_service_explain">Rodo pastovų pranešimą</string>
 
-    <string name="pref_background_notifications_rationale">Norėdami palaikyti ryšį su savo el. pašto serveriu ir gauti žinutes fone, kitame žingsnyje nepaisykite akumuliatoriaus optimizavimų (leiskite vykdyti programą fone).\n\nArcane Chat naudoja nedaug išteklių ir rūpinasi, kad neeikvotų jūsų akumuliatoriaus energijos.</string>
+    <string name="pref_background_notifications_rationale">Norėdami palaikyti ryšį su savo el. pašto serveriu ir gauti žinutes fone, kitame žingsnyje nepaisykite akumuliatoriaus optimizavimų (leiskite vykdyti programą fone).\n\nDelta Chat naudoja nedaug išteklių ir rūpinasi, kad neeikvotų jūsų akumuliatoriaus energijos.</string>
     <!-- disabling "Reliable service" will hide a the maybe annoying permanent-notification with the drawback that new-message-notifications get potentially unreliable -->
-    <string name="perm_enable_bg_reminder_title">Bakstelėkite čia, norėdami gauti žinutes, kol Arcane Chat veikia fone.</string>
-    <string name="perm_enable_bg_already_done">Jūs jau leidote Arcane Chat gauti žinutes fone.\n\nJei žinutės vis tiek nepristatomos fone, patikrinkite taip pat savo sistemos nustatymus.</string>
+    <string name="perm_enable_bg_reminder_title">Bakstelėkite čia, norėdami gauti žinutes, kol Delta Chat veikia fone.</string>
+    <string name="perm_enable_bg_already_done">Jūs jau leidote Delta Chat gauti žinutes fone.\n\nJei žinutės vis tiek nepristatomos fone, patikrinkite taip pat savo sistemos nustatymus.</string>
 
     <!-- device messages for updates -->
     <string name="update_2_0">Kas naujo?\n\n💯 Ištisinis šifravimas yra patikimas ir visą laiką. Pakabinamųjų spynų 🔒 nebėra!\n\n✉️ Klasikiniai el. laiškai be ištisinio šifravimo yra pažymėti voko simboliu\n\n😻 Naujas, pagerintas profilio langas visiems jūsų adresatams\n\n🔲 Naujas mygtukas, skirtas greitai pasiekti pokalbyje naudojamas programėles\n\n❤️ Prašome paaukoti, kad padėtumėte mums išlikti nepriklausomiems ir galėtume toliau teikti patobulinimus: %1$s</string>

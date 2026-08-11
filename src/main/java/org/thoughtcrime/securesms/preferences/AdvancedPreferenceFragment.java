@@ -4,8 +4,6 @@ import static android.app.Activity.RESULT_OK;
 import static android.text.InputType.TYPE_TEXT_VARIATION_URI;
 import static org.thoughtcrime.securesms.connect.DcHelper.CONFIG_BCC_SELF;
 import static org.thoughtcrime.securesms.connect.DcHelper.CONFIG_KEY_GEN_MODE;
-import static org.thoughtcrime.securesms.connect.DcHelper.CONFIG_KEY_ROTATION_GRACE_DAYS;
-import static org.thoughtcrime.securesms.connect.DcHelper.CONFIG_KEY_ROTATION_PERIOD;
 import static org.thoughtcrime.securesms.connect.DcHelper.CONFIG_STATS_SENDING;
 
 import android.content.Context;
@@ -44,13 +42,9 @@ import org.thoughtcrime.securesms.util.StreamUtil;
 public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
     implements DcEventCenter.DcEventDelegate {
   private static final String TAG = "AdvancedPreferenceFragment";
-
-  /** Recommended key rotation period (see `Config::KeyRotationPeriod` docs: 30-60 days). */
-  private static final int FORWARD_SECRECY_ROTATION_DAYS = 60;
-  /**
+/**
    * Default grace days when user has not set a custom value, and the low/high ends of the
    * allowed range. Must mirror the clamp enforced core-side by
-   * `Config::KeyRotationGraceDays` (`clamp_key_rotation_grace_days` in config.rs) — core is the
    * source of truth and will silently re-clamp anything out of range, but keeping the UI in sync
    * avoids a confusing "I typed 5 but it shows 7" round-trip.
    */
@@ -61,8 +55,6 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
   CheckBoxPreference selfReportingCheckbox;
   CheckBoxPreference multiDeviceCheckbox;
   CheckBoxPreference postQuantumCheckbox;
-  CheckBoxPreference forwardSecrecyCheckbox;
-  Preference keyRotationGraceButton;
   Preference rotateKeypairButton;
   private ActivityResultLauncher<Intent> screenLockLauncher;
 
@@ -170,26 +162,7 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
       rotateKeypairButton.setOnPreferenceClickListener(new RotateKeypairListener());
     }
 
-    forwardSecrecyCheckbox = this.findPreference("pref_forward_secrecy");
-    if (forwardSecrecyCheckbox != null) {
-      forwardSecrecyCheckbox.setOnPreferenceChangeListener(
-          (preference, newValue) -> {
-            boolean enabled = (Boolean) newValue;
-            dcContext.setConfigInt(
-                CONFIG_KEY_ROTATION_PERIOD, enabled ? FORWARD_SECRECY_ROTATION_DAYS : 0);
-            return true;
-          });
-    }
 
-    keyRotationGraceButton = this.findPreference("pref_key_rotation_grace");
-    if (keyRotationGraceButton != null) {
-      keyRotationGraceButton.setOnPreferenceClickListener(
-          preference -> {
-            showGraceDaysDialog();
-            return true;
-          });
-      updateGraceDaysSummary();
-    }
 
     Preference proxySettings = this.findPreference("proxy_settings_button");
     if (proxySettings != null) {
@@ -235,29 +208,20 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
     if (postQuantumCheckbox != null) {
       postQuantumCheckbox.setChecked(0 != dcContext.getConfigInt(CONFIG_KEY_GEN_MODE));
     }
-    if (forwardSecrecyCheckbox != null) {
-      forwardSecrecyCheckbox.setChecked(0 != dcContext.getConfigInt(CONFIG_KEY_ROTATION_PERIOD));
     }
     updateGraceDaysSummary();
     updateRotateKeypairSummary();
   }
 
   private void updateGraceDaysSummary() {
-    if (keyRotationGraceButton == null) {
-      return;
-    }
-    int days = dcContext.getConfigInt(CONFIG_KEY_ROTATION_GRACE_DAYS);
     if (days <= 0) {
       days = DEFAULT_GRACE_DAYS;
     }
-    keyRotationGraceButton.setSummary(
-        getString(R.string.pref_key_rotation_grace_explain) + "\n(" + days + " days)");
   }
 
   private void showGraceDaysDialog() {
     final EditText input = new EditText(requireContext());
     input.setInputType(android.text.InputType.TYPE_CLASS_NUMBER);
-    int current = dcContext.getConfigInt(CONFIG_KEY_ROTATION_GRACE_DAYS);
     if (current <= 0) {
       current = DEFAULT_GRACE_DAYS;
     }
@@ -265,8 +229,6 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
     input.setSelection(input.getText().length());
 
     new AlertDialog.Builder(requireContext())
-        .setTitle(R.string.pref_key_rotation_grace_dialog_title)
-        .setMessage(R.string.pref_key_rotation_grace_explain)
         .setView(input)
         .setPositiveButton(
             android.R.string.ok,
@@ -275,7 +237,6 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
                 int days = Integer.parseInt(input.getText().toString().trim());
                 if (days < MIN_GRACE_DAYS) days = MIN_GRACE_DAYS;
                 if (days > MAX_GRACE_DAYS) days = MAX_GRACE_DAYS;
-                dcContext.setConfigInt(CONFIG_KEY_ROTATION_GRACE_DAYS, days);
                 updateGraceDaysSummary();
               } catch (NumberFormatException e) {
                 Toast.makeText(requireContext(), R.string.pref_rotate_keypair_now_failed, Toast.LENGTH_SHORT)
