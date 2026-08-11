@@ -42,15 +42,6 @@ import org.thoughtcrime.securesms.util.StreamUtil;
 public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
     implements DcEventCenter.DcEventDelegate {
   private static final String TAG = "AdvancedPreferenceFragment";
-/**
-   * Default grace days when user has not set a custom value, and the low/high ends of the
-   * allowed range. Must mirror the clamp enforced core-side by
-   * source of truth and will silently re-clamp anything out of range, but keeping the UI in sync
-   * avoids a confusing "I typed 5 but it shows 7" round-trip.
-   */
-  private static final int DEFAULT_GRACE_DAYS = 30;
-  private static final int MIN_GRACE_DAYS = 7;
-  private static final int MAX_GRACE_DAYS = 90;
 
   CheckBoxPreference selfReportingCheckbox;
   CheckBoxPreference multiDeviceCheckbox;
@@ -95,6 +86,45 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
           });
     }
 
+    postQuantumCheckbox = this.findPreference("pref_post_quantum_encryption");
+    if (postQuantumCheckbox != null) {
+      postQuantumCheckbox.setOnPreferenceChangeListener(
+          (preference, newValue) -> {
+            boolean enabled = (Boolean) newValue;
+            dcContext.setConfigInt(CONFIG_KEY_GEN_MODE, enabled ? 1 : 0);
+            updateRotateKeypairSummary();
+            if (enabled) {
+              new AlertDialog.Builder(requireContext())
+                  .setTitle(R.string.pref_post_quantum_enable_apply_title)
+                  .setMessage(R.string.pref_post_quantum_enable_apply_message)
+                  .setPositiveButton(R.string.ok, (d, which) -> runRotateKeypairNow())
+                  .setNegativeButton(R.string.pref_post_quantum_enable_apply_later, null)
+                  .show();
+            } else {
+              new AlertDialog.Builder(requireContext())
+                  .setTitle(R.string.pref_rotate_keypair_now_confirm_title)
+                  .setMessage(R.string.pref_rotate_keypair_now_confirm_message)
+                  .setPositiveButton(R.string.ok, (d, which) -> runRotateKeypairNow())
+                  .setNegativeButton(R.string.pref_post_quantum_enable_apply_later, null)
+                  .show();
+            }
+            return true;
+          });
+    }
+
+    rotateKeypairButton = this.findPreference("pref_rotate_keypair_now");
+    if (rotateKeypairButton != null) {
+      rotateKeypairButton.setOnPreferenceClickListener(preference -> {
+        new AlertDialog.Builder(requireContext())
+            .setTitle(R.string.pref_rotate_keypair_now_confirm_title)
+            .setMessage(R.string.pref_rotate_keypair_now_confirm_message)
+            .setPositiveButton(R.string.ok, (d, which) -> runRotateKeypairNow())
+            .setNegativeButton(android.R.string.cancel, null)
+            .show();
+        return true;
+      });
+    }
+
     Preference submitDebugLog = this.findPreference("pref_view_log");
     if (submitDebugLog != null) {
       submitDebugLog.setOnPreferenceClickListener(new ViewLogListener());
@@ -105,6 +135,10 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
       webxdcStore.setOnPreferenceClickListener(new WebxdcStoreUrlListener());
     }
     updateWebxdcStoreSummary();
+    if (postQuantumCheckbox != null) {
+      postQuantumCheckbox.setChecked(0 != dcContext.getConfigInt(CONFIG_KEY_GEN_MODE));
+    }
+    updateRotateKeypairSummary();
 
     selfReportingCheckbox = this.findPreference("pref_stats_sending");
     if (selfReportingCheckbox != null) {
@@ -124,45 +158,6 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
             }
           });
     }
-
-    postQuantumCheckbox = this.findPreference("pref_post_quantum_encryption");
-    if (postQuantumCheckbox != null) {
-      postQuantumCheckbox.setOnPreferenceChangeListener(
-          (preference, newValue) -> {
-            boolean enabled = (Boolean) newValue;
-            dcContext.setConfigInt(CONFIG_KEY_GEN_MODE, enabled ? 1 : 0);
-            updateRotateKeypairSummary();
-            if (enabled) {
-              // Offer immediate key update so hybrid subkey + PQ signing key exist now.
-              new AlertDialog.Builder(requireContext())
-                  .setTitle(R.string.pref_post_quantum_enable_apply_title)
-                  .setMessage(R.string.pref_post_quantum_enable_apply_message)
-                  .setPositiveButton(
-                      R.string.ok,
-                      (d, which) -> runRotateKeypairNow())
-                  .setNegativeButton(R.string.pref_post_quantum_enable_apply_later, null)
-                  .show();
-            } else {
-              // Turning PQ off: offer to drop PQ material from the published key.
-              new AlertDialog.Builder(requireContext())
-                  .setTitle(R.string.pref_rotate_keypair_now_confirm_title)
-                  .setMessage(R.string.pref_rotate_keypair_now_confirm_message)
-                  .setPositiveButton(
-                      R.string.ok,
-                      (d, which) -> runRotateKeypairNow())
-                  .setNegativeButton(R.string.pref_post_quantum_enable_apply_later, null)
-                  .show();
-            }
-            return true;
-          });
-    }
-
-    rotateKeypairButton = this.findPreference("pref_rotate_keypair_now");
-    if (rotateKeypairButton != null) {
-      rotateKeypairButton.setOnPreferenceClickListener(new RotateKeypairListener());
-    }
-
-
 
     Preference proxySettings = this.findPreference("proxy_settings_button");
     if (proxySettings != null) {
@@ -205,76 +200,6 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
 
     selfReportingCheckbox.setChecked(0 != dcContext.getConfigInt(CONFIG_STATS_SENDING));
     multiDeviceCheckbox.setChecked(0 != dcContext.getConfigInt(CONFIG_BCC_SELF));
-    if (postQuantumCheckbox != null) {
-      postQuantumCheckbox.setChecked(0 != dcContext.getConfigInt(CONFIG_KEY_GEN_MODE));
-    }
-    }
-    updateGraceDaysSummary();
-    updateRotateKeypairSummary();
-  }
-
-  private void updateGraceDaysSummary() {
-    if (days <= 0) {
-      days = DEFAULT_GRACE_DAYS;
-    }
-  }
-
-  private void showGraceDaysDialog() {
-    final EditText input = new EditText(requireContext());
-    input.setInputType(android.text.InputType.TYPE_CLASS_NUMBER);
-    if (current <= 0) {
-      current = DEFAULT_GRACE_DAYS;
-    }
-    input.setText(String.valueOf(current));
-    input.setSelection(input.getText().length());
-
-    new AlertDialog.Builder(requireContext())
-        .setView(input)
-        .setPositiveButton(
-            android.R.string.ok,
-            (dialog, which) -> {
-              try {
-                int days = Integer.parseInt(input.getText().toString().trim());
-                if (days < MIN_GRACE_DAYS) days = MIN_GRACE_DAYS;
-                if (days > MAX_GRACE_DAYS) days = MAX_GRACE_DAYS;
-                updateGraceDaysSummary();
-              } catch (NumberFormatException e) {
-                Toast.makeText(requireContext(), R.string.pref_rotate_keypair_now_failed, Toast.LENGTH_SHORT)
-                    .show();
-              }
-            })
-        .setNegativeButton(android.R.string.cancel, null)
-        .show();
-  }
-
-  /**
-   * Summary under "Regenerate Keys Now" reflects both the *desired* mode
-   * (key_gen_mode toggle) and the *actual* encryption subkey on the account.
-   * Toggling PQ alone does not change keys — only rotate/regenerate does —
-   * so without this the label stayed stuck on the old algorithm family.
-   */
-  private void updateRotateKeypairSummary() {
-    if (rotateKeypairButton == null) {
-      return;
-    }
-    boolean wantPq = 0 != dcContext.getConfigInt(CONFIG_KEY_GEN_MODE);
-    String kind = dcContext.getSelfEncryptionKind();
-    if (kind == null) {
-      kind = "";
-    }
-    boolean havePq = "pq".equals(kind);
-
-    if (wantPq && havePq) {
-      rotateKeypairButton.setSummary(R.string.pref_rotate_keypair_now_explain_pq);
-    } else if (!wantPq && !havePq) {
-      rotateKeypairButton.setSummary(R.string.pref_rotate_keypair_now_explain_classic);
-    } else if (wantPq && !havePq) {
-      // Toggle on, published key still classic — user must regenerate.
-      rotateKeypairButton.setSummary(R.string.pref_rotate_keypair_now_explain_pq_pending);
-    } else {
-      // Toggle off, but published key still has ML-KEM subkey.
-      rotateKeypairButton.setSummary(R.string.pref_rotate_keypair_now_explain_classic_pending);
-    }
   }
 
   protected File copyToCacheDir(Uri uri) throws IOException {
@@ -299,48 +224,6 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
     } catch (PackageManager.NameNotFoundException e) {
       Log.w(TAG, e);
       return context.getString(R.string.app_name);
-    }
-  }
-
-  private void runRotateKeypairNow() {
-    Context appContext = requireActivity().getApplicationContext();
-    new Thread(
-            () -> {
-              boolean success = dcContext.rotateKeypairNow();
-              if (!isAdded()) {
-                return;
-              }
-              requireActivity()
-                  .runOnUiThread(
-                      () -> {
-                        if (!isAdded()) {
-                          return;
-                        }
-                        Toast.makeText(
-                                appContext,
-                                success
-                                    ? R.string.pref_rotate_keypair_now_success
-                                    : R.string.pref_rotate_keypair_now_failed,
-                                Toast.LENGTH_SHORT)
-                            .show();
-                        updateRotateKeypairSummary();
-                      });
-            })
-        .start();
-  }
-
-  private class RotateKeypairListener implements Preference.OnPreferenceClickListener {
-    @Override
-    public boolean onPreferenceClick(@NonNull Preference preference) {
-      new AlertDialog.Builder(requireContext())
-          .setTitle(R.string.pref_rotate_keypair_now_confirm_title)
-          .setMessage(R.string.pref_rotate_keypair_now_confirm_message)
-          .setPositiveButton(
-              R.string.ok,
-              (dialogInterface, i) -> runRotateKeypairNow())
-          .setNegativeButton(R.string.cancel, null)
-          .show();
-      return true;
     }
   }
 
@@ -372,6 +255,10 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
               (dlg, btn) -> {
                 Prefs.setWebxdcStoreUrl(requireActivity(), inputField.getText().toString());
                 updateWebxdcStoreSummary();
+    if (postQuantumCheckbox != null) {
+      postQuantumCheckbox.setChecked(0 != dcContext.getConfigInt(CONFIG_KEY_GEN_MODE));
+    }
+    updateRotateKeypairSummary();
               })
           .show();
       return true;
@@ -389,4 +276,52 @@ public class AdvancedPreferenceFragment extends ListSummaryPreferenceFragment
     Intent intent = new Intent(requireActivity(), RelayListActivity.class);
     startActivity(intent);
   }
+
+  private void updateRotateKeypairSummary() {
+    if (rotateKeypairButton == null) {
+      return;
+    }
+    boolean wantPq = 0 != dcContext.getConfigInt(CONFIG_KEY_GEN_MODE);
+    String kind = dcContext.getSelfEncryptionKind();
+    if (kind == null) {
+      kind = "";
+    }
+    boolean havePq = "pq".equals(kind);
+    if (wantPq && havePq) {
+      rotateKeypairButton.setSummary(R.string.pref_rotate_keypair_now_explain_pq);
+    } else if (!wantPq && !havePq) {
+      rotateKeypairButton.setSummary(R.string.pref_rotate_keypair_now_explain_classic);
+    } else if (wantPq && !havePq) {
+      rotateKeypairButton.setSummary(R.string.pref_rotate_keypair_now_explain_pq_pending);
+    } else {
+      rotateKeypairButton.setSummary(R.string.pref_rotate_keypair_now_explain_classic_pending);
+    }
+  }
+
+  private void runRotateKeypairNow() {
+    new Thread(
+            () -> {
+              boolean ok = dcContext.rotateKeypairNow();
+              if (!isAdded()) {
+                return;
+              }
+              requireActivity()
+                  .runOnUiThread(
+                      () -> {
+                        if (!isAdded()) {
+                          return;
+                        }
+                        Toast.makeText(
+                                requireContext(),
+                                ok
+                                    ? R.string.pref_rotate_keypair_now_success
+                                    : R.string.pref_rotate_keypair_now_failed,
+                                Toast.LENGTH_SHORT)
+                            .show();
+                        updateRotateKeypairSummary();
+                      });
+            })
+        .start();
+  }
+
 }
