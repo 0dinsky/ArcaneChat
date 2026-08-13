@@ -92,25 +92,25 @@
             style="@style/AddReaction" />
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/reaction_1"
-            android:text="❤️"
+            android:text="👎"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/AddReaction" />
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/reaction_2"
-            android:text="😂"
+            android:text="❤️"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/AddReaction" />
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/reaction_3"
-            android:text="🎉"
+            android:text="😂"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/AddReaction" />
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/reaction_4"
-            android:text="😢"
+            android:text="🙁"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/AddReaction" />
