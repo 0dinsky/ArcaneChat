@@ -1,9 +1,9 @@
 package org.thoughtcrime.securesms;
 
 import android.app.Activity;
+import android.app.ActivityManager;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
@@ -183,11 +183,17 @@ public class WebxdcActivity extends WebViewActivity implements DcEventCenter.DcE
   @Override
   protected void onCreate(Bundle state, boolean ready) {
     Bundle b = getIntent().getExtras();
+    if (b == null) finish();
     hideActionBar = b.getBoolean(EXTRA_HIDE_ACTION_BAR, false);
 
     super.onCreate(state, ready);
     rpc = DcHelper.getRpc(this);
     initTTS();
+
+    // enter fullscreen mode if necessary,
+    // this is needed here because if the app is opened while already in landscape mode,
+    // onConfigurationChanged() is not triggered
+    setScreenMode(getResources().getConfiguration());
 
     webView.setWebChromeClient(
         new WebChromeClient() {
@@ -247,16 +253,6 @@ public class WebxdcActivity extends WebViewActivity implements DcEventCenter.DcE
     WebxdcMessageInfo info;
     try {
       info = rpc.getWebxdcInfo(accountId, appMessageId);
-
-      if ("landscape".equals(info.orientation)) {
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-      } else {
-        // enter fullscreen mode if necessary,
-        // this is needed here because if the app is opened while already in landscape mode,
-        // onConfigurationChanged() is not triggered
-        setScreenMode(getResources().getConfiguration());
-      }
-
       internetAccess = info.internetAccess;
       selfAddr = info.selfAddr;
       isAppSender = info.isAppSender;
@@ -569,6 +565,10 @@ public class WebxdcActivity extends WebViewActivity implements DcEventCenter.DcE
       title = docName + " – " + chat.getName();
     }
     getSupportActionBar().setTitle(title);
+
+    if (!hideActionBar) {
+      setTaskDescription(new ActivityManager.TaskDescription(title));
+    }
 
     String currSourceCodeUrl = info.sourceCodeUrl != null ? info.sourceCodeUrl : "";
     if (!sourceCodeUrl.equals(currSourceCodeUrl)) {
